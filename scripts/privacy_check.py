@@ -13,7 +13,7 @@ def ffprobe_binary():
  for path in sorted((ROOT/'node_modules/@remotion').glob('compositor-*/ffprobe*')):
   if path.name not in ('ffprobe','ffprobe.exe'):continue
   try:
-   test=subprocess.run([str(path),'-version'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+   test=subprocess.run([str(path),'-version'],cwd=str(path.parent),stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
    if test.returncode==0:return str(path)
   except OSError:pass
  raise RuntimeError('ffprobe required: install FFmpeg or run npm ci for the pinned Remotion compositor.')
@@ -32,7 +32,8 @@ for p in files():
     if name=='email' and ('LICENSE' in p.name or p.name.endswith('-OFL.txt') or p.name.endswith('-NOTICE.txt') or p.name=='package-lock.json'):continue
     issues.append({'file':rel,'kind':name,'line':content[:m.start()].count('\n')+1})
  if p.suffix.lower()=='.mp4':
-  probe=subprocess.run([ffprobe_binary(),'-v','error','-show_format','-show_streams','-of','json',str(p)],capture_output=True,text=True,check=True)
+  binary=ffprobe_binary()
+  probe=subprocess.run([binary,'-v','error','-show_format','-show_streams','-of','json',str(p)],cwd=str(Path(binary).parent),capture_output=True,text=True,check=True)
   meta=json.loads(probe.stdout);tags={**meta.get('format',{}).get('tags',{})}
   for s in meta.get('streams',[]):tags.update(s.get('tags',{}))
   if any(k.lower() in ['location','location-eng','creation_time','title','artist','comment','description','voice-memo-uuid'] or k.startswith('com.apple.') for k in tags):issues.append({'file':rel,'kind':'media_metadata'})
