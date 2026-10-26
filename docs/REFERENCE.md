@@ -1,5 +1,9 @@
 # 48 秒 voice-to-video reference
 
+[完整有声视频发布页](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.0-beta.1) · [直接下载MP4](https://github.com/derek-zhuolin/motion-skill/releases/download/v1.1.0-beta.1/motion-skill-reference.mp4)
+
+![48秒静音动图预览](../demo/motion-skill-preview.gif)
+
 ## 实际制作方式
 
 作者提供录音和视觉反馈，在 Codex 中使用 **GPT-6.1 Sol**（作者提供的模型标注）理解原话、编排、修改源码与检查。Whisper 本地转写；Remotion / Chrome 本地渲染；FFmpeg 检查和媒体准备。未把所有步骤说成由一个模型完成，也没有使用新的图像、视频、语音或音乐生成模型。

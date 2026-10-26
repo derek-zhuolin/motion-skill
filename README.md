@@ -2,7 +2,16 @@
 
 **把声音做成可读、连续、有明确结尾的视频。**
 
-![Motion Skill reference end card](docs/hero.png)
+## 先看 reference 效果
+
+[![48秒reference动图预览：实拍＋MG动效＋同步字幕](demo/motion-skill-preview.gif)](https://github.com/derek-zhuolin/motion-skill/releases/download/v1.1.0-beta.1/motion-skill-reference.mp4)
+
+**上方是48秒循环动图预览（静音）。**
+
+### ▶ [下载完整有声视频 · 1080p / 48秒 / 中文字幕](https://github.com/derek-zhuolin/motion-skill/releases/download/v1.1.0-beta.1/motion-skill-reference.mp4)
+
+[视频发布页](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.0-beta.1) · [仓库内的MP4原文件](demo/motion-skill-reference.mp4) · [可编辑reference工程](examples/voice-to-video/README.md)
+
 
 **96 项动效机制研究 · 19 个分类 · 5 类语义结构 · 48 秒有声 reference**
 
@@ -24,9 +33,17 @@
 
 ## 可直接复制的提示词
 
-> /motion-video 把这段音频做成“实拍素材混剪＋MG 动效”：具体场景用实拍，抽象关系用动效。保留原声 1×，补上同步底部字幕。片尾放大 **[名称]**，配 **[收尾文案]**，稳定停留至少三秒。素材保留来源；完成后导出有声 MP4 和可编辑工程。
+> /motion-video 把这段音频做成“实拍素材混剪＋MG 动效”：具体场景用实拍，抽象关系用动效。保留原声 1×，补上同步底部字幕。没有实拍素材时，请 Codex 按口播场景联网寻找并下载有明确使用许可的公开素材，保留作者与来源。片尾放大 **[名称]**，配 **[收尾文案]**，稳定停留至少三秒。完成后导出有声 MP4 和可编辑工程。
 
 更完整的输入、素材与 ending 模板见 [PROMPTS](docs/PROMPTS.md)。尽量给出受众、唯一带走的结论、画幅和想要的片尾。没有仓库链接就不编造链接。
+
+## 没有实拍素材，也可以让 Codex 找
+
+可以在提示词里直接说：
+
+> 我没有现成的实拍素材。请你根据口播里的具体场景，联网搜索并下载有明确使用许可的真实照片和短视频，优先使用可用的公开素材库。自行选取合适片段并静音，记录作者、原始页面和许可证，再接入工程。不需要我逐张挑选。
+
+Codex需要有可用的联网搜索/下载能力；Skill本身没有内置素材搜索API。来源不清、付费或下载受限时，说明缺口，不把示意图或AI生成画面标成实拍，也不自动购买。本reference就采用了从公开来源获取的工作台照片和手机实拍视频，详见[制作记录](docs/REFERENCE.md)。
 
 ## 工程里有什么
 
