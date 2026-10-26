@@ -1,0 +1,6 @@
+interface:
+  display_name: "Motion Skill"
+  short_description: "把口播节奏、语义和可读时间组织成连续的视觉解释视频"
+  default_prompt: "用 $motion-video 将这段音频或视频做成语义清楚、来得及读懂、跟随重音与停顿的本地动效样片。"
+policy:
+  allow_implicit_invocation: false

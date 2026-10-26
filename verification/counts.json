@@ -1,0 +1,32 @@
+{
+  "studies": 96,
+  "categories": {
+    "内容与画面组织": 10,
+    "聚焦与运镜": 8,
+    "连续转场": 10,
+    "流程与结果表达": 8,
+    "文字与数字": 8,
+    "触感与表面动作": 8,
+    "微动效与小点缀": 12,
+    "光学与材质": 4,
+    "文字与编辑": 4,
+    "空间与运镜": 4,
+    "玩心与触感": 4,
+    "产品揭露": 3,
+    "材质与重组": 2,
+    "因果与节奏": 1,
+    "编辑与叙事": 1,
+    "镜头编排升级": 1,
+    "取景与讲述": 3,
+    "运镜与遮挡": 3,
+    "空间与视角": 2
+  },
+  "semantic_renderers": 5,
+  "documented_capability_groups": 12,
+  "reference_scenes": 7,
+  "reference_captions": 25,
+  "reference_stock_photo_count": 1,
+  "reference_stock_video_seconds": 5.4,
+  "historical_compositions_in_catalog": 18,
+  "historical_compositions_available_in_ui": false
+}

@@ -1,0 +1,24 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run verify:rules
+      - run: npm run check
+      - run: npm run build
+      - run: npm run verify:frames
+      - run: npm run verify:template
+      - run: command -v ffprobe || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+      - run: npm run verify:privacy

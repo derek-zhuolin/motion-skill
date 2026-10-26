@@ -1,0 +1,25 @@
+{
+  "version": "1.1.0-beta.1",
+  "display_name": "Motion Skill",
+  "invocation": "motion-video",
+  "motion_studies": 96,
+  "renderers": [
+    "collect",
+    "connect",
+    "compare",
+    "evidence",
+    "conclusion"
+  ],
+  "speech_recognition_bundled": false,
+  "automatic_face_tracking": false,
+  "automatic_music_beat_detection": false,
+  "spec_kit": {
+    "version": "1.2.3",
+    "commit": "5ea8b1cf0a38699340a38e00d02770308997d8c0"
+  },
+  "derived_from": "Historical local motion studies and a public voice-to-video reference; see ATTRIBUTION.md",
+  "license_note": "Scoped MIT for project tooling/reference engineering; historical study archive is excluded pending per-item provenance. Fonts and dependencies keep their licenses.",
+  "private_media_included": false,
+  "reference_video_in_separate_demo_directory": true,
+  "captions_required_by_default": true
+}

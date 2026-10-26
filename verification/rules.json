@@ -1,0 +1,154 @@
+{
+  "passed": 21,
+  "cases": [
+    {
+      "case": "valid example has enough readable time",
+      "expected_blocker": null,
+      "observed": []
+    },
+    {
+      "case": "fast scene cannot skip the comprehension budget",
+      "expected_blocker": "NEEDS_SIMPLIFY",
+      "observed": [
+        "NEEDS_SIMPLIFY",
+        "UNCOVERED_TIMELINE"
+      ]
+    },
+    {
+      "case": "late text reveal starts the clock later",
+      "expected_blocker": "NEEDS_SIMPLIFY",
+      "observed": [
+        "NEEDS_SIMPLIFY"
+      ]
+    },
+    {
+      "case": "headline overload is not solved by small type",
+      "expected_blocker": "HEADLINE_OVERLOAD",
+      "observed": [
+        "HEADLINE_OVERLOAD",
+        "NEEDS_SIMPLIFY"
+      ]
+    },
+    {
+      "case": "a declared shared entity must survive the handoff",
+      "expected_blocker": "SHARED_ENTITY_LOST",
+      "observed": [
+        "NO_FOCUS",
+        "SHARED_ENTITY_LOST",
+        "SHARED_ENTITY_LOST"
+      ]
+    },
+    {
+      "case": "audio alone cannot create a real face",
+      "expected_blocker": "NO_FACE_SOURCE",
+      "observed": [
+        "NO_FACE_SOURCE"
+      ]
+    },
+    {
+      "case": "no silent acceleration of the source audio",
+      "expected_blocker": "UNAUTHORIZED_RETIME",
+      "observed": [
+        "UNAUTHORIZED_RETIME"
+      ]
+    },
+    {
+      "case": "authorization alone does not implement retiming",
+      "expected_blocker": "UNSUPPORTED_RETIME",
+      "observed": [
+        "UNSUPPORTED_RETIME"
+      ]
+    },
+    {
+      "case": "invalid geometry or time cannot pass",
+      "expected_blocker": "INVALID_NUMBER",
+      "observed": [
+        "INVALID_NUMBER",
+        "INVALID_SCENE_RANGE",
+        "CONTENT_READY_INVALID",
+        "NEEDS_SIMPLIFY",
+        "EMPHASIS_OUTSIDE_SCENE",
+        "UNCOVERED_TIMELINE"
+      ]
+    },
+    {
+      "case": "unimplemented renderer cannot masquerade as a feature",
+      "expected_blocker": "UNSUPPORTED_RENDERER",
+      "observed": [
+        "UNSUPPORTED_RENDERER"
+      ]
+    },
+    {
+      "case": "verified voice coordinates can share the same clock",
+      "expected_blocker": null,
+      "observed": []
+    },
+    {
+      "case": "source speech cannot cross a hidden edit",
+      "expected_blocker": "VOICE_MAPPING_INVALID",
+      "observed": [
+        "VOICE_MAPPING_INVALID",
+        "NEEDS_SIMPLIFY"
+      ]
+    },
+    {
+      "case": "audio length cannot silently drift",
+      "expected_blocker": "AUDIO_DURATION_MISMATCH",
+      "observed": [
+        "AUDIO_DURATION_MISMATCH"
+      ]
+    },
+    {
+      "case": "unverified transcript stays blocked",
+      "expected_blocker": "TRANSCRIPT_NOT_VERIFIED",
+      "observed": [
+        "TRANSCRIPT_NOT_VERIFIED"
+      ]
+    },
+    {
+      "case": "a voiced deliverable needs an audio source",
+      "expected_blocker": "MISSING_AUDIO_SOURCE",
+      "observed": [
+        "MISSING_AUDIO_SOURCE"
+      ]
+    },
+    {
+      "case": "pauses must not create blank timeline holes",
+      "expected_blocker": "UNCOVERED_TIMELINE",
+      "observed": [
+        "UNCOVERED_TIMELINE"
+      ]
+    },
+    {
+      "case": "the focus must fit the frame",
+      "expected_blocker": "FOCUS_OUTSIDE_FRAME",
+      "observed": [
+        "FOCUS_OUTSIDE_FRAME"
+      ]
+    },
+    {
+      "case": "voiced output cannot silently omit subtitles",
+      "expected_blocker": "MISSING_CAPTIONS",
+      "observed": [
+        "MISSING_CAPTIONS"
+      ]
+    },
+    {
+      "case": "caption cannot exceed the source clock",
+      "expected_blocker": "CAPTION_TIMING_INVALID",
+      "observed": [
+        "CAPTION_TIMING_INVALID"
+      ]
+    },
+    {
+      "case": "explicitly requested no-subtitle output is allowed",
+      "expected_blocker": null,
+      "observed": []
+    },
+    {
+      "case": "Han and Latin counts use distinct declared units",
+      "passed": true
+    }
+  ],
+  "scope": "deterministic behavior only; not ASR, aesthetic or listening acceptance"
+}

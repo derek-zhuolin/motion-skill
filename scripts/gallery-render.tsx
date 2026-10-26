@@ -1,0 +1,9 @@
+import React,{useEffect,useState} from 'react';
+import {Composition,registerRoot,delayRender,continueRender,cancelRender,staticFile} from 'remotion';
+import {loadFont} from '@remotion/fonts';
+import {FrameFilm} from '../assets/runtime/src/studies/Films';
+const ids=[1,2,8,11,19,25,38,43,65,66,69,77,81,84,89,96];
+const ready=Promise.all([loadFont({family:'InterflowCN',url:staticFile('assets/fonts/source-han-regular.otf'),weight:'400'}),loadFont({family:'InterflowCN',url:staticFile('assets/fonts/source-han-bold.otf'),weight:'700'})]);
+function Gallery(){const[h]=useState(()=>delayRender('fonts'));useEffect(()=>{ready.then(()=>continueRender(h)).catch(cancelRender)},[h]);return <div style={{width:2400,height:1720,background:'#141414',padding:24,color:'#fff',fontFamily:'InterflowCN,sans-serif'}}><div style={{fontSize:43,height:104,padding:'12px 16px'}}>Motion Skill / 16 selected study frames</div><div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}}>{ids.map(id=><div key={id} style={{background:'#202228',borderRadius:15,overflow:'hidden'}}><div style={{width:576,height:324,overflow:'hidden'}}><div style={{width:1600,height:900,transform:'scale(.36)',transformOrigin:'0 0'}}><FrameFilm mode="study" id={id} frame={144} rhythm="flow"/></div></div><div style={{fontSize:25,padding:'12px 18px'}}>Study {String(id).padStart(3,'0')}</div></div>)}</div></div>}
+function SingleStudy({id}:{id:number}){const[h]=useState(()=>delayRender("fonts"));useEffect(()=>{ready.then(()=>continueRender(h)).catch(cancelRender)},[h]);return <FrameFilm mode="study" id={id} frame={144} rhythm="flow"/>}
+registerRoot(()=> <><Composition id="Study-Contact-Sheet" component={Gallery} width={2400} height={1720} fps={30} durationInFrames={1}/><Composition id="Study-Snapshot" component={SingleStudy} width={1600} height={900} fps={30} durationInFrames={1} defaultProps={{id:89}}/></>);

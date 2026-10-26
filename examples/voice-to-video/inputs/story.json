@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "title": "Motion Skill · 让想法，被看见",
+  "mode": "voice",
+  "duration": 48.064,
+  "fps": 30,
+  "audio_speed": 1,
+  "source": {
+    "voice_url": "assets/voice.wav",
+    "video_url": null,
+    "actual_duration": 48.064,
+    "source_offset": 0,
+    "transcript_verified": true,
+    "verification_scope": "Reference narration and caption timing reviewed during production; caption wording includes light ASR corrections."
+  },
+  "brand": {
+    "blue": "#0070DB",
+    "ink": "#141414",
+    "paper": "#F5F5F2"
+  },
+  "layout": {
+    "width": 1600,
+    "height": 900,
+    "face": {
+      "enabled": false
+    }
+  },
+  "pacing": {},
+  "scenes": [
+    {
+      "id": "blocked",
+      "start": 0,
+      "end": 9.9,
+      "headline": "不想露脸，内容就卡住？",
+      "relation": "compare",
+      "entry_seconds": 0.7,
+      "content_ready_at": 4.6,
+      "voice": {
+        "start": 0.76,
+        "end": 9.68,
+        "text": "不想露脸但又想说出做内容怎么办我以前经常这样不想露脸的时候就不露了但其实内容就出不来了"
+      },
+      "meaning_complete_at": 9.68,
+      "visual": {
+        "renderer": "compare",
+        "labels": [
+          "露脸",
+          "创作工作台"
+        ],
+        "focus_object": "voice-capsule",
+        "object_ids": [
+          "voice-capsule",
+          "phone",
+          "frame",
+          "agent"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        },
+        "direction": "3.9秒由摄像头图标交接到真实剪辑工作台照片，回应内容卡住；声音胶囊保持下方。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "主文字稳定；交接时只移动声音胶囊和其承载框"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "voice-capsule",
+        "reason": "真实工作台照片承接内容卡住，蓝色声音胶囊保持在场，进入先说出来的主张。"
+      },
+      "emphasis": []
+    },
+    {
+      "id": "speak",
+      "start": 9.9,
+      "end": 17.1,
+      "headline": "先把想法说出来",
+      "relation": "claim",
+      "entry_seconds": 0.6,
+      "content_ready_at": 11.6,
+      "voice": {
+        "start": 10.06,
+        "end": 16.74,
+        "text": "所以我现在的工作理由是先把我表达的表达出来这个skill就是为了解决这个场景做出来的"
+      },
+      "meaning_complete_at": 16.74,
+      "visual": {
+        "renderer": "collect",
+        "labels": [
+          "先表达"
+        ],
+        "focus_object": "voice-capsule",
+        "object_ids": [
+          "voice-capsule",
+          "phone",
+          "frame",
+          "agent"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        },
+        "direction": "打开阻隔，从空白窗口中出现蓝色声音胶囊，强调表达优先。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "主文字稳定；交接时只移动声音胶囊和其承载框"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "voice-capsule",
+        "reason": "打开阻隔，从空白窗口中出现蓝色声音胶囊，强调表达优先。"
+      },
+      "emphasis": []
+    },
+    {
+      "id": "handover",
+      "start": 17.1,
+      "end": 24.45,
+      "headline": "录下灵感，交给 Agent",
+      "relation": "process",
+      "entry_seconds": 0.5,
+      "content_ready_at": 20.9,
+      "voice": {
+        "start": 17.2,
+        "end": 24.18,
+        "text": "我希望的是当我有灵感的时候想表达的时候拿起手机录个音直接把这个音频丢给agent"
+      },
+      "meaning_complete_at": 24.18,
+      "visual": {
+        "renderer": "collect",
+        "labels": [
+          "录音",
+          "Agent"
+        ],
+        "focus_object": "voice-capsule",
+        "object_ids": [
+          "voice-capsule",
+          "phone",
+          "frame",
+          "agent"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        },
+        "direction": "17.1–22.5秒真实手持手机素材，静音；同一声音胶囊位于画面下方，在24.18秒抵达Agent输入口。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "主文字稳定；交接时只移动声音胶囊和其承载框"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "voice-capsule",
+        "reason": "真实手机视频退出后，同一声音胶囊进入Agent输入口，再移到产出时间线，24.18秒抵达。"
+      },
+      "emphasis": []
+    },
+    {
+      "id": "make",
+      "start": 24.45,
+      "end": 31.1,
+      "headline": "声音，长成画面",
+      "relation": "process",
+      "entry_seconds": 0.5,
+      "content_ready_at": 27.4,
+      "voice": {
+        "start": 24.56,
+        "end": 30.72,
+        "text": "剩下的所有的画面视觉动效剪辑和补充都由它自动完成我只要说话就可以了"
+      },
+      "meaning_complete_at": 30.72,
+      "visual": {
+        "renderer": "collect",
+        "labels": [
+          "画面",
+          "动效",
+          "剪辑"
+        ],
+        "focus_object": "voice-capsule",
+        "object_ids": [
+          "voice-capsule",
+          "phone",
+          "frame",
+          "agent"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        },
+        "direction": "胶囊保持在轨道中作为声音来源，三层画面依次展开为可见时间线。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "主文字稳定；交接时只移动声音胶囊和其承载框"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "voice-capsule",
+        "reason": "胶囊保持在轨道中作为声音来源，三层画面依次展开为可见时间线。"
+      },
+      "emphasis": []
+    },
+    {
+      "id": "yours",
+      "start": 31.1,
+      "end": 39.1,
+      "headline": "你负责观点",
+      "relation": "collect",
+      "entry_seconds": 0.5,
+      "content_ready_at": 32.2,
+      "voice": {
+        "start": 31.52,
+        "end": 38.76,
+        "text": "未来我只要有灵感和判断表达自己的观点就行剩下的都交给这个skill这也就是motion skill"
+      },
+      "meaning_complete_at": 38.76,
+      "visual": {
+        "renderer": "collect",
+        "labels": [
+          "灵感",
+          "判断",
+          "表达"
+        ],
+        "focus_object": "voice-capsule",
+        "object_ids": [
+          "voice-capsule",
+          "phone",
+          "frame",
+          "agent"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        },
+        "direction": "从产出的画面拉回人的选择；三个关键词排成有主次的版面，蓝色声轨仍在。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "主文字稳定；交接时只移动声音胶囊和其承载框"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "voice-capsule",
+        "reason": "从产出的画面拉回人的选择；三个关键词排成有主次的版面，蓝色声轨仍在。"
+      },
+      "emphasis": []
+    },
+    {
+      "id": "conclusion",
+      "start": 39.1,
+      "end": 44.35,
+      "headline": "让想法，被看见",
+      "relation": "conclusion",
+      "entry_seconds": 0.5,
+      "content_ready_at": 40.1,
+      "voice": {
+        "start": 39.48,
+        "end": 44.08,
+        "text": "希望能帮你不用再去剪辑，只要把你的想法和观点表达出来"
+      },
+      "meaning_complete_at": 44.08,
+      "visual": {
+        "renderer": "conclusion",
+        "labels": [],
+        "focus_object": "voice-capsule",
+        "object_ids": [
+          "voice-capsule",
+          "phone",
+          "frame",
+          "agent"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        },
+        "direction": "此前作品汇入真实成片构图；说到这样的内容时，画面框收为完整作品。最终标题和声音胶囊留在同一位置稳定收束。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "主文字稳定；交接时只移动声音胶囊和其承载框"
+      },
+      "handoff": {
+        "type": "hold_then_cut",
+        "reason": "本句完成后，将全屏焦点交给Motion Skill品牌end card，使用深色完整画面收束。"
+      },
+      "emphasis": []
+    },
+    {
+      "id": "endcard",
+      "start": 44.35,
+      "end": 48.064,
+      "headline": "Motion Skill",
+      "relation": "conclusion",
+      "entry_seconds": 0.6,
+      "content_ready_at": 45.0,
+      "voice": {
+        "start": 44.6,
+        "end": 46.48,
+        "text": "它自动就能帮你做出这样的内容"
+      },
+      "meaning_complete_at": 46.48,
+      "visual": {
+        "renderer": "conclusion",
+        "labels": [
+          "让想法，被看见"
+        ],
+        "focus_object": "motion-wordmark",
+        "object_ids": [
+          "motion-wordmark",
+          "voice-capsule"
+        ],
+        "token": {
+          "x": 800,
+          "y": 465
+        },
+        "direction": "Motion Skill以190px大字号放大到中心，45.0秒全部稳定，保持到末帧。仓库未发布，用户明确取消链接，不放占位。"
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "品牌名和短句稳定停留3.064秒，听完最后一句，留足end point。"
+      }
+    }
+  ],
+  "captions": {
+    "fps": 30,
+    "cues": [
+      {
+        "id": "c01",
+        "start_frame": 23,
+        "end_frame": 52,
+        "text": "不想露脸"
+      },
+      {
+        "id": "c02",
+        "start_frame": 52,
+        "end_frame": 104,
+        "text": "但又想做内容，怎么办？"
+      },
+      {
+        "id": "c03",
+        "start_frame": 113,
+        "end_frame": 151,
+        "text": "我以前经常这样"
+      },
+      {
+        "id": "c04",
+        "start_frame": 154,
+        "end_frame": 212,
+        "text": "不想露脸的时候，就不露了"
+      },
+      {
+        "id": "c05",
+        "start_frame": 218,
+        "end_frame": 296,
+        "text": "但其实内容就出不来了"
+      },
+      {
+        "id": "c06",
+        "start_frame": 302,
+        "end_frame": 342,
+        "text": "所以我现在的工作流是"
+      },
+      {
+        "id": "c07",
+        "start_frame": 342,
+        "end_frame": 400,
+        "text": "先把我表达的表达出来"
+      },
+      {
+        "id": "c08",
+        "start_frame": 409,
+        "end_frame": 461,
+        "text": "这个 Skill 就是为了解决"
+      },
+      {
+        "id": "c09",
+        "start_frame": 461,
+        "end_frame": 509,
+        "text": "这个场景做出来的"
+      },
+      {
+        "id": "c10",
+        "start_frame": 516,
+        "end_frame": 542,
+        "text": "我希望的是"
+      },
+      {
+        "id": "c11",
+        "start_frame": 542,
+        "end_frame": 580,
+        "text": "当我有灵感的时候"
+      },
+      {
+        "id": "c12",
+        "start_frame": 580,
+        "end_frame": 610,
+        "text": "想表达的时候"
+      },
+      {
+        "id": "c13",
+        "start_frame": 610,
+        "end_frame": 659,
+        "text": "拿起手机录个音"
+      },
+      {
+        "id": "c14",
+        "start_frame": 667,
+        "end_frame": 731,
+        "text": "直接把这个音频丢给 Agent"
+      },
+      {
+        "id": "c15",
+        "start_frame": 737,
+        "end_frame": 809,
+        "text": "剩下的所有画面、视觉、动效"
+      },
+      {
+        "id": "c16",
+        "start_frame": 817,
+        "end_frame": 880,
+        "text": "剪辑和补充，都由它自动完成"
+      },
+      {
+        "id": "c17",
+        "start_frame": 880,
+        "end_frame": 931,
+        "text": "我只要说话就可以了"
+      },
+      {
+        "id": "c18",
+        "start_frame": 946,
+        "end_frame": 1013,
+        "text": "未来我只要有灵感和判断"
+      },
+      {
+        "id": "c19",
+        "start_frame": 1013,
+        "end_frame": 1063,
+        "text": "表达自己的观点就行"
+      },
+      {
+        "id": "c20",
+        "start_frame": 1066,
+        "end_frame": 1115,
+        "text": "剩下的，都交给这个 Skill"
+      },
+      {
+        "id": "c21",
+        "start_frame": 1126,
+        "end_frame": 1171,
+        "text": "这也就是 Motion Skill"
+      },
+      {
+        "id": "c22",
+        "start_frame": 1184,
+        "end_frame": 1255,
+        "text": "希望能帮你不用再去剪辑"
+      },
+      {
+        "id": "c23",
+        "start_frame": 1255,
+        "end_frame": 1328,
+        "text": "只要把你的想法和观点表达出来"
+      },
+      {
+        "id": "c24",
+        "start_frame": 1338,
+        "end_frame": 1366,
+        "text": "它自动就能帮你"
+      },
+      {
+        "id": "c25",
+        "start_frame": 1366,
+        "end_frame": 1406,
+        "text": "做出这样的内容"
+      }
+    ],
+    "enabled": true
+  }
+}

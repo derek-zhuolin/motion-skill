@@ -1,0 +1,24 @@
+{
+  "name": "motion-skill-reference",
+  "private": true,
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "esbuild src/app.tsx --bundle --minify --outfile=site/app.js --loader:.css=css '--external:assets/*' && esbuild src/studies.tsx --bundle --minify --outfile=site/studies.js --loader:.css=css '--external:assets/*'",
+    "render": "node scripts/render.mjs",
+    "verify:frames": "esbuild src/check.tsx --bundle --platform=node --outfile=evidence/check.cjs && node evidence/check.cjs"
+  },
+  "dependencies": {
+    "remotion": "4.0.538",
+    "@remotion/player": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/bundler": "4.0.538",
+    "@remotion/renderer": "4.0.538",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/react": "19.2.7",
+    "esbuild": "0.28.1"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "title": "先看懂，再进入下一步",
+  "mode": "example",
+  "duration": 20,
+  "fps": 60,
+  "audio_speed": 1,
+  "source": {
+    "transcript_verified": false,
+    "voice_url": null,
+    "video_url": null
+  },
+  "brand": {
+    "blue": "#0070DB",
+    "ink": "#141414",
+    "paper": "#FFFFFF"
+  },
+  "layout": {
+    "width": 1600,
+    "height": 900,
+    "face": {
+      "enabled": false,
+      "x": 0.78,
+      "y": 0.64,
+      "w": 0.18,
+      "h": 0.3
+    }
+  },
+  "pacing": {},
+  "scenes": [
+    {
+      "id": "see",
+      "start": 0,
+      "end": 6,
+      "headline": "先给一个重点",
+      "relation": "collect",
+      "entry_seconds": 0.5,
+      "visual": {
+        "renderer": "collect",
+        "labels": [
+          "工具",
+          "内容",
+          "方法"
+        ],
+        "focus_object": "thread",
+        "object_ids": [
+          "thread",
+          "tools",
+          "content",
+          "method"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        }
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "让主结论与三个标签先读清楚"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "thread",
+        "reason": "同一连接点把散开的卡片带到一条流程"
+      },
+      "emphasis": [
+        {
+          "at": 1.0,
+          "word": "重点"
+        }
+      ]
+    },
+    {
+      "id": "understand",
+      "start": 6,
+      "end": 13,
+      "headline": "看懂它们的关系",
+      "relation": "process",
+      "entry_seconds": 0.5,
+      "visual": {
+        "renderer": "connect",
+        "labels": [
+          "洞察",
+          "表达",
+          "验证"
+        ],
+        "focus_object": "thread",
+        "object_ids": [
+          "thread",
+          "insight",
+          "message",
+          "test"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        }
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "阅读和连线同步但不移动文字"
+      },
+      "handoff": {
+        "type": "shared_entity",
+        "object_id": "thread",
+        "reason": "同一条流程收拢成可采取的下一步"
+      },
+      "emphasis": [
+        {
+          "at": 8.2,
+          "word": "关系"
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "start": 13,
+      "end": 20,
+      "headline": "讲清楚，再往下走",
+      "relation": "conclusion",
+      "entry_seconds": 0.4,
+      "visual": {
+        "renderer": "conclusion",
+        "labels": [
+          "下一步"
+        ],
+        "focus_object": "thread",
+        "object_ids": [
+          "thread",
+          "next"
+        ],
+        "token": {
+          "x": 800,
+          "y": 610
+        }
+      },
+      "camera": {
+        "reading_motion": "none",
+        "reason": "让结论有稳定记忆时间"
+      },
+      "emphasis": [
+        {
+          "at": 15.3,
+          "word": "讲清楚"
+        }
+      ]
+    }
+  ],
+  "captions": {
+    "enabled": false,
+    "fps": 60,
+    "cues": []
+  }
+}

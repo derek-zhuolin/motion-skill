@@ -1,0 +1,2580 @@
+{
+  "checked_on": "2026-10-26",
+  "counts": {
+    "studies": 96,
+    "legacy_presets_in_source": 17,
+    "semantic_runtime_patterns": 5
+  },
+  "count_note": "96项已有二维研究；源代码保留17个历史预设入口，当前UI只开放96项研究与五类语义结构，不宣称新增96种技法或自动18组新成片。",
+  "effects": [
+    {
+      "id": 1,
+      "name": "错速瀑布流",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 1
+      },
+      "preview": "studies.html?effect=1"
+    },
+    {
+      "id": 2,
+      "name": "焦点抽卡",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 2
+      },
+      "preview": "studies.html?effect=2"
+    },
+    {
+      "id": 3,
+      "name": "横向内容传送带",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 3
+      },
+      "preview": "studies.html?effect=3"
+    },
+    {
+      "id": 4,
+      "name": "卡片扇形发牌",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 4
+      },
+      "preview": "studies.html?effect=4"
+    },
+    {
+      "id": 5,
+      "name": "多层视差巡览",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 5
+      },
+      "preview": "studies.html?effect=5"
+    },
+    {
+      "id": 6,
+      "name": "环绕画廊",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 6
+      },
+      "preview": "studies.html?effect=6"
+    },
+    {
+      "id": 7,
+      "name": "层叠纸面卡",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 7
+      },
+      "preview": "studies.html?effect=7"
+    },
+    {
+      "id": 8,
+      "name": "共享对象连续变形",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 8
+      },
+      "preview": "studies.html?effect=8"
+    },
+    {
+      "id": 9,
+      "name": "路径绘制与组件接力",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 9
+      },
+      "preview": "studies.html?effect=9"
+    },
+    {
+      "id": 10,
+      "name": "文字作为窗口",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 10
+      },
+      "preview": "studies.html?effect=10"
+    },
+    {
+      "id": 11,
+      "name": "关键词节奏排版",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 11
+      },
+      "preview": "studies.html?effect=11"
+    },
+    {
+      "id": 12,
+      "name": "磨砂玻璃焦点卡",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 12
+      },
+      "preview": "studies.html?effect=12"
+    },
+    {
+      "id": 13,
+      "name": "内容行嵌入",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 13
+      },
+      "preview": "studies.html?effect=13"
+    },
+    {
+      "id": 14,
+      "name": "侧向甩镜",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 14
+      },
+      "preview": "studies.html?effect=14"
+    },
+    {
+      "id": 15,
+      "name": "翻书与折页",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 15
+      },
+      "preview": "studies.html?effect=15"
+    },
+    {
+      "id": 16,
+      "name": "圆形接力揭露",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 16
+      },
+      "preview": "studies.html?effect=16"
+    },
+    {
+      "id": 17,
+      "name": "SVG轮廓变形",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 17
+      },
+      "preview": "studies.html?effect=17"
+    },
+    {
+      "id": 18,
+      "name": "追光寻找重点",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 18
+      },
+      "preview": "studies.html?effect=18"
+    },
+    {
+      "id": 19,
+      "name": "粘土组件接合",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 19
+      },
+      "preview": "studies.html?effect=19"
+    },
+    {
+      "id": 20,
+      "name": "卡片展开为品牌收尾",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "20基础",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/Films.tsx",
+        "mode": "study",
+        "id": 20
+      },
+      "preview": "studies.html?effect=20"
+    },
+    {
+      "id": 21,
+      "name": "网格错峰显现",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 21
+      },
+      "preview": "studies.html?effect=21"
+    },
+    {
+      "id": 22,
+      "name": "网格自动重排",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 22
+      },
+      "preview": "studies.html?effect=22"
+    },
+    {
+      "id": 23,
+      "name": "散卡聚拢成一叠",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 23
+      },
+      "preview": "studies.html?effect=23"
+    },
+    {
+      "id": 24,
+      "name": "内容队列追加与推挤",
+      "category": "内容与画面组织",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 24
+      },
+      "preview": "studies.html?effect=24"
+    },
+    {
+      "id": 25,
+      "name": "镜头推近与拉远",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 25
+      },
+      "preview": "studies.html?effect=25"
+    },
+    {
+      "id": 26,
+      "name": "从全景进入可读细节",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 26
+      },
+      "preview": "studies.html?effect=26"
+    },
+    {
+      "id": 27,
+      "name": "取景框裁切聚焦",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 27
+      },
+      "preview": "studies.html?effect=27"
+    },
+    {
+      "id": 28,
+      "name": "选中框追踪主体",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 28
+      },
+      "preview": "studies.html?effect=28"
+    },
+    {
+      "id": 29,
+      "name": "视线随指针移动",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 29
+      },
+      "preview": "studies.html?effect=29"
+    },
+    {
+      "id": 30,
+      "name": "筛掉无关项并合拢",
+      "category": "聚焦与运镜",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 30
+      },
+      "preview": "studies.html?effect=30"
+    },
+    {
+      "id": 31,
+      "name": "逐行裁切揭露",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 31
+      },
+      "preview": "studies.html?effect=31"
+    },
+    {
+      "id": 32,
+      "name": "关键词接替变形",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 32
+      },
+      "preview": "studies.html?effect=32"
+    },
+    {
+      "id": 33,
+      "name": "大字局部巡览",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 33
+      },
+      "preview": "studies.html?effect=33"
+    },
+    {
+      "id": 34,
+      "name": "字距收拢与释放",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 34
+      },
+      "preview": "studies.html?effect=34"
+    },
+    {
+      "id": 35,
+      "name": "数字滚轮落定",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 35
+      },
+      "preview": "studies.html?effect=35"
+    },
+    {
+      "id": 36,
+      "name": "手绘划线与圈注",
+      "category": "文字与数字",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 36
+      },
+      "preview": "studies.html?effect=36"
+    },
+    {
+      "id": 37,
+      "name": "前景经过遮挡换景",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 37
+      },
+      "preview": "studies.html?effect=37"
+    },
+    {
+      "id": 38,
+      "name": "形状与位置匹配剪辑",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 38
+      },
+      "preview": "studies.html?effect=38"
+    },
+    {
+      "id": 39,
+      "name": "穿过局部进入下一镜",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 39
+      },
+      "preview": "studies.html?effect=39"
+    },
+    {
+      "id": 40,
+      "name": "分区幕帘接力揭露",
+      "category": "连续转场",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 40
+      },
+      "preview": "studies.html?effect=40"
+    },
+    {
+      "id": 41,
+      "name": "节点分支与汇合",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 41
+      },
+      "preview": "studies.html?effect=41"
+    },
+    {
+      "id": 42,
+      "name": "拖放归位与排序",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 42
+      },
+      "preview": "studies.html?effect=42"
+    },
+    {
+      "id": 43,
+      "name": "前后对比拉幕",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 43
+      },
+      "preview": "studies.html?effect=43"
+    },
+    {
+      "id": 44,
+      "name": "图表沿数据路径生长",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 44
+      },
+      "preview": "studies.html?effect=44"
+    },
+    {
+      "id": 45,
+      "name": "素材汇集打包成资产",
+      "category": "流程与结果表达",
+      "theory": [
+        "T01",
+        "T04",
+        "T09"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 45
+      },
+      "preview": "studies.html?effect=45"
+    },
+    {
+      "id": 46,
+      "name": "按压与受控回弹",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 46
+      },
+      "preview": "studies.html?effect=46"
+    },
+    {
+      "id": 47,
+      "name": "轻微挤压与回正",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 47
+      },
+      "preview": "studies.html?effect=47"
+    },
+    {
+      "id": 48,
+      "name": "黏连拉伸后分离",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 48
+      },
+      "preview": "studies.html?effect=48"
+    },
+    {
+      "id": 49,
+      "name": "卡片倾转与惯性落定",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 49
+      },
+      "preview": "studies.html?effect=49"
+    },
+    {
+      "id": 50,
+      "name": "抬升与接触影变化",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 50
+      },
+      "preview": "studies.html?effect=50"
+    },
+    {
+      "id": 51,
+      "name": "纸面边缘翘起回落",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 51
+      },
+      "preview": "studies.html?effect=51"
+    },
+    {
+      "id": 52,
+      "name": "边缘高光掠过",
+      "category": "触感与表面动作",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 52
+      },
+      "preview": "studies.html?effect=52"
+    },
+    {
+      "id": 53,
+      "name": "点击涟漪",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 53
+      },
+      "preview": "studies.html?effect=53"
+    },
+    {
+      "id": 54,
+      "name": "短指针轨迹",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 54
+      },
+      "preview": "studies.html?effect=54"
+    },
+    {
+      "id": 55,
+      "name": "按钮磁吸跟随",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 55
+      },
+      "preview": "studies.html?effect=55"
+    },
+    {
+      "id": 56,
+      "name": "状态点轻脉冲",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 56
+      },
+      "preview": "studies.html?effect=56"
+    },
+    {
+      "id": 57,
+      "name": "三点错峰跳动",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 57
+      },
+      "preview": "studies.html?effect=57"
+    },
+    {
+      "id": 58,
+      "name": "环形进度推进",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 58
+      },
+      "preview": "studies.html?effect=58"
+    },
+    {
+      "id": 59,
+      "name": "勾选路径绘制",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 59
+      },
+      "preview": "studies.html?effect=59"
+    },
+    {
+      "id": 60,
+      "name": "连线信号脉冲",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 60
+      },
+      "preview": "studies.html?effect=60"
+    },
+    {
+      "id": 61,
+      "name": "标签选中底板滑移",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 61
+      },
+      "preview": "studies.html?effect=61"
+    },
+    {
+      "id": 62,
+      "name": "头像群靠拢展开",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 62
+      },
+      "preview": "studies.html?effect=62"
+    },
+    {
+      "id": 63,
+      "name": "胶囊工具栏展开",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 63
+      },
+      "preview": "studies.html?effect=63"
+    },
+    {
+      "id": 64,
+      "name": "提示条展开并切换状态",
+      "category": "微动效与小点缀",
+      "theory": [
+        "T07",
+        "T08",
+        "T11"
+      ],
+      "batch": "44扩展",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "implementation": {
+        "file": "assets/runtime/src/studies/MoreFilms.tsx",
+        "mode": "study",
+        "id": 64
+      },
+      "preview": "studies.html?effect=64"
+    },
+    {
+      "id": 65,
+      "name": "条纹玻璃 · 把焦点切出来",
+      "category": "光学与材质",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "文字与蓝色物体先被条纹错切；一个清晰窗口扫过，再把焦点还给完整画面。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://shaders.paper.design/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 65
+      },
+      "preview": "studies.html?effect=65"
+    },
+    {
+      "id": 66,
+      "name": "流银缎带 · 形状变成镜头",
+      "category": "光学与材质",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "带有明暗反射的缎带绕过文字，收紧，再从中心打开。金属感由二维明暗层模拟。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://shaders.paper.design/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 66
+      },
+      "preview": "studies.html?effect=66"
+    },
+    {
+      "id": 67,
+      "name": "柔性海报 · 风穿过版面",
+      "category": "光学与材质",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "画面按纵向切片起伏，纸面带着文字一起呼吸，再被拉成一张安静的海报。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/22/juan-mora-romero-portfolio/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 67
+      },
+      "preview": "studies.html?effect=67"
+    },
+    {
+      "id": 68,
+      "name": "光栅双面 · 一个画面两种答案",
+      "category": "光学与材质",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "用窄条交错的两幅作品，模拟转动光栅印刷时的视角切换。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/21/atelier-ui-webgl-dom/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 68
+      },
+      "preview": "studies.html?effect=68"
+    },
+    {
+      "id": 69,
+      "name": "字形隧道 · 穿过一个关键词",
+      "category": "文字与编辑",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "反复的轮廓字形成纵深，镜头沿字的负空间前进，最后看到完整关键词。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/22/juan-mora-romero-portfolio/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 69
+      },
+      "preview": "studies.html?effect=69"
+    },
+    {
+      "id": 70,
+      "name": "弹性字浪 · 文字也有重心",
+      "category": "文字与编辑",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "每个字按不同时间压缩、舒展，像一股能量穿过一句话，最后恢复可读比例。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/21/atelier-ui-webgl-dom/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 70
+      },
+      "preview": "studies.html?effect=70"
+    },
+    {
+      "id": 71,
+      "name": "狭缝时间 · 让上一帧留下来",
+      "category": "文字与编辑",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "各条带读取同一动作的不同时间，形成有秩序的时间拖影，然后重新对齐。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/22/juan-mora-romero-portfolio/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 71
+      },
+      "preview": "studies.html?effect=71"
+    },
+    {
+      "id": 72,
+      "name": "网点显影 · 颗粒聚成一个形状",
+      "category": "文字与编辑",
+      "theory": [
+        "T01",
+        "T06",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "规则网点按波前变大、变小，蓝色体积从印刷网点中浮现，留下简洁标题。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://shaders.paper.design/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 72
+      },
+      "preview": "studies.html?effect=72"
+    },
+    {
+      "id": 73,
+      "name": "无限桌面 · 从全貌跳进细节",
+      "category": "空间与运镜",
+      "theory": [
+        "T02",
+        "T09",
+        "T10"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "原创作品铺成自由桌面，镜头弧线滑行、减速，精准进入其中一张海报。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/22/juan-mora-romero-portfolio/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 73
+      },
+      "preview": "studies.html?effect=73"
+    },
+    {
+      "id": 74,
+      "name": "轨迹旋涡 · 收集一个好想法",
+      "category": "空间与运镜",
+      "theory": [
+        "T02",
+        "T09",
+        "T10"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "小作品沿螺旋留下连续轨迹，逐渐收拢成一个清楚的焦点。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/hub/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 74
+      },
+      "preview": "studies.html?effect=74"
+    },
+    {
+      "id": 75,
+      "name": "弹性画带 · 沿着曲线看作品",
+      "category": "空间与运镜",
+      "theory": [
+        "T02",
+        "T09",
+        "T10"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "作品在同一条有张力的曲线上行进，曲线逐渐拉直，带出一次有惯性的视觉交接。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/21/atelier-ui-webgl-dom/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 75
+      },
+      "preview": "studies.html?effect=75"
+    },
+    {
+      "id": 76,
+      "name": "摩尔纹透镜 · 线条里的呼吸",
+      "category": "空间与运镜",
+      "theory": [
+        "T02",
+        "T09",
+        "T10"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "两层细线发生缓慢相对运动，一枚透镜穿过它们，产生局部放大与干涉层次。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://shaders.paper.design/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 76
+      },
+      "preview": "studies.html?effect=76"
+    },
+    {
+      "id": 77,
+      "name": "撕开一角 · 从纸面进入现场",
+      "category": "玩心与触感",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "裂口从中间向两边打开，露出另一个画面；纸边保留受力和细小锯齿。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://tympanus.net/codrops/2026/10/18/real-folds-real-fire/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 77
+      },
+      "preview": "studies.html?effect=77"
+    },
+    {
+      "id": 78,
+      "name": "软体磁场 · 分散到一起成形",
+      "category": "玩心与触感",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "几个柔软体块靠近、连成一体，再回到有呼吸感的轮廓。以SVG滤镜模拟黏合。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://shaders.paper.design/",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 78
+      },
+      "preview": "studies.html?effect=78"
+    },
+    {
+      "id": 79,
+      "name": "机械翻片 · 偶然变成一句话",
+      "category": "玩心与触感",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "像机场翻片牌一样，各列按错峰节奏翻动，散乱字母逐渐组成清楚的一句。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/oreo-design/oreo-ui",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 79
+      },
+      "preview": "studies.html?effect=79"
+    },
+    {
+      "id": 80,
+      "name": "创意弹球 · 一次碰撞带出下一步",
+      "category": "玩心与触感",
+      "theory": [
+        "T04",
+        "T07",
+        "T08"
+      ],
+      "batch": "16实验",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "一个小球带着视线沿曲线穿过三个节点；接触、反馈、路径接力形成小叙事。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/oreo-design/oreo-ui",
+      "implementation": {
+        "file": "assets/runtime/src/studies/ExperimentalFilms.tsx",
+        "mode": "study",
+        "id": 80
+      },
+      "preview": "studies.html?effect=80"
+    },
+    {
+      "id": 81,
+      "name": "贴纸剥离 · 揭开下一步",
+      "category": "产品揭露",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "让“揭开”承担内容交接：蓝色贴纸翻出浅色背面，再露出下一层。适合新栏目、产品卖点与片头。二维折面近似。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 81
+      },
+      "preview": "studies.html?effect=81"
+    },
+    {
+      "id": 82,
+      "name": "分层拆解 · 把做法展开",
+      "category": "产品揭露",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "把一份看起来完整的成果拆成洞察、创意、分发与复盘四层，再合回一件作品。适合把能力讲清楚的中段。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 82
+      },
+      "preview": "studies.html?effect=82"
+    },
+    {
+      "id": 83,
+      "name": "体素重组 · 从散点到成形",
+      "category": "材质与重组",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "散开的立方体按不同路径聚拢，逐渐从体素块变成一个完整的蓝色物体。适合“从零散信息到清楚判断”的表达。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 83
+      },
+      "preview": "studies.html?effect=83"
+    },
+    {
+      "id": 84,
+      "name": "连锁机关 · 让下一步发生",
+      "category": "因果与节奏",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "从一次落球开始，杠杆、骨牌和转轮连续响应。动作按接触时机编排，表达“一个好判断带来下一步”。并非物理求解。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 84
+      },
+      "preview": "studies.html?effect=84"
+    },
+    {
+      "id": 85,
+      "name": "光盘惯性 · 摇摆之后落定",
+      "category": "材质与重组",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "蓝银色光盘在边缘上摇摆，旋转与倾倒逐渐放慢，最后安静落定。适合节奏释放和品牌收尾前的呼吸。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 85
+      },
+      "preview": "studies.html?effect=85"
+    },
+    {
+      "id": 86,
+      "name": "立体折页 · 把内容立起来",
+      "category": "编辑与叙事",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "从绘本条目延伸出一张立体编辑页，让案例、方法与合作从纸上站起来。这是我们的编排提案，不声称是原片中的同款折页。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 86
+      },
+      "preview": "studies.html?effect=86"
+    },
+    {
+      "id": 87,
+      "name": "剖面追光 · 看见里面的关系",
+      "category": "产品揭露",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "追光经过外壳时，窗口里出现互相咬合的结构。把注意力带到产品内部，适合解释“这一步到底发生了什么”。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 87
+      },
+      "preview": "studies.html?effect=87"
+    },
+    {
+      "id": 88,
+      "name": "一镜回环 · 结尾接上开头",
+      "category": "镜头编排升级",
+      "theory": [
+        "T04",
+        "T06",
+        "T08"
+      ],
+      "batch": "8参考提炼",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "二维或等距动效研究；复杂材质为近似",
+      "detail": "让一个蓝色物体先成为案例，再展开为方法与合作的空间，最后回到最初形态。单项6秒、组合12秒的首尾均可验证。",
+      "limit": "本地静音小样不等于正式影片或真实功能。",
+      "source": "https://github.com/yihui-dev/awesome-kimi-k3-1-videos",
+      "implementation": {
+        "file": "assets/runtime/src/studies/KimiStudies.tsx",
+        "mode": "study",
+        "id": 88
+      },
+      "preview": "studies.html?effect=88"
+    },
+    {
+      "id": 89,
+      "name": "从全貌，走进一个细节",
+      "category": "取景与讲述",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "让观众先理解现场，再沿手动选定的焦点走近。适合真实照片、人物和产品细节；单张图用取景缩放实现，不补画面外内容。",
+      "limit": "平面取景移动，不是重建真实空间；焦点由你设置。",
+      "source": "https://github.com/yomotsu/camera-controls",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 89
+      },
+      "preview": "studies.html?effect=89"
+    },
+    {
+      "id": 90,
+      "name": "前景掠过，视线继续向前",
+      "category": "运镜与遮挡",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "画面缓慢横移，一道柔化的前景经过，给主体建立“从别处看进去”的感觉。前景是独立的编辑遮挡层。",
+      "limit": "遮挡层为编排图形，不冒充原片里存在的门框或人物。",
+      "source": "https://github.com/theatre-js/theatre",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 90
+      },
+      "preview": "studies.html?effect=90"
+    },
+    {
+      "id": 91,
+      "name": "围着作品，换一个观看角度",
+      "category": "空间与视角",
+      "theory": [
+        "T02",
+        "T09",
+        "T10"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "把三张真实素材放进空间，用观看角度变化建立前后关系。适合案例、作品和同一场活动的不同照片。",
+      "limit": "环绕的是图片平面，不能显示照片人物背面。是旧环绕画廊的实素材升级。",
+      "source": "https://github.com/codrops/Scroll3DGrid",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 91
+      },
+      "preview": "studies.html?effect=91"
+    },
+    {
+      "id": 92,
+      "name": "穿过画框，进入下一镜",
+      "category": "运镜与遮挡",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "下一张素材先作为画中窗口出现，然后随画框扩大接管视野。适合从案例总览进入现场、作品或细节。",
+      "limit": "编辑式窗口转场，不宣称两张照片来自物理连续机位。",
+      "source": "https://github.com/codrops/RepeatingImageTransition",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 92
+      },
+      "preview": "studies.html?effect=92"
+    },
+    {
+      "id": 93,
+      "name": "转动视角，把动作接过去",
+      "category": "运镜与遮挡",
+      "theory": [
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "两张素材沿同一方向滚转和横移，在快速段交接，再缓下来。适合节拍较快但仍需要看清素材的短片。",
+      "limit": "模糊是过渡近似，不是真实快门运动模糊。",
+      "source": "https://github.com/codrops/RotatingOnScrollAnimations",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 93
+      },
+      "preview": "studies.html?effect=93"
+    },
+    {
+      "id": 94,
+      "name": "镜头移动，解释跟着细节走",
+      "category": "取景与讲述",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "镜头推进时，圆点和引线始终对应你手动指定的图像位置。适合解释作品细节、产品使用方式或一项观察。",
+      "limit": "手动位置锚定，未接AI检测或视频目标追踪。",
+      "source": "https://github.com/yomotsu/camera-controls",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 94
+      },
+      "preview": "studies.html?effect=94"
+    },
+    {
+      "id": 95,
+      "name": "把清晰，交给正在讲的地方",
+      "category": "取景与讲述",
+      "theory": [
+        "T02",
+        "T03",
+        "T10"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "在同一张素材上移动清晰区域，再让全画幅恢复清晰。适合把视线从环境引向一个内容重点。",
+      "limit": "分区清晰度模拟；没有估计人物深度或真实镜头焦平面。",
+      "source": "https://github.com/theatre-js/theatre",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 95
+      },
+      "preview": "studies.html?effect=95"
+    },
+    {
+      "id": 96,
+      "name": "主体稳住，空间发生变化",
+      "category": "空间与视角",
+      "theory": [
+        "T02",
+        "T09",
+        "T10"
+      ],
+      "batch": "8镜头",
+      "runtime_status": "playground_implemented",
+      "unique_invention": false,
+      "representation": "真实素材的平面镜头研究",
+      "detail": "同步改变观看距离与透视，让中央图片大小基本稳定、前后图片的关系变化。适合有一点紧张感或惊喜的品牌揭露。",
+      "limit": "在图片平面画廊中演示推拉变焦的关系，不是对单图原场景做真实Dolly Zoom。",
+      "source": "https://github.com/yomotsu/camera-controls",
+      "implementation": {
+        "file": "assets/runtime/src/studies/CameraStudies.tsx",
+        "mode": "study",
+        "id": 96
+      },
+      "preview": "studies.html?effect=96"
+    }
+  ],
+  "compositions": [
+    {
+      "id": "c-observe",
+      "name": "从现场，走进一个好问题",
+      "tag": "观察与解释",
+      "note": "全景 → 推近 → 锚定说明 → 焦点回到现场",
+      "ids": [
+        89,
+        94,
+        95
+      ],
+      "desc": "同一张真实素材贯穿16秒。先建立环境，再推近手动焦点，让解释与画面共同移动，最后回到全貌。",
+      "historical_preview": "archive.html?mode=c-observe&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "c-gallery",
+      "name": "让素材，拥有空间与节奏",
+      "tag": "作品与镜头",
+      "note": "空间画廊 → 窗口穿越 → 同向滚转 → 透视推拉",
+      "ids": [
+        91,
+        92,
+        93,
+        96
+      ],
+      "desc": "用多张素材试观看角度和景别变化。它是一组预设的16秒编辑编排，可以替换成本机图片或视频。",
+      "historical_preview": "archive.html?mode=c-gallery&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "k-reveal",
+      "name": "把好做法，拆给你看",
+      "tag": "产品与解释",
+      "note": "贴纸揭开 → 分层拆解 → 剖面追光",
+      "ids": [
+        81,
+        82,
+        87
+      ],
+      "desc": "用遮挡揭露下一层，再把成果拆开讲清楚；三段画面用空间遮罩接力。适合产品卖点、案例拆解与新栏目片头。",
+      "historical_preview": "archive.html?mode=k-reveal&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "k-reaction",
+      "name": "一个动作，带出下一步",
+      "tag": "节奏与因果",
+      "note": "连锁机关 → 体素重组 → 光盘落定",
+      "ids": [
+        84,
+        83,
+        85
+      ],
+      "desc": "开头连续触发，中段快速聚拢，最后让运动缓下来。用密与疏的变化组织12秒，不把全片简单加速。",
+      "historical_preview": "archive.html?mode=k-reaction&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "k-loop",
+      "name": "让结尾，回到新的开始",
+      "tag": "连续回环",
+      "note": "共享对象 → 案例 → 方法 → 合作 → 起点",
+      "ids": [
+        88
+      ],
+      "desc": "一组真正首尾相接的形状编排：同一物体承担几个角色，保留蓝色形状作为视觉线索。推荐观察连续循环两次。",
+      "historical_preview": "archive.html?mode=k-loop&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "x-optical",
+      "name": "穿过光，看见想法",
+      "tag": "光学实验",
+      "note": "条纹折射 → 流银环 → 光栅揭露",
+      "ids": [
+        65,
+        66,
+        68
+      ],
+      "desc": "玻璃的条带先把画面切开，收成一条缎带，再展开为双面海报。用同一方向的遮挡连接三个镜头。",
+      "historical_preview": "archive.html?mode=x-optical&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "x-type",
+      "name": "让文字成为镜头",
+      "tag": "编辑实验",
+      "note": "字形隧道 → 弹性字浪 → 时间残像 → 网点",
+      "ids": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "desc": "从字的负空间进入画面，节奏从连续推进转成短促形变，最后让网点逐渐落定。",
+      "historical_preview": "archive.html?mode=x-type&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "x-space",
+      "name": "灵感不走直线",
+      "tag": "空间实验",
+      "note": "无限桌面 → 旋涡 → 弹性画带 → 摩尔纹",
+      "ids": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "desc": "作品不再只是依次弹出。镜头和路径接力，把平铺、旋转、曲线与线场组织成一次连续探索。",
+      "historical_preview": "archive.html?mode=x-space&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "x-play",
+      "name": "有点，不按常理",
+      "tag": "触感实验",
+      "note": "撕纸 → 软体汇集 → 翻片 → 弹球",
+      "ids": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "desc": "先建立触感，再用一次意外转折改变节奏。每个小动作都承担把视线交给下一步的任务。",
+      "historical_preview": "archive.html?mode=x-play&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "discover",
+      "name": "从发现，到被记住",
+      "tag": "内容社区",
+      "note": "关键词 → 错速瀑布流 → 焦点抽卡 → 品牌展开",
+      "ids": [
+        11,
+        1,
+        2,
+        20
+      ],
+      "desc": "内容持续经过，一张卡成为主角，再展开为品牌画面。不是四张幻灯片，是同一个对象的四种状态。",
+      "historical_preview": "archive.html?mode=discover&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "gallery",
+      "name": "让作品成为主角",
+      "tag": "品牌作品",
+      "note": "文字窗口 → 环绕画廊 → 追光 → 品牌展开",
+      "ids": [
+        10,
+        6,
+        18,
+        20
+      ],
+      "desc": "从字里看见作品，镜头拉开形成画廊，光线带出焦点，最后回到品牌。这里的作品为程序绘制的几何视觉小样。",
+      "historical_preview": "archive.html?mode=gallery&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "process",
+      "name": "让想法找到搭档",
+      "tag": "方法与合作",
+      "note": "关键词 → 内容行嵌入 → 路径接力 → 粘土接合",
+      "ids": [
+        11,
+        13,
+        9,
+        19
+      ],
+      "desc": "词变成一行，行整理成需求，再沿路径找到互补能力。表现协作意图，不表示平台已自动匹配。",
+      "historical_preview": "archive.html?mode=process&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "contrast",
+      "name": "小预算，大创意",
+      "tag": "创意对比",
+      "note": "短词连击 → 留白 → 前后对比 → 品牌落点",
+      "ids": [
+        11,
+        43,
+        36,
+        20
+      ],
+      "desc": "用前后变化讲清一个创意，把节奏留给判断。演示不代表真实品牌改造结果。",
+      "historical_preview": "archive.html?mode=contrast&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "insight",
+      "name": "让洞察浮出水面",
+      "tag": "数据洞察",
+      "note": "图表生长 → 选框追踪 → 数字落定 → 一句判断",
+      "ids": [
+        44,
+        28,
+        35,
+        36
+      ],
+      "desc": "先看趋势，再聚焦一个信号。所有数字均为动效演示数据。",
+      "historical_preview": "archive.html?mode=insight&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "connect",
+      "name": "把不同能力连起来",
+      "tag": "全球连接",
+      "note": "头像展开 → 路径分支 → 连线脉冲 → 汇合",
+      "ids": [
+        62,
+        41,
+        60,
+        20
+      ],
+      "desc": "圆点代表抽象参与者，路径表达连接意图，不代表真实用户或自动匹配已经发生。",
+      "historical_preview": "archive.html?mode=connect&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "assets",
+      "name": "让灵感成为资产",
+      "tag": "工作流程",
+      "note": "标签选择 → 拖放归位 → 素材聚拢 → 打包",
+      "ids": [
+        61,
+        42,
+        23,
+        45
+      ],
+      "desc": "从选择到整理，再到一份可带走的成果。用组件变化表达工作流程。",
+      "historical_preview": "archive.html?mode=assets&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "quiet",
+      "name": "安静，也有力量",
+      "tag": "克制品牌",
+      "note": "局部作品 → 慢推镜头 → 高光 → 遮挡 → 品牌",
+      "ids": [
+        26,
+        49,
+        52,
+        37
+      ],
+      "desc": "前段放慢建立期待，转场快速交接，最后留出稳定的品牌画面。",
+      "historical_preview": "archive.html?mode=quiet&rhythm=flow",
+      "available_in_current_ui": false
+    },
+    {
+      "id": "interflow-story-001",
+      "name": "从一个参考，到一起做",
+      "ids": [
+        11,
+        1,
+        2,
+        89,
+        94,
+        9,
+        38,
+        45,
+        19,
+        41,
+        60,
+        8,
+        20
+      ],
+      "duration": 15,
+      "historical_preview": "?view=story",
+      "available_in_current_ui": false
+    }
+  ],
+  "theories": [
+    {
+      "id": "T01",
+      "name": "先说清，再好看",
+      "rule": "先写观众最后能复述的一句话。一个动作只完成一个叙事任务。",
+      "application": "本片从看参考，到整理问题，再到协作；不介绍全站菜单。",
+      "kind": "本项目编辑原则"
+    },
+    {
+      "id": "T02",
+      "name": "每一镜，都有注视点",
+      "rule": "机位决定从哪里看；注视点决定为什么看这里。移动两者时保持关系明确。",
+      "application": "真实照片的手动坐标同时驱动推近与标注，不做自动识别。",
+      "kind": "摄影关系的二维转译",
+      "source": "https://github.com/yomotsu/camera-controls"
+    },
+    {
+      "id": "T03",
+      "name": "全貌 → 细节 → 理解",
+      "rule": "先给环境，再接近证据；解释时少动，理解后再离开。",
+      "application": "3.65—6.4秒留给细节，避免所有画面一样快。",
+      "kind": "本项目讲述方法"
+    },
+    {
+      "id": "T04",
+      "name": "前一个动作，带出后一个",
+      "rule": "用同一对象、同一方向或同一位置交接注意力，让转场有原因。",
+      "application": "蓝色种子变画框、变标点、变连线，最后展开成品牌底色。",
+      "kind": "本项目连续编排约束"
+    },
+    {
+      "id": "T05",
+      "name": "速度要接上",
+      "rule": "关键帧之间不只对齐位置，也检查速度变化。需要停时才停。",
+      "application": "机位采用保形三次Hermite曲线，共用切线；不在每个中间点重置ease。",
+      "kind": "数学实现规则"
+    },
+    {
+      "id": "T06",
+      "name": "快慢来自信息量",
+      "rule": "快用于经过、选择、连接；慢用于读懂、判断、记住。不要只把整片加倍速。",
+      "application": "15秒分六个信息节拍，三个连接高点与细节、结尾的停留交替。",
+      "kind": "本项目节奏方法"
+    },
+    {
+      "id": "T07",
+      "name": "先蓄力，再落定",
+      "rule": "大动作前给一个可感知的预备，触感用少量压缩、回正和接触影表达。",
+      "application": "种子先轻落，才进入照片队列；粘土仅用于接力对象。",
+      "kind": "动效实践约束"
+    },
+    {
+      "id": "T08",
+      "name": "一次只争一个焦点",
+      "rule": "主角发生变化时，次要画面后退。标题、照片和装饰不要同时抢。",
+      "application": "推近时两边照片降到低透明度；结束只剩原Logo和一句话。",
+      "kind": "本项目视觉层级"
+    },
+    {
+      "id": "T09",
+      "name": "空间关系，解释关系",
+      "rule": "前后、远近、连线和汇合必须承载内容；不要为转动而转动。",
+      "application": "机位跟随问题向右推进；两种能力在同一位置合拢。",
+      "kind": "本项目可视化语法"
+    },
+    {
+      "id": "T10",
+      "name": "真实素材，诚实取景",
+      "rule": "图片移动不能揭示被遮挡的世界；手动锚点不能说成AI追踪。",
+      "application": "照片原色、标往期；平面画廊与清晰窗明确为模拟。",
+      "kind": "素材与能力边界"
+    },
+    {
+      "id": "T11",
+      "name": "声音强调决定，不填满画面",
+      "rule": "关键交接才落声音，连续背景留空间。声音也必须可以关掉。",
+      "application": "复用已存在的本地音乐，另合成少量点按与过渡；没有新音乐模型调用。",
+      "kind": "本项目声音方法"
+    },
+    {
+      "id": "T12",
+      "name": "可回看，才可维护",
+      "rule": "画面由frame决定；保存版本、素材来源、检查结果与用户审美反馈。",
+      "application": "暂停、后退、单帧检查；代码通过不等于视觉验收。",
+      "kind": "Remotion与工程约束",
+      "source": "https://www.remotion.dev/docs/animating-properties"
+    }
+  ],
+  "package_note": "96项已有二维研究，17组历史组合；是参考库，不是任意新影片的自动导演。"
+}

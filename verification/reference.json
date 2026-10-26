@@ -1,0 +1,33 @@
+{
+  "sha256": "a5cd515ae5d29a8d19672e891e38d270b8441695040245da8fd04c4860bcfc54",
+  "full_decode": "pass",
+  "source_duration": 48.064,
+  "video_duration": 48.066667,
+  "container_duration": 48.085,
+  "audio_zero_lag_correlation": 0.9999760007050967,
+  "audio_comparison_seconds": 48.064,
+  "packet_checks": [
+    {
+      "stream": 0,
+      "packets": 1442,
+      "dts_monotonic": true,
+      "max_pts_gap": 0.03333400000000353
+    },
+    {
+      "stream": 1,
+      "packets": 2256,
+      "dts_monotonic": true,
+      "max_pts_gap": 0.021334000000003073
+    }
+  ],
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 1442,
+  "captions": 25,
+  "reference_scenes": 7,
+  "model_label": "GPT-6.1 Sol (author-supplied)",
+  "raw_recording_distributed": false,
+  "voice_anonymized": false,
+  "published_demo_metadata_removed": true
+}

@@ -1,0 +1,155 @@
+{
+  "fps": 30,
+  "cues": [
+    {
+      "id": "c01",
+      "start_frame": 23,
+      "end_frame": 52,
+      "text": "不想露脸"
+    },
+    {
+      "id": "c02",
+      "start_frame": 52,
+      "end_frame": 104,
+      "text": "但又想做内容，怎么办？"
+    },
+    {
+      "id": "c03",
+      "start_frame": 113,
+      "end_frame": 151,
+      "text": "我以前经常这样"
+    },
+    {
+      "id": "c04",
+      "start_frame": 154,
+      "end_frame": 212,
+      "text": "不想露脸的时候，就不露了"
+    },
+    {
+      "id": "c05",
+      "start_frame": 218,
+      "end_frame": 296,
+      "text": "但其实内容就出不来了"
+    },
+    {
+      "id": "c06",
+      "start_frame": 302,
+      "end_frame": 342,
+      "text": "所以我现在的工作流是"
+    },
+    {
+      "id": "c07",
+      "start_frame": 342,
+      "end_frame": 400,
+      "text": "先把我表达的表达出来"
+    },
+    {
+      "id": "c08",
+      "start_frame": 409,
+      "end_frame": 461,
+      "text": "这个 Skill 就是为了解决"
+    },
+    {
+      "id": "c09",
+      "start_frame": 461,
+      "end_frame": 509,
+      "text": "这个场景做出来的"
+    },
+    {
+      "id": "c10",
+      "start_frame": 516,
+      "end_frame": 542,
+      "text": "我希望的是"
+    },
+    {
+      "id": "c11",
+      "start_frame": 542,
+      "end_frame": 580,
+      "text": "当我有灵感的时候"
+    },
+    {
+      "id": "c12",
+      "start_frame": 580,
+      "end_frame": 610,
+      "text": "想表达的时候"
+    },
+    {
+      "id": "c13",
+      "start_frame": 610,
+      "end_frame": 659,
+      "text": "拿起手机录个音"
+    },
+    {
+      "id": "c14",
+      "start_frame": 667,
+      "end_frame": 731,
+      "text": "直接把这个音频丢给 Agent"
+    },
+    {
+      "id": "c15",
+      "start_frame": 737,
+      "end_frame": 809,
+      "text": "剩下的所有画面、视觉、动效"
+    },
+    {
+      "id": "c16",
+      "start_frame": 817,
+      "end_frame": 880,
+      "text": "剪辑和补充，都由它自动完成"
+    },
+    {
+      "id": "c17",
+      "start_frame": 880,
+      "end_frame": 931,
+      "text": "我只要说话就可以了"
+    },
+    {
+      "id": "c18",
+      "start_frame": 946,
+      "end_frame": 1013,
+      "text": "未来我只要有灵感和判断"
+    },
+    {
+      "id": "c19",
+      "start_frame": 1013,
+      "end_frame": 1063,
+      "text": "表达自己的观点就行"
+    },
+    {
+      "id": "c20",
+      "start_frame": 1066,
+      "end_frame": 1115,
+      "text": "剩下的，都交给这个 Skill"
+    },
+    {
+      "id": "c21",
+      "start_frame": 1126,
+      "end_frame": 1171,
+      "text": "这也就是 Motion Skill"
+    },
+    {
+      "id": "c22",
+      "start_frame": 1184,
+      "end_frame": 1255,
+      "text": "希望能帮你不用再去剪辑"
+    },
+    {
+      "id": "c23",
+      "start_frame": 1255,
+      "end_frame": 1328,
+      "text": "只要把你的想法和观点表达出来"
+    },
+    {
+      "id": "c24",
+      "start_frame": 1338,
+      "end_frame": 1366,
+      "text": "它自动就能帮你"
+    },
+    {
+      "id": "c25",
+      "start_frame": 1366,
+      "end_frame": 1406,
+      "text": "做出这样的内容"
+    }
+  ]
+}
