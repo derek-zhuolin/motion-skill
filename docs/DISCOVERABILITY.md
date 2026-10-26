@@ -10,6 +10,7 @@
 - 保留有声 MP4、动图、源码与字幕入口，让读者能够验证案例。
 - GitHub About 与相关 Topics 补充项目用途；将“96 attributed studies”修正为“96 motion studies”，避免暗示全部出处已完成核对。
 - 增加内测反馈和 PR 指南，要求实际预览、来源及验证范围。
+- CI 的官方 Actions 升级为 Node 24 运行时并锁定提交 SHA，测试系统固定 Ubuntu 24.04；项目测试仍使用 Node 22 / Python 3.12。
 
 ## SEO / GEO 的边界
 
