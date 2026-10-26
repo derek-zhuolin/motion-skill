@@ -1,6 +1,10 @@
-# Motion Skill
+# Motion Skill — 不出镜，也能把想法做成视频
 
-**把声音做成可读、连续、有明确结尾的视频。**
+**给有想法、想表达，但不想出镜的人：录下声音，让观点通过实拍画面、动效和字幕被看见。**
+
+Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 Remotion 工程**，将已有录音编排成视频。默认 **16:9**，当前为 **Beta 内测版**。
+
+[English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
 
 ## 先看 reference 效果
 
@@ -19,21 +23,31 @@
 
 本 reference 在 **Codex + GPT-6.1 Sol** 中完成（模型名称按作者提供的标注），本地 Whisper 负责转写，Remotion 负责画面渲染。作者参与了视觉方向、实拍补充、ending 与字幕的反馈。它是一个真实迭代案例，不是“一条 prompt 保证任意音频全自动成片”的能力承诺。
 
-## 先看实际结果
+## 适合谁
 
-- [播放 / 下载 1080p 中文字幕 reference MP4](demo/motion-skill-reference.mp4)
-- [可编辑 reference 工程](examples/voice-to-video/README.md)
+你可能有很多想法，也愿意分享自己的观察，却总卡在“要不要露脸、怎么拍、怎么剪”这一步。可以先拿手机把话说出来，再让 Codex 配合 Motion Skill 把声音组织成画面。
+
+- **不想出镜的创作者**：用自己的声音分享观点、知识或生活观察。
+- **有产品想法的设计师、开发者与独立创作者**：用流程动效、真实截图或实拍解释一个问题与解决方式。
+- **习惯先说再写的人**：把一段核对过的语音整理成可观看、可继续修改的视频。
+
+你负责内容、判断与最终确认，Agent 协助编排和实现。无需拍摄自己的脸；已有录音是最直接的起点。**不出镜不等于匿名**，声音及讲述内容仍可能识别身份；公开前请确认发布范围。
+
+只看效果可以直接下载视频；制作自己的片子需要 Codex 或其他能读写工程、运行命令的 Agent，以及下方列出的本地环境。
+
+## 效果与工程索引
+
 - [25 条同步字幕 SRT](examples/voice-to-video/captions.srt)
 - [96 项机制目录、分类与缩略图](docs/EFFECTS.md)
 - [来源与参考者署名](ATTRIBUTION.md) · [许可范围](LICENSE_SCOPE.md)
 
-![16 selected study frames](docs/study-contact-sheet.png)
+![16项动效研究预览：文字、卡片、流程与相机效果](docs/study-contact-sheet.png)
 
 上图是机制的单帧示意；在本地打开 `studies.html` 可逐项播放 96 项研究。它们是二维/SVG/CSS 研究和近似效果，不是 96 项全新发明，也不是本片用了 96 个效果。
 
 ## 可直接复制的提示词
 
-> /motion-video 把这段音频做成“实拍素材混剪＋MG 动效”：具体场景用实拍，抽象关系用动效。保留原声 1×，补上同步底部字幕。没有实拍素材时，请 Codex 按口播场景联网寻找并下载有明确使用许可的公开素材，保留作者与来源。片尾放大 **[名称]**，配 **[收尾文案]**，稳定停留至少三秒。完成后导出有声 MP4 和可编辑工程。
+> /motion-video 我不想出镜，但想分享这段录音里的观点。把这段音频做成“实拍素材混剪＋MG 动效”：具体场景用实拍，抽象关系用动效。保留原声 1×，补上同步底部字幕。没有实拍素材时，请 Codex 按口播场景联网寻找并下载有明确使用许可的公开素材，保留作者与来源。片尾放大 **[名称]**，配 **[收尾文案]**，稳定停留至少三秒。完成后导出有声 MP4 和可编辑工程。
 
 更完整的输入、素材与 ending 模板见 [PROMPTS](docs/PROMPTS.md)。尽量给出受众、唯一带走的结论、画幅和想要的片尾。没有仓库链接就不编造链接。
 
@@ -139,3 +153,5 @@ python3 scripts/motion.py new --dest /tmp/my-motion-film --deps "$PWD/node_modul
 工具、模板编排层和 reference 工程中由本仓库贡献者持有版权的代码采用 [MIT](LICENSE)，**历史研究档案、字体、依赖、实拍素材与示范片有明确排除范围**，见 [LICENSE_SCOPE](LICENSE_SCOPE.md)。早期 1–64 项逐项出处记录不完整，因此不把研究档案重新授予 MIT，也不把相关技法说成本仓库发明。
 
 欢迎按许可范围 Fork、改配色、优化字幕、改进机位、补来源记录和提交 PR。提交新效果时请附来源、使用范围和实际预览；计数按有独立 ID 的可运行机制记录，不用配色变化凑数。
+
+内测遇到问题或想贡献配色、竖屏版式、来源记录，请先看 [贡献与反馈指南](CONTRIBUTING.md)。关于搜索可发现性、AI 引用信息及本轮检查范围，见 [文档维护记录](docs/DISCOVERABILITY.md)。
