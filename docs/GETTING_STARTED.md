@@ -24,6 +24,17 @@ python3 serve.py --port 4342
 
 示例没有音频，画面明确标注结构示意。要显式导出静音演示时才运行 `npm run render -- --allow-example`。
 
+## 只有文案，不录音
+
+使用 `mode: "script"`，让 Agent 根据真实文案填写 story、镜头时长与阅读预算，不填写虚构的转写或口播时间。不要传 `--media` 或 `--transcript`；`source.voice_url` 留空，人物窗关闭。以自己的文稿 story 创建工程：
+
+```sh
+python3 scripts/motion.py new --dest /tmp/my-script-film --deps "$PWD/node_modules" \
+  --story /path/script-story.json
+```
+
+这与省略 story 后产生的 `example` 结构演示不同。完成检查与实际预览后可导出无口播视频。没有接入任何音源时为静音；需要音效或音乐须另行实现，见[声音说明](AUDIO.md)。
+
 ## 真实口播
 
 1. `probe` 原音视频，取得实际时长。

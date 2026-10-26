@@ -2,7 +2,7 @@
 
 [中文完整文档](README.md) · [FAQ (中文)](docs/FAQ.md) · [Contributing](CONTRIBUTING.md)
 
-**Have ideas to share but prefer not to appear on camera? Start with a voice recording.** Motion Skill is a Codex / Agent skill and editable Remotion project for combining narration, real-world footage, motion graphics and synchronized captions. It is currently in beta.
+**Have ideas to share but prefer not to appear on camera? Start with a written idea or a voice recording.** Motion Skill is a Codex / Agent skill and editable Remotion project for combining narration, real-world footage, motion graphics and synchronized captions. It also supports script-driven motion graphics without narration. It is currently in beta.
 
 ## Watch the reference
 
@@ -19,6 +19,12 @@ The published reference is 48 seconds, 1920×1080 at 30fps, with 7 scenes, 25 ca
 - People who find it easier to speak an idea before editing it into a story.
 
 You provide the ideas and approve the result. The Agent helps direct and implement the video. Staying off camera does not anonymize your voice or the information you share.
+
+## Narration is optional
+
+`script` mode uses a written script and planned reading time; without an audio source, the result is silent. `voice` mode uses a real recording and its timestamps. `example` mode is a labeled structural demo.
+
+Narration, sound effects and background music are separate creative choices. The current template only wires narration: it has no bundled SFX library, independent SFX switch or automatic music/SFX mixing pipeline. Ask the Agent to integrate authorized audio and verify the mix when needed. The published 48-second reference has narration only; its stock footage is muted. The player’s voice toggle controls narration, while the README GIF is always silent. See [audio details (中文)](docs/AUDIO.md).
 
 ## Example prompt
 
