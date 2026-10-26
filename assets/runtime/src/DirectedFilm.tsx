@@ -27,7 +27,7 @@ function Visual({scene,t,blue,center}:any){
     <Text x={0} y={13} size={36} fill={i===1?'#fff':'#141414'}>{label}</Text>
    </g>
   })}
-  {type==='collect'&&<path d={`M${center-220} 555Q${center} 605 ${center+220} 555`} fill="none" stroke={blue} strokeWidth="3" strokeDasharray="5 8" opacity={.55}/>} 
+  {type==='collect'&&<path d={`M${center-220} 555Q${center} 605 ${center+220} 555`} fill="none" stroke={blue} strokeWidth="3" strokeDasharray="5 8" opacity={.55}/>}
  </g>
 }
 
