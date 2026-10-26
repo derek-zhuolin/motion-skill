@@ -10,7 +10,7 @@ This repository does not relicense its dependencies, fonts, reference works or m
 | esbuild | Bundling | [esbuild MIT](https://github.com/evanw/esbuild/blob/main/LICENSE.md) |
 | Source Han Sans | Bundled CJK fonts | Apache-2.0 and NOTICE files in `assets/runtime/site/assets/fonts/` |
 | Figtree | Bundled Latin font | SIL OFL 1.1 in `assets/runtime/site/assets/fonts/Figtree-OFL.txt` |
-| FFmpeg / Chrome / Python / Node | User-installed tools; not vendored | Their own distribution terms |
+| FFmpeg / Chrome / Python / Node | User-installed tools; CI may use ffprobe from the locked Remotion compositor dependency. No separate tool distribution is vendored | Their own distribution terms |
 | Whisper | Used locally for the reference transcript; not bundled or invoked by this repo | [Upstream](https://github.com/openai/whisper) |
 | Spec Kit | Documentation/workflow reference; CLI not bundled | [Official project](https://github.com/github/spec-kit) |
 

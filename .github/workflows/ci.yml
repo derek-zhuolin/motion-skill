@@ -20,5 +20,4 @@ jobs:
       - run: npm run build
       - run: npm run verify:frames
       - run: npm run verify:template
-      - run: command -v ffprobe || (sudo apt-get update && sudo apt-get install -y ffmpeg)
       - run: npm run verify:privacy

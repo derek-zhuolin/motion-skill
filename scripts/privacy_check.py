@@ -1,12 +1,22 @@
 #!/usr/bin/env python3
 """Scan the publishable snapshot, not dependency trees or generated local media."""
 from pathlib import Path
-import json,re,subprocess,sys
+import json,re,subprocess,sys,shutil
 ROOT=Path(__file__).resolve().parents[1]
 def files():
  p=subprocess.run(['git','-C',str(ROOT),'ls-files','--cached','--others','--exclude-standard','-z'],capture_output=True)
  if p.returncode==0:return [ROOT/x.decode() for x in p.stdout.split(b'\0') if x]
  return [x for x in ROOT.rglob('*') if x.is_file() and not any(t in x.parts for t in ['node_modules','.git','.cache','__pycache__','evidence','outputs']) and '/site/assets/' not in str(x.relative_to(ROOT)) or x.is_file() and 'assets/runtime/site/assets' in str(x.relative_to(ROOT))]
+def ffprobe_binary():
+ system=shutil.which('ffprobe')
+ if system:return system
+ for path in sorted((ROOT/'node_modules/@remotion').glob('compositor-*/ffprobe*')):
+  if path.name not in ('ffprobe','ffprobe.exe'):continue
+  try:
+   test=subprocess.run([str(path),'-version'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+   if test.returncode==0:return str(path)
+  except OSError:pass
+ raise RuntimeError('ffprobe required: install FFmpeg or run npm ci for the pinned Remotion compositor.')
 patterns={'home_path':re.compile(r'/(?:Users|home)/[^\s/"\']+/'),'private_key':re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),'credential':re.compile(r'(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{24,})'),'email':re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')}
 issues=[];count=0
 for p in files():
@@ -22,7 +32,7 @@ for p in files():
     if name=='email' and ('LICENSE' in p.name or p.name.endswith('-OFL.txt') or p.name.endswith('-NOTICE.txt') or p.name=='package-lock.json'):continue
     issues.append({'file':rel,'kind':name,'line':content[:m.start()].count('\n')+1})
  if p.suffix.lower()=='.mp4':
-  probe=subprocess.run(['ffprobe','-v','error','-show_format','-show_streams','-of','json',str(p)],capture_output=True,text=True,check=True)
+  probe=subprocess.run([ffprobe_binary(),'-v','error','-show_format','-show_streams','-of','json',str(p)],capture_output=True,text=True,check=True)
   meta=json.loads(probe.stdout);tags={**meta.get('format',{}).get('tags',{})}
   for s in meta.get('streams',[]):tags.update(s.get('tags',{}))
   if any(k.lower() in ['location','location-eng','creation_time','title','artist','comment','description','voice-memo-uuid'] or k.startswith('com.apple.') for k in tags):issues.append({'file':rel,'kind':'media_metadata'})
