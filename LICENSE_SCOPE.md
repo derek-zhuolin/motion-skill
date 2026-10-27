@@ -8,6 +8,8 @@
 
 - `scripts/`：工程、时间约束、脱敏与验证工具。
 - `assets/runtime/src/` 下除 `studies/` 以外的模板编排、预览与字幕代码。
+- `assets/reuse-runtime/` 的基准复制包装代码（不含使用者登记的原片或媒体）。
+- `assets/runtime/src/production/` 的独立基础组件；研究 ID 仅为机制分类索引，不授予对应外部作品使用权。
 - `assets/runtime/scripts/`、`assets/runtime/serve.py`、项目配置。
 - `examples/voice-to-video/` 的定制编排、字幕、主题与工程文件；不包括本地下载资产或上游研究档案。
 - 文本使用说明、Skill指令和新编写的工程说明；引用的作者名称、上游说明和公开事实不声称独占版权。

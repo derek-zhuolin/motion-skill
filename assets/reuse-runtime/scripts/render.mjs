@@ -1,0 +1,8 @@
+import {resolveBrowser} from './browser.mjs';
+import{bundle}from'@remotion/bundler';import{selectComposition,renderMedia,renderStill}from'@remotion/renderer';import{resolve,dirname}from'node:path';import{fileURLToPath}from'node:url';import{existsSync,mkdirSync,writeFileSync}from'node:fs';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),browserExecutable=resolveBrowser();if(!existsSync(browserExecutable))throw Error('Existing Chrome required; no download');const start=Date.now(),tag=String(start);mkdirSync(resolve(root,'outputs'),{recursive:true});
+const serveUrl=await bundle({entryPoint:resolve(root,'src/render.tsx'),publicDir:resolve(root,'public'),outDir:resolve(root,'evidence/bundle-'+tag)});const composition=await selectComposition({serveUrl,id:'ReferenceFilm',browserExecutable});const stillArg=process.argv.find(a=>a.startsWith('--still='));
+let outputLocation;
+if(stillArg){const frame=Number(stillArg.split('=')[1]);if(!Number.isInteger(frame)||frame<0||frame>=composition.durationInFrames)throw Error('Invalid frame');outputLocation=resolve(root,'outputs/still-'+tag+'.png');await renderStill({serveUrl,composition,browserExecutable,frame,output:outputLocation,imageFormat:'png',scale:.5});}
+else{outputLocation=resolve(root,'outputs/reference-'+tag+'.mp4');await renderMedia({serveUrl,composition,browserExecutable,outputLocation,codec:'h264',audioCodec:'aac',crf:18,concurrency:1,pixelFormat:'yuv420p',overwrite:false});}
+writeFileSync(resolve(root,'evidence/render-'+tag+'.json'),JSON.stringify({outputLocation,kind:stillArg?'still':'reference export',elapsed_seconds:(Date.now()-start)/1000,new_content_verified:false},null,2));console.log(outputLocation);

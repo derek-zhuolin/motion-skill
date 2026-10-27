@@ -58,6 +58,8 @@ export function DirectedFilm({plan,sound=false}:{plan:any;sound?:boolean}){
  const frame=useCurrentFrame(),f=plan.layout.face,ready=plan.audit.blocking.length===0;
  return <AbsoluteFill style={{fontFamily:'InterflowCN,Figtree,sans-serif',background:'#fff'}}>
   {sound&&ready&&plan.source.voice_url&&<Html5Audio src={staticFile(plan.source.voice_url)}/>}
+  {sound&&ready&&plan.source.sfx_url&&<Html5Audio src={staticFile(plan.source.sfx_url)}/>}
+  {sound&&ready&&plan.source.music_url&&<Html5Audio src={staticFile(plan.source.music_url)}/>}
   <DirectedFrame plan={plan} frame={frame}/>
   {ready&&f?.enabled&&plan.source.video_url&&<div style={{position:'absolute',left:`${f.x*100}%`,top:`${f.y*100}%`,width:`${f.w*100}%`,height:`${f.h*100}%`,borderRadius:24,overflow:'hidden',border:'3px solid white',boxShadow:'0 12px 35px #14141422'}}><OffthreadVideo src={staticFile(plan.source.video_url)} muted style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:f.object_position||'50% 50%'}}/></div>}
  </AbsoluteFill>

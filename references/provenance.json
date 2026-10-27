@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0-beta.1",
+  "version": "1.1.1-beta.1",
   "display_name": "Motion Skill",
   "invocation": "motion-video",
   "motion_studies": 96,
@@ -21,5 +21,58 @@
   "license_note": "Scoped MIT for project tooling/reference engineering; historical study archive is excluded pending per-item provenance. Fonts and dependencies keep their licenses.",
   "private_media_included": false,
   "reference_video_in_separate_demo_directory": true,
-  "captions_required_by_default": true
+  "captions_required_by_default": true,
+  "production_adapters": [
+    "keyword-window",
+    "keyword-rhythm",
+    "clay-join",
+    "number-reel",
+    "value-reveal",
+    "numeric-comparison",
+    "line-reveal",
+    "media-focus",
+    "draw-annotation",
+    "focus-handoff"
+  ],
+  "clay_representation": "SVG simulated volume; no mesh 3D",
+  "timing_helpers": [
+    "compileScore",
+    "cueProgress"
+  ],
+  "continuity_review": "references/continuity-review-20261027.md",
+  "external_design_reference": {
+    "author": "Emil Kowalski",
+    "repository": "https://github.com/emilkowalski/skills",
+    "reviewed_on": "2026-10-27",
+    "attribution": "references/emil-motion-reference.md",
+    "scope": "principles paraphrased; no upstream code or full text vendored"
+  },
+  "pilot_policy": {
+    "default_seconds": [
+      15,
+      20
+    ],
+    "human_acceptance_required_before_expansion": true,
+    "source_priority": "authorized local assets first",
+    "semantic_variation": "inherit style, choose shot grammar for current meaning",
+    "approval_inferred_from_tests": false
+  },
+  "remotion_guidance": {
+    "source": "https://github.com/remotion-dev/skills",
+    "official_docs": "https://www.remotion.dev/docs/ai/skills",
+    "tested_local_version": "4.0.538",
+    "bundled": false,
+    "entry": "remotion-best-practices",
+    "resolution": "installed skill roots; no hardcoded personal path",
+    "auto_install": false
+  },
+  "semantic_selection": {
+    "entry": "scripts/semantic_motion.py",
+    "input": "Agent-reviewed meaning, roles, sources and readable intervals",
+    "automatic_raw_media_interpretation": false,
+    "model_calls": 0,
+    "plan_is_not_wiring_evidence": true
+  },
+  "integrated_from_local": "1.1.1-local.4",
+  "public_base_commit": "9c6b308087f246f366b4750a560cbede631e9e95"
 }

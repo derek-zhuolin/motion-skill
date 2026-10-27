@@ -16,6 +16,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npm run verify:rules
+      - run: npm run verify:production
       - run: npm run check
       - run: npm run build
       - run: npm run verify:frames

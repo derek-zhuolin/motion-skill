@@ -3,7 +3,8 @@
   "counts": {
     "studies": 96,
     "legacy_presets_in_source": 17,
-    "semantic_runtime_patterns": 5
+    "semantic_runtime_patterns": 5,
+    "production_adapters": 10
   },
   "count_note": "96项已有二维研究；源代码保留17个历史预设入口，当前UI只开放96项研究与五类语义结构，不宣称新增96种技法或自动18组新成片。",
   "effects": [
@@ -28,7 +29,8 @@
         "mode": "study",
         "id": 1
       },
-      "preview": "studies.html?effect=1"
+      "preview": "studies.html?effect=1",
+      "production_status": "study_only"
     },
     {
       "id": 2,
@@ -51,7 +53,8 @@
         "mode": "study",
         "id": 2
       },
-      "preview": "studies.html?effect=2"
+      "preview": "studies.html?effect=2",
+      "production_status": "study_only"
     },
     {
       "id": 3,
@@ -74,7 +77,8 @@
         "mode": "study",
         "id": 3
       },
-      "preview": "studies.html?effect=3"
+      "preview": "studies.html?effect=3",
+      "production_status": "study_only"
     },
     {
       "id": 4,
@@ -97,7 +101,8 @@
         "mode": "study",
         "id": 4
       },
-      "preview": "studies.html?effect=4"
+      "preview": "studies.html?effect=4",
+      "production_status": "study_only"
     },
     {
       "id": 5,
@@ -120,7 +125,8 @@
         "mode": "study",
         "id": 5
       },
-      "preview": "studies.html?effect=5"
+      "preview": "studies.html?effect=5",
+      "production_status": "study_only"
     },
     {
       "id": 6,
@@ -143,7 +149,8 @@
         "mode": "study",
         "id": 6
       },
-      "preview": "studies.html?effect=6"
+      "preview": "studies.html?effect=6",
+      "production_status": "study_only"
     },
     {
       "id": 7,
@@ -166,7 +173,8 @@
         "mode": "study",
         "id": 7
       },
-      "preview": "studies.html?effect=7"
+      "preview": "studies.html?effect=7",
+      "production_status": "study_only"
     },
     {
       "id": 8,
@@ -189,7 +197,8 @@
         "mode": "study",
         "id": 8
       },
-      "preview": "studies.html?effect=8"
+      "preview": "studies.html?effect=8",
+      "production_status": "study_only"
     },
     {
       "id": 9,
@@ -212,7 +221,8 @@
         "mode": "study",
         "id": 9
       },
-      "preview": "studies.html?effect=9"
+      "preview": "studies.html?effect=9",
+      "production_status": "study_only"
     },
     {
       "id": 10,
@@ -235,7 +245,12 @@
         "mode": "study",
         "id": 10
       },
-      "preview": "studies.html?effect=10"
+      "preview": "studies.html?effect=10",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "keyword-window"
+      ],
+      "production_adapter": "keyword-window"
     },
     {
       "id": 11,
@@ -258,7 +273,12 @@
         "mode": "study",
         "id": 11
       },
-      "preview": "studies.html?effect=11"
+      "preview": "studies.html?effect=11",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "keyword-rhythm"
+      ],
+      "production_adapter": "keyword-rhythm"
     },
     {
       "id": 12,
@@ -281,7 +301,8 @@
         "mode": "study",
         "id": 12
       },
-      "preview": "studies.html?effect=12"
+      "preview": "studies.html?effect=12",
+      "production_status": "study_only"
     },
     {
       "id": 13,
@@ -304,7 +325,8 @@
         "mode": "study",
         "id": 13
       },
-      "preview": "studies.html?effect=13"
+      "preview": "studies.html?effect=13",
+      "production_status": "study_only"
     },
     {
       "id": 14,
@@ -327,7 +349,8 @@
         "mode": "study",
         "id": 14
       },
-      "preview": "studies.html?effect=14"
+      "preview": "studies.html?effect=14",
+      "production_status": "study_only"
     },
     {
       "id": 15,
@@ -350,7 +373,8 @@
         "mode": "study",
         "id": 15
       },
-      "preview": "studies.html?effect=15"
+      "preview": "studies.html?effect=15",
+      "production_status": "study_only"
     },
     {
       "id": 16,
@@ -373,7 +397,8 @@
         "mode": "study",
         "id": 16
       },
-      "preview": "studies.html?effect=16"
+      "preview": "studies.html?effect=16",
+      "production_status": "study_only"
     },
     {
       "id": 17,
@@ -396,7 +421,8 @@
         "mode": "study",
         "id": 17
       },
-      "preview": "studies.html?effect=17"
+      "preview": "studies.html?effect=17",
+      "production_status": "study_only"
     },
     {
       "id": 18,
@@ -419,7 +445,8 @@
         "mode": "study",
         "id": 18
       },
-      "preview": "studies.html?effect=18"
+      "preview": "studies.html?effect=18",
+      "production_status": "study_only"
     },
     {
       "id": 19,
@@ -442,7 +469,12 @@
         "mode": "study",
         "id": 19
       },
-      "preview": "studies.html?effect=19"
+      "preview": "studies.html?effect=19",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "clay-join"
+      ],
+      "production_adapter": "clay-join"
     },
     {
       "id": 20,
@@ -465,7 +497,8 @@
         "mode": "study",
         "id": 20
       },
-      "preview": "studies.html?effect=20"
+      "preview": "studies.html?effect=20",
+      "production_status": "study_only"
     },
     {
       "id": 21,
@@ -488,7 +521,8 @@
         "mode": "study",
         "id": 21
       },
-      "preview": "studies.html?effect=21"
+      "preview": "studies.html?effect=21",
+      "production_status": "study_only"
     },
     {
       "id": 22,
@@ -511,7 +545,8 @@
         "mode": "study",
         "id": 22
       },
-      "preview": "studies.html?effect=22"
+      "preview": "studies.html?effect=22",
+      "production_status": "study_only"
     },
     {
       "id": 23,
@@ -534,7 +569,8 @@
         "mode": "study",
         "id": 23
       },
-      "preview": "studies.html?effect=23"
+      "preview": "studies.html?effect=23",
+      "production_status": "study_only"
     },
     {
       "id": 24,
@@ -557,7 +593,8 @@
         "mode": "study",
         "id": 24
       },
-      "preview": "studies.html?effect=24"
+      "preview": "studies.html?effect=24",
+      "production_status": "study_only"
     },
     {
       "id": 25,
@@ -580,7 +617,8 @@
         "mode": "study",
         "id": 25
       },
-      "preview": "studies.html?effect=25"
+      "preview": "studies.html?effect=25",
+      "production_status": "study_only"
     },
     {
       "id": 26,
@@ -603,7 +641,8 @@
         "mode": "study",
         "id": 26
       },
-      "preview": "studies.html?effect=26"
+      "preview": "studies.html?effect=26",
+      "production_status": "study_only"
     },
     {
       "id": 27,
@@ -626,7 +665,11 @@
         "mode": "study",
         "id": 27
       },
-      "preview": "studies.html?effect=27"
+      "preview": "studies.html?effect=27",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "media-focus"
+      ]
     },
     {
       "id": 28,
@@ -649,7 +692,8 @@
         "mode": "study",
         "id": 28
       },
-      "preview": "studies.html?effect=28"
+      "preview": "studies.html?effect=28",
+      "production_status": "study_only"
     },
     {
       "id": 29,
@@ -672,7 +716,8 @@
         "mode": "study",
         "id": 29
       },
-      "preview": "studies.html?effect=29"
+      "preview": "studies.html?effect=29",
+      "production_status": "study_only"
     },
     {
       "id": 30,
@@ -695,7 +740,8 @@
         "mode": "study",
         "id": 30
       },
-      "preview": "studies.html?effect=30"
+      "preview": "studies.html?effect=30",
+      "production_status": "study_only"
     },
     {
       "id": 31,
@@ -718,7 +764,12 @@
         "mode": "study",
         "id": 31
       },
-      "preview": "studies.html?effect=31"
+      "preview": "studies.html?effect=31",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "value-reveal",
+        "line-reveal"
+      ]
     },
     {
       "id": 32,
@@ -741,7 +792,8 @@
         "mode": "study",
         "id": 32
       },
-      "preview": "studies.html?effect=32"
+      "preview": "studies.html?effect=32",
+      "production_status": "study_only"
     },
     {
       "id": 33,
@@ -764,7 +816,8 @@
         "mode": "study",
         "id": 33
       },
-      "preview": "studies.html?effect=33"
+      "preview": "studies.html?effect=33",
+      "production_status": "study_only"
     },
     {
       "id": 34,
@@ -787,7 +840,8 @@
         "mode": "study",
         "id": 34
       },
-      "preview": "studies.html?effect=34"
+      "preview": "studies.html?effect=34",
+      "production_status": "study_only"
     },
     {
       "id": 35,
@@ -810,7 +864,11 @@
         "mode": "study",
         "id": 35
       },
-      "preview": "studies.html?effect=35"
+      "preview": "studies.html?effect=35",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "number-reel"
+      ]
     },
     {
       "id": 36,
@@ -833,7 +891,11 @@
         "mode": "study",
         "id": 36
       },
-      "preview": "studies.html?effect=36"
+      "preview": "studies.html?effect=36",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "draw-annotation"
+      ]
     },
     {
       "id": 37,
@@ -856,7 +918,8 @@
         "mode": "study",
         "id": 37
       },
-      "preview": "studies.html?effect=37"
+      "preview": "studies.html?effect=37",
+      "production_status": "study_only"
     },
     {
       "id": 38,
@@ -879,7 +942,11 @@
         "mode": "study",
         "id": 38
       },
-      "preview": "studies.html?effect=38"
+      "preview": "studies.html?effect=38",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "focus-handoff"
+      ]
     },
     {
       "id": 39,
@@ -902,7 +969,8 @@
         "mode": "study",
         "id": 39
       },
-      "preview": "studies.html?effect=39"
+      "preview": "studies.html?effect=39",
+      "production_status": "study_only"
     },
     {
       "id": 40,
@@ -925,7 +993,8 @@
         "mode": "study",
         "id": 40
       },
-      "preview": "studies.html?effect=40"
+      "preview": "studies.html?effect=40",
+      "production_status": "study_only"
     },
     {
       "id": 41,
@@ -948,7 +1017,8 @@
         "mode": "study",
         "id": 41
       },
-      "preview": "studies.html?effect=41"
+      "preview": "studies.html?effect=41",
+      "production_status": "study_only"
     },
     {
       "id": 42,
@@ -971,7 +1041,8 @@
         "mode": "study",
         "id": 42
       },
-      "preview": "studies.html?effect=42"
+      "preview": "studies.html?effect=42",
+      "production_status": "study_only"
     },
     {
       "id": 43,
@@ -994,7 +1065,11 @@
         "mode": "study",
         "id": 43
       },
-      "preview": "studies.html?effect=43"
+      "preview": "studies.html?effect=43",
+      "production_status": "production_adapter",
+      "production_adapters": [
+        "numeric-comparison"
+      ]
     },
     {
       "id": 44,
@@ -1017,7 +1092,8 @@
         "mode": "study",
         "id": 44
       },
-      "preview": "studies.html?effect=44"
+      "preview": "studies.html?effect=44",
+      "production_status": "study_only"
     },
     {
       "id": 45,
@@ -1040,7 +1116,8 @@
         "mode": "study",
         "id": 45
       },
-      "preview": "studies.html?effect=45"
+      "preview": "studies.html?effect=45",
+      "production_status": "study_only"
     },
     {
       "id": 46,
@@ -1063,7 +1140,8 @@
         "mode": "study",
         "id": 46
       },
-      "preview": "studies.html?effect=46"
+      "preview": "studies.html?effect=46",
+      "production_status": "study_only"
     },
     {
       "id": 47,
@@ -1086,7 +1164,8 @@
         "mode": "study",
         "id": 47
       },
-      "preview": "studies.html?effect=47"
+      "preview": "studies.html?effect=47",
+      "production_status": "study_only"
     },
     {
       "id": 48,
@@ -1109,7 +1188,8 @@
         "mode": "study",
         "id": 48
       },
-      "preview": "studies.html?effect=48"
+      "preview": "studies.html?effect=48",
+      "production_status": "study_only"
     },
     {
       "id": 49,
@@ -1132,7 +1212,8 @@
         "mode": "study",
         "id": 49
       },
-      "preview": "studies.html?effect=49"
+      "preview": "studies.html?effect=49",
+      "production_status": "study_only"
     },
     {
       "id": 50,
@@ -1155,7 +1236,8 @@
         "mode": "study",
         "id": 50
       },
-      "preview": "studies.html?effect=50"
+      "preview": "studies.html?effect=50",
+      "production_status": "study_only"
     },
     {
       "id": 51,
@@ -1178,7 +1260,8 @@
         "mode": "study",
         "id": 51
       },
-      "preview": "studies.html?effect=51"
+      "preview": "studies.html?effect=51",
+      "production_status": "study_only"
     },
     {
       "id": 52,
@@ -1201,7 +1284,8 @@
         "mode": "study",
         "id": 52
       },
-      "preview": "studies.html?effect=52"
+      "preview": "studies.html?effect=52",
+      "production_status": "study_only"
     },
     {
       "id": 53,
@@ -1224,7 +1308,8 @@
         "mode": "study",
         "id": 53
       },
-      "preview": "studies.html?effect=53"
+      "preview": "studies.html?effect=53",
+      "production_status": "study_only"
     },
     {
       "id": 54,
@@ -1247,7 +1332,8 @@
         "mode": "study",
         "id": 54
       },
-      "preview": "studies.html?effect=54"
+      "preview": "studies.html?effect=54",
+      "production_status": "study_only"
     },
     {
       "id": 55,
@@ -1270,7 +1356,8 @@
         "mode": "study",
         "id": 55
       },
-      "preview": "studies.html?effect=55"
+      "preview": "studies.html?effect=55",
+      "production_status": "study_only"
     },
     {
       "id": 56,
@@ -1293,7 +1380,8 @@
         "mode": "study",
         "id": 56
       },
-      "preview": "studies.html?effect=56"
+      "preview": "studies.html?effect=56",
+      "production_status": "study_only"
     },
     {
       "id": 57,
@@ -1316,7 +1404,8 @@
         "mode": "study",
         "id": 57
       },
-      "preview": "studies.html?effect=57"
+      "preview": "studies.html?effect=57",
+      "production_status": "study_only"
     },
     {
       "id": 58,
@@ -1339,7 +1428,8 @@
         "mode": "study",
         "id": 58
       },
-      "preview": "studies.html?effect=58"
+      "preview": "studies.html?effect=58",
+      "production_status": "study_only"
     },
     {
       "id": 59,
@@ -1362,7 +1452,8 @@
         "mode": "study",
         "id": 59
       },
-      "preview": "studies.html?effect=59"
+      "preview": "studies.html?effect=59",
+      "production_status": "study_only"
     },
     {
       "id": 60,
@@ -1385,7 +1476,8 @@
         "mode": "study",
         "id": 60
       },
-      "preview": "studies.html?effect=60"
+      "preview": "studies.html?effect=60",
+      "production_status": "study_only"
     },
     {
       "id": 61,
@@ -1408,7 +1500,8 @@
         "mode": "study",
         "id": 61
       },
-      "preview": "studies.html?effect=61"
+      "preview": "studies.html?effect=61",
+      "production_status": "study_only"
     },
     {
       "id": 62,
@@ -1431,7 +1524,8 @@
         "mode": "study",
         "id": 62
       },
-      "preview": "studies.html?effect=62"
+      "preview": "studies.html?effect=62",
+      "production_status": "study_only"
     },
     {
       "id": 63,
@@ -1454,7 +1548,8 @@
         "mode": "study",
         "id": 63
       },
-      "preview": "studies.html?effect=63"
+      "preview": "studies.html?effect=63",
+      "production_status": "study_only"
     },
     {
       "id": 64,
@@ -1477,7 +1572,8 @@
         "mode": "study",
         "id": 64
       },
-      "preview": "studies.html?effect=64"
+      "preview": "studies.html?effect=64",
+      "production_status": "study_only"
     },
     {
       "id": 65,
@@ -1500,7 +1596,8 @@
         "mode": "study",
         "id": 65
       },
-      "preview": "studies.html?effect=65"
+      "preview": "studies.html?effect=65",
+      "production_status": "study_only"
     },
     {
       "id": 66,
@@ -1523,7 +1620,8 @@
         "mode": "study",
         "id": 66
       },
-      "preview": "studies.html?effect=66"
+      "preview": "studies.html?effect=66",
+      "production_status": "study_only"
     },
     {
       "id": 67,
@@ -1546,7 +1644,8 @@
         "mode": "study",
         "id": 67
       },
-      "preview": "studies.html?effect=67"
+      "preview": "studies.html?effect=67",
+      "production_status": "study_only"
     },
     {
       "id": 68,
@@ -1569,7 +1668,8 @@
         "mode": "study",
         "id": 68
       },
-      "preview": "studies.html?effect=68"
+      "preview": "studies.html?effect=68",
+      "production_status": "study_only"
     },
     {
       "id": 69,
@@ -1592,7 +1692,8 @@
         "mode": "study",
         "id": 69
       },
-      "preview": "studies.html?effect=69"
+      "preview": "studies.html?effect=69",
+      "production_status": "study_only"
     },
     {
       "id": 70,
@@ -1615,7 +1716,8 @@
         "mode": "study",
         "id": 70
       },
-      "preview": "studies.html?effect=70"
+      "preview": "studies.html?effect=70",
+      "production_status": "study_only"
     },
     {
       "id": 71,
@@ -1638,7 +1740,8 @@
         "mode": "study",
         "id": 71
       },
-      "preview": "studies.html?effect=71"
+      "preview": "studies.html?effect=71",
+      "production_status": "study_only"
     },
     {
       "id": 72,
@@ -1661,7 +1764,8 @@
         "mode": "study",
         "id": 72
       },
-      "preview": "studies.html?effect=72"
+      "preview": "studies.html?effect=72",
+      "production_status": "study_only"
     },
     {
       "id": 73,
@@ -1684,7 +1788,8 @@
         "mode": "study",
         "id": 73
       },
-      "preview": "studies.html?effect=73"
+      "preview": "studies.html?effect=73",
+      "production_status": "study_only"
     },
     {
       "id": 74,
@@ -1707,7 +1812,8 @@
         "mode": "study",
         "id": 74
       },
-      "preview": "studies.html?effect=74"
+      "preview": "studies.html?effect=74",
+      "production_status": "study_only"
     },
     {
       "id": 75,
@@ -1730,7 +1836,8 @@
         "mode": "study",
         "id": 75
       },
-      "preview": "studies.html?effect=75"
+      "preview": "studies.html?effect=75",
+      "production_status": "study_only"
     },
     {
       "id": 76,
@@ -1753,7 +1860,8 @@
         "mode": "study",
         "id": 76
       },
-      "preview": "studies.html?effect=76"
+      "preview": "studies.html?effect=76",
+      "production_status": "study_only"
     },
     {
       "id": 77,
@@ -1776,7 +1884,8 @@
         "mode": "study",
         "id": 77
       },
-      "preview": "studies.html?effect=77"
+      "preview": "studies.html?effect=77",
+      "production_status": "study_only"
     },
     {
       "id": 78,
@@ -1799,7 +1908,8 @@
         "mode": "study",
         "id": 78
       },
-      "preview": "studies.html?effect=78"
+      "preview": "studies.html?effect=78",
+      "production_status": "study_only"
     },
     {
       "id": 79,
@@ -1822,7 +1932,8 @@
         "mode": "study",
         "id": 79
       },
-      "preview": "studies.html?effect=79"
+      "preview": "studies.html?effect=79",
+      "production_status": "study_only"
     },
     {
       "id": 80,
@@ -1845,7 +1956,8 @@
         "mode": "study",
         "id": 80
       },
-      "preview": "studies.html?effect=80"
+      "preview": "studies.html?effect=80",
+      "production_status": "study_only"
     },
     {
       "id": 81,
@@ -1868,7 +1980,8 @@
         "mode": "study",
         "id": 81
       },
-      "preview": "studies.html?effect=81"
+      "preview": "studies.html?effect=81",
+      "production_status": "study_only"
     },
     {
       "id": 82,
@@ -1891,7 +2004,8 @@
         "mode": "study",
         "id": 82
       },
-      "preview": "studies.html?effect=82"
+      "preview": "studies.html?effect=82",
+      "production_status": "study_only"
     },
     {
       "id": 83,
@@ -1914,7 +2028,8 @@
         "mode": "study",
         "id": 83
       },
-      "preview": "studies.html?effect=83"
+      "preview": "studies.html?effect=83",
+      "production_status": "study_only"
     },
     {
       "id": 84,
@@ -1937,7 +2052,8 @@
         "mode": "study",
         "id": 84
       },
-      "preview": "studies.html?effect=84"
+      "preview": "studies.html?effect=84",
+      "production_status": "study_only"
     },
     {
       "id": 85,
@@ -1960,7 +2076,8 @@
         "mode": "study",
         "id": 85
       },
-      "preview": "studies.html?effect=85"
+      "preview": "studies.html?effect=85",
+      "production_status": "study_only"
     },
     {
       "id": 86,
@@ -1983,7 +2100,8 @@
         "mode": "study",
         "id": 86
       },
-      "preview": "studies.html?effect=86"
+      "preview": "studies.html?effect=86",
+      "production_status": "study_only"
     },
     {
       "id": 87,
@@ -2006,7 +2124,8 @@
         "mode": "study",
         "id": 87
       },
-      "preview": "studies.html?effect=87"
+      "preview": "studies.html?effect=87",
+      "production_status": "study_only"
     },
     {
       "id": 88,
@@ -2029,7 +2148,8 @@
         "mode": "study",
         "id": 88
       },
-      "preview": "studies.html?effect=88"
+      "preview": "studies.html?effect=88",
+      "production_status": "study_only"
     },
     {
       "id": 89,
@@ -2052,7 +2172,8 @@
         "mode": "study",
         "id": 89
       },
-      "preview": "studies.html?effect=89"
+      "preview": "studies.html?effect=89",
+      "production_status": "study_only"
     },
     {
       "id": 90,
@@ -2075,7 +2196,8 @@
         "mode": "study",
         "id": 90
       },
-      "preview": "studies.html?effect=90"
+      "preview": "studies.html?effect=90",
+      "production_status": "study_only"
     },
     {
       "id": 91,
@@ -2098,7 +2220,8 @@
         "mode": "study",
         "id": 91
       },
-      "preview": "studies.html?effect=91"
+      "preview": "studies.html?effect=91",
+      "production_status": "study_only"
     },
     {
       "id": 92,
@@ -2121,7 +2244,8 @@
         "mode": "study",
         "id": 92
       },
-      "preview": "studies.html?effect=92"
+      "preview": "studies.html?effect=92",
+      "production_status": "study_only"
     },
     {
       "id": 93,
@@ -2144,7 +2268,8 @@
         "mode": "study",
         "id": 93
       },
-      "preview": "studies.html?effect=93"
+      "preview": "studies.html?effect=93",
+      "production_status": "study_only"
     },
     {
       "id": 94,
@@ -2167,7 +2292,8 @@
         "mode": "study",
         "id": 94
       },
-      "preview": "studies.html?effect=94"
+      "preview": "studies.html?effect=94",
+      "production_status": "study_only"
     },
     {
       "id": 95,
@@ -2190,7 +2316,8 @@
         "mode": "study",
         "id": 95
       },
-      "preview": "studies.html?effect=95"
+      "preview": "studies.html?effect=95",
+      "production_status": "study_only"
     },
     {
       "id": 96,
@@ -2213,7 +2340,8 @@
         "mode": "study",
         "id": 96
       },
-      "preview": "studies.html?effect=96"
+      "preview": "studies.html?effect=96",
+      "production_status": "study_only"
     }
   ],
   "compositions": [

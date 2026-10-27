@@ -2,7 +2,7 @@
 
 [中文完整文档](README.md) · [FAQ (中文)](docs/FAQ.md) · [Contributing](CONTRIBUTING.md)
 
-**Have ideas to share but prefer not to appear on camera? Start with a written idea or a voice recording.** Motion Skill is a Codex / Agent skill and editable Remotion project for combining narration, real-world footage, motion graphics and synchronized captions. It also supports script-driven motion graphics without narration. It is currently in beta.
+**Have ideas to share but prefer not to appear on camera? Start with a written idea or a voice recording.** Motion Skill is a Codex / Agent skill and editable Remotion project for combining narration, real-world footage, motion graphics and synchronized captions. It also supports script-driven motion graphics without narration. Current source version: **1.1.1-beta.1**, integrating local **1.1.1-local.4**. See the [changelog](CHANGELOG.md).
 
 ## Watch the reference
 
@@ -11,6 +11,27 @@
 [Download the full video with audio](https://github.com/derek-zhuolin/motion-skill/releases/download/v1.1.0-beta.1/motion-skill-reference.mp4) · [Editable reference project](examples/voice-to-video/README.md)
 
 The published reference is 48 seconds, 1920×1080 at 30fps, with 7 scenes, 25 caption cues, one stock photo and a 5.4-second stock clip. It was developed in Codex with **GPT-6.1 Sol** (model label supplied by the author), local Whisper transcription, Remotion rendering and human review. It does not establish equivalent quality for every recording or model.
+
+## Meaning first, with an explicit shot plan
+
+Before implementing Remotion code, the Agent locates and reads the official `remotion-best-practices` entry and relevant branches by default. The read-only locator reports paths/version/hash, **not proof of reading**. Missing guidance is reported; it is never silently installed. Install the upstream skills separately when authorized:
+
+```sh
+npx skills add remotion-dev/skills
+python3 scripts/motion.py preflight-remotion --project /absolute/project
+python3 scripts/motion.py select-motion assets/semantic-plan.example.json \
+  --out /tmp/motion-selection.json --explain /tmp/motion-shots.md
+```
+
+Before coding, show numbered shots with time, meaning, focal object, primary study ID/component, supporting transitions, handoff object, rationale and readable interval. This is a short disclosure, not an extra per-shot approval gate.
+
+There are **96 studies and 10 reusable production adapters**, not 96 production templates. Select effects for fixed numbers, sourced comparisons, keyword hierarchy, inspected media or meaningful joins. Avoid repeating recently used adapters when another suitable choice exists; do not randomize effects or replay one reference's sequence for every story. The deterministic selector operates on Agent-reviewed structured input; it does not recognize raw audio/video or assemble the film. Unsupported relationships can use explicitly documented custom implementations.
+
+Preserve the approved visual language: typography, colors, material, shadows and media treatment. Change effect selection and handoff paths for the meaning at hand. Reusable number reels retain configurable edge fading, subtle motion blur and separator appearance; a workflow upgrade is not permission to redesign the film.
+
+Default to a **15–20 second pilot**, then expand after human acceptance unless the user explicitly requested a different scope. Preserve readable time and continuity; tests never imply aesthetic approval. Private baselines and transcript caches remain local and are not bundled. The existing 48-second reference is unchanged.
+
+See [integration](references/remotion-integration.md), [shot planning](references/semantic-orchestration.md), [production adapters](references/production-registry.json) and [local reuse](references/local-fastpatch.md).
 
 ## Who it is for
 
@@ -24,7 +45,7 @@ You provide the ideas and approve the result. The Agent helps direct and impleme
 
 `script` mode uses a written script and planned reading time; without an audio source, the result is silent. `voice` mode uses a real recording and its timestamps. `example` mode is a labeled structural demo.
 
-Narration, sound effects and background music are separate creative choices. The current template only wires narration: it has no bundled SFX library, independent SFX switch or automatic music/SFX mixing pipeline. Ask the Agent to integrate authorized audio and verify the mix when needed. The published 48-second reference has narration only; its stock footage is muted. The player’s voice toggle controls narration, while the README GIF is always silent. See [audio details (中文)](docs/AUDIO.md).
+Narration, sound effects and background music are separate creative choices. New generated projects accept an explicit `--audio-kind voice|sfx|music` input (voice is the default); they have no bundled SFX library, independent SFX switch or automatic mixing pipeline. The existing reference still uses narration only. Ask the Agent to integrate authorized audio and verify the mix when needed. The published 48-second reference has narration only; its stock footage is muted. The player’s voice toggle controls narration, while the README GIF is always silent. See [audio details (中文)](docs/AUDIO.md).
 
 ## Example prompt
 
@@ -52,7 +73,7 @@ Install the full repository in an Agent-readable skill directory, preserving its
 ## What is included, and what is not
 
 - **96 motion studies in 19 categories**, with source mappings and documented attribution gaps; not 96 original inventions or production templates.
-- **5 semantic renderers**, frame-based caption checks, editable palettes and a reproducible reference project.
+- **10 production adapters** plus **5 semantic renderers**, frame-based caption checks, editable palettes and a reproducible reference project.
 - No bundled ASR service, model, automatic stock-search API or one-click semantic directing engine. External tools and human review remain necessary.
 - Change colors through `theme.json`, story brand settings or the study palette as documented in [customization](docs/CUSTOMIZATION.md).
 

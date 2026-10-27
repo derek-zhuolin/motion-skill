@@ -1,0 +1,27 @@
+{
+  "duration": 8,
+  "beats": {
+    "start": 0,
+    "handoff": 2,
+    "identityStart": {"after":"handoff","offset":-0.2},
+    "identityReady": {"after":"handoff","offset":0.35},
+    "contentStart": {"after":"handoff","offset":-0.05},
+    "contentReady": {"after":"handoff","offset":0.6},
+    "carrierStart": {"after":"handoff","offset":0.1},
+    "carrierReady": {"after":"handoff","offset":0.75},
+    "keywordAt": {"after":"carrierReady","offset":0.05},
+    "keywordReady": {"after":"keywordAt","offset":0.55},
+    "meaningEnd": 6.3,
+    "materialStart": {"after":"meaningEnd","offset":-0.3},
+    "contact": 7,
+    "finish": 8
+  },
+  "cues": {
+    "window": {"from":"start","to":"handoff"},
+    "identity": {"from":"identityStart","to":"identityReady"},
+    "content": {"from":"contentStart","to":"contentReady"},
+    "carrier": {"from":"carrierStart","to":"carrierReady"},
+    "keyword": {"from":"keywordAt","to":"keywordReady"},
+    "material": {"from":"materialStart","to":"contact"}
+  }
+}

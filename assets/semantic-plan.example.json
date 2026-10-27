@@ -1,0 +1,155 @@
+{
+  "fixture_notice": "Synthetic test data. These are not real metrics, sources or project results. Replace and verify before production.",
+  "duration": 15,
+  "recent_mechanisms": [],
+  "shots": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 3,
+      "kind": "number_snapshot",
+      "meaning": "测试数值50",
+      "purpose": "测试语义到机制的适配，不是实际营销结论",
+      "focus_object": "focus1",
+      "object_ids": [
+        "guide",
+        "focus1"
+      ],
+      "reading": {
+        "ready_at": 1.3,
+        "until": 2.5,
+        "min_seconds": 1.2,
+        "basis": "本样片设计预算，待人看是否读完"
+      },
+      "handoff": {
+        "kind": "focus",
+        "to": "s2",
+        "object_id": "guide",
+        "at": 2.6,
+        "reason": "注视框从当前测试内容交给下一段"
+      },
+      "number": {
+        "display": "50",
+        "observed_at": "fixture only",
+        "source": "fixture://synthetic-test"
+      }
+    },
+    {
+      "id": "s2",
+      "start": 3,
+      "end": 6,
+      "kind": "number_snapshot",
+      "meaning": "测试数值80",
+      "purpose": "测试语义到机制的适配，不是实际营销结论",
+      "focus_object": "focus2",
+      "object_ids": [
+        "guide",
+        "focus2"
+      ],
+      "reading": {
+        "ready_at": 4.3,
+        "until": 5.5,
+        "min_seconds": 1.2,
+        "basis": "本样片设计预算，待人看是否读完"
+      },
+      "handoff": {
+        "kind": "focus",
+        "to": "s3",
+        "object_id": "guide",
+        "at": 5.6,
+        "reason": "注视框从当前测试内容交给下一段"
+      },
+      "number": {
+        "display": "80",
+        "observed_at": "fixture only",
+        "source": "fixture://synthetic-test"
+      }
+    },
+    {
+      "id": "s3",
+      "start": 6,
+      "end": 9,
+      "kind": "keyword",
+      "meaning": "先说结论",
+      "purpose": "测试语义到机制的适配，不是实际营销结论",
+      "focus_object": "focus3",
+      "object_ids": [
+        "guide",
+        "focus3"
+      ],
+      "reading": {
+        "ready_at": 7.3,
+        "until": 8.5,
+        "min_seconds": 1.2,
+        "basis": "本样片设计预算，待人看是否读完"
+      },
+      "handoff": {
+        "kind": "focus",
+        "to": "s4",
+        "object_id": "guide",
+        "at": 8.6,
+        "reason": "注视框从当前测试内容交给下一段"
+      },
+      "intent": "claim"
+    },
+    {
+      "id": "s4",
+      "start": 9,
+      "end": 12,
+      "kind": "real_media",
+      "meaning": "查看证据位置",
+      "purpose": "测试语义到机制的适配，不是实际营销结论",
+      "focus_object": "focus4",
+      "object_ids": [
+        "guide",
+        "focus4"
+      ],
+      "reading": {
+        "ready_at": 10.3,
+        "until": 11.5,
+        "min_seconds": 1.2,
+        "basis": "本样片设计预算，待人看是否读完"
+      },
+      "handoff": {
+        "kind": "focus",
+        "to": "s5",
+        "object_id": "guide",
+        "at": 11.6,
+        "reason": "注视框从当前测试内容交给下一段"
+      },
+      "media": {
+        "inspected": true,
+        "role": "evidence",
+        "source": "fixture://test-card",
+        "rights": "authored synthetic test fixture",
+        "target": [
+          0.2,
+          0.2,
+          0.8,
+          0.7
+        ],
+        "has_subject_motion": false
+      }
+    },
+    {
+      "id": "s5",
+      "start": 12,
+      "end": 15,
+      "kind": "conclusion",
+      "meaning": "先验收样片",
+      "purpose": "测试语义到机制的适配，不是实际营销结论",
+      "focus_object": "focus5",
+      "object_ids": [
+        "guide",
+        "focus5"
+      ],
+      "reading": {
+        "ready_at": 13.3,
+        "until": 14.5,
+        "min_seconds": 1.2,
+        "basis": "本样片设计预算，待人看是否读完"
+      },
+      "handoff": null
+    }
+  ]
+}

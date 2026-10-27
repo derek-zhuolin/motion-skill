@@ -10,7 +10,9 @@
     "verify:template": "python3 scripts/verify_template.py",
     "gallery": "esbuild scripts/gallery.tsx --bundle --platform=node --outfile=.cache/gallery.cjs && node .cache/gallery.cjs",
     "preview": "python3 examples/voice-to-video/serve.py --port 4341",
-    "render": "npm --prefix examples/voice-to-video run render"
+    "render": "npm --prefix examples/voice-to-video run render",
+    "verify:production": "python3 -m unittest discover -s scripts -p \"test_*.py\"",
+    "verify:components": "node scripts/verify-components.mjs"
   },
   "dependencies": {
     "remotion": "4.0.538",
@@ -26,7 +28,7 @@
     "@types/react": "19.2.7",
     "esbuild": "0.28.1"
   },
-  "version": "1.1.0-beta.1",
+  "version": "1.1.1-beta.1",
   "engines": {
     "node": ">=22"
   }

@@ -19,3 +19,10 @@ examples/voice-to-video/site/studies.css
 examples/voice-to-video/evidence/
 examples/voice-to-video/outputs/
 dist/
+
+# Private local references, transcript indices and transient outputs
+.local/
+evidence/
+outputs/
+backups/
+*.zip

@@ -3,9 +3,12 @@
   "private": true,
   "scripts": {
     "check": "tsc --noEmit",
-    "build": "esbuild src/app.tsx --bundle --minify --outfile=site/app.js --loader:.css=css '--external:assets/*' && esbuild src/studies.tsx --bundle --minify --outfile=site/studies.js --loader:.css=css '--external:assets/*'",
+    "build": "esbuild src/app.tsx --bundle --minify --outfile=site/app.js --loader:.css=css '--external:assets/*'",
     "render": "node scripts/render.mjs",
-    "verify:frames": "esbuild src/check.tsx --bundle --platform=node --outfile=evidence/check.cjs && node evidence/check.cjs"
+    "verify:frames": "esbuild src/check.tsx --bundle --platform=node --outfile=evidence/check.cjs && node evidence/check.cjs",
+    "verify:score": "esbuild src/check-score.tsx --bundle --platform=node --outfile=evidence/score-check.cjs && node evidence/score-check.cjs",
+    "build:studies": "esbuild src/studies.tsx --bundle --minify --outfile=site/studies.js --loader:.css=css '--external:assets/*'",
+    "verify:studies": "esbuild src/check-studies.tsx --bundle --platform=node --outfile=evidence/studies-check.cjs && node evidence/studies-check.cjs"
   },
   "dependencies": {
     "remotion": "4.0.538",

@@ -1,0 +1,96 @@
+{
+  "version": "1.1.1-beta.1",
+  "representation_note": "Production adapters are reusable primitives; Agent still designs the narrative and trajectories. SVG clay simulates volume and is not mesh 3D.",
+  "adapters": [
+    {
+      "id": "keyword-window",
+      "study_id": 10,
+      "status": "production_adapter",
+      "file": "src/production/Mechanisms.tsx",
+      "export": "KeywordWindow",
+      "task": "Use a keyword as a window into real content"
+    },
+    {
+      "id": "keyword-rhythm",
+      "study_id": 11,
+      "status": "production_adapter",
+      "file": "src/production/Mechanisms.tsx",
+      "export": "KineticWords",
+      "task": "Establish reading hierarchy with short words"
+    },
+    {
+      "id": "clay-join",
+      "study_id": 19,
+      "status": "production_adapter",
+      "file": "src/production/Mechanisms.tsx",
+      "export": "ClayJoin",
+      "task": "Join persistent modules with contact response"
+    },
+    {
+      "id": "number-reel",
+      "study_id": 35,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "NumberReel",
+      "task": "Reveal a fixed observed number, without claiming growth"
+    },
+    {
+      "id": "value-reveal",
+      "study_id": 31,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "ValueReveal",
+      "task": "Reveal a fixed value without rolling intermediate digits"
+    },
+    {
+      "id": "numeric-comparison",
+      "study_id": 43,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "NumericComparison",
+      "task": "Keep two sourced values visible while revealing the second"
+    },
+    {
+      "id": "line-reveal",
+      "study_id": 31,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "LineReveal",
+      "task": "Reveal one short semantic line"
+    },
+    {
+      "id": "media-focus",
+      "study_id": 27,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "MediaFocus",
+      "task": "Focus inside inspected media; hold camera when subject already moves"
+    },
+    {
+      "id": "draw-annotation",
+      "study_id": 36,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "DrawAnnotation",
+      "task": "Draw a specific evidence annotation"
+    },
+    {
+      "id": "focus-handoff",
+      "study_id": 38,
+      "status": "production_adapter",
+      "file": "src/production/DetailMechanisms.tsx",
+      "export": "FocusHandoff",
+      "task": "Transfer one attention frame between meaningful targets"
+    }
+  ],
+  "other_studies": "study_only unless a verified custom production implementation is supplied; 96 studies are not an effect quota",
+  "timing": {
+    "file": "src/production/score.ts",
+    "exports": [
+      "compileScore",
+      "cueProgress"
+    ],
+    "example": "src/production/score.example.json",
+    "scope": "opt-in timing graph; not an additional study adapter or automatic director"
+  }
+}

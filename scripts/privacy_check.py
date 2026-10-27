@@ -23,6 +23,8 @@ for p in files():
  if not p.is_file():continue
  rel=p.relative_to(ROOT).as_posix();count+=1
  if p.is_symlink():issues.append({'file':rel,'kind':'symlink'});continue
+ if any(part in {'.local','.cache','node_modules','__pycache__','backups'} for part in p.relative_to(ROOT).parts):issues.append({'file':rel,'kind':'local_cache_or_backup'})
+ if p.suffix.lower() in {'.mp4','.mov','.webm','.mkv','.aac','.flac','.ogg'} and rel!='demo/motion-skill-reference.mp4':issues.append({'file':rel,'kind':'unreviewed_source_media'})
  if p.name.startswith('.env') or p.suffix.lower() in {'.m4a','.wav','.mp3','.pem','.key'}:issues.append({'file':rel,'kind':'private_source_or_secret_file'})
  if p.suffix.lower() in {'.md','.json','.py','.tsx','.ts','.mjs','.yaml','.yml','.html','.css','.txt','.srt'} or p.name in {'.gitignore','LICENSE'}:
   content=p.read_text(errors='replace')

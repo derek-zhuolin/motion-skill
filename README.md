@@ -2,9 +2,9 @@
 
 **给有想法、想表达，但不想出镜的人：用文案或录音，让观点通过画面与动效被看见。**
 
-Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 Remotion 工程**，支持按文稿编排无口播动效，也支持将已有录音编排成视频。默认 **16:9**，当前为 **Beta 内测版**。
+Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 Remotion 工程**，支持按文稿编排无口播动效，也支持将已有录音编排成视频。默认 **16:9**，当前为 **1.1.1-beta.1 内测版**（整合本地 1.1.1-local.4）。
 
-[English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
+[更新日志](CHANGELOG.md) · [English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
 
 ## 先看 reference 效果
 
@@ -17,11 +17,58 @@ Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 
 [视频发布页](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.0-beta.1) · [仓库内的MP4原文件](demo/motion-skill-reference.mp4) · [可编辑reference工程](examples/voice-to-video/README.md)
 
 
-**96 项动效机制研究 · 19 个分类 · 5 类语义结构 · 48 秒有声 reference**
+**96 项动效机制研究 · 19 个分类 · 10 个生产组件 · 5 类语义结构 · 48 秒有声 reference**
 
 这是一套给 Codex / Agent 使用的 Skill 和 Remotion 工程。它组织原声、实拍素材、字幕与 Motion Graphics；由 Agent 理解内容并编排镜头，Python 负责时间与约束检查，Remotion 负责预览和导出。
 
 本 reference 在 **Codex + GPT-6.1 Sol** 中完成（模型名称按作者提供的标注），本地 Whisper 负责转写，Remotion 负责画面渲染。作者参与了视觉方向、实拍补充、ending 与字幕的反馈。它是一个真实迭代案例，不是“一条 prompt 保证任意音频全自动成片”的能力承诺。
+
+## 本次更新：先讲清镜头，再动手
+
+**默认读取 Remotion Best Practices → 提前展示编号镜头表 → 按内容选动效 → 先看 15–20 秒样片。**
+
+- **规范默认读取**：涉及 Remotion 实现时，Agent 先定位并阅读官方 `remotion-best-practices` 入口，再读与本次任务有关的分支，无需重复提醒。定位器只报告文件、版本与 hash；找到文件不等于已读或已遵循。缺失会说明，不静默联网安装。
+- **编排提前可见**：实现前展示每镜的时间、意思、主焦点、主效果研究编号与组件名、辅助转场、交接对象、选择原因和阅读窗口。它是开工说明，不新增逐镜审批。
+- **内容决定效果**：数字快照可滚动落定或固定揭露；两期变化须有两份可比证据；关键词建立阅读层级；真实素材在原图内部取景与圈注；原视频已有动作时保持外框稳定。记录近期实际用过的机制，减少机械重复，不随机抽效果、不固定重放 AME 镜头。
+- **保留已选视觉**：字体、字号角色、配色、材质、阴影和素材表现沿用已选基准；按当前内容调整动效选择与衔接路径。数字组件保留边缘渐隐、轻微模糊与分隔符外观，通用组件不能以“升级”为由换掉原片质感。
+- **先样片**：默认 15–20 秒，用户确认表达、可读性与连续性后再扩展；明确要求其他时长或直接整片时按本次要求。技术通过不代替用户验收。
+
+**96 项研究 ≠ 96 套生产模板。** 当前有 **10 个可导入基础组件**（[实际清单](references/production-registry.json)），包括数字滚动、固定数值揭露、数值对照、逐行揭露、素材内部取景、圈注、焦点交接，以及原有关键词窗口、词组节奏、粘土汇合。复杂关系仍需 Agent 定制。
+
+| 镜头与时间（说明性示例） | 内容与焦点 | 主效果 | 辅助 / 交接 | 为什么用 / 阅读窗口 |
+|---|---|---|---|---|
+| S01 · 0–4s | 已核验的当前数字 | #35 NumberReel | #36 圈注来源；#38 交给证据区域 | 强调这个快照；不是增长曲线。完整显露后保留 1.6–3.5s 供读数 |
+| S02 · 4–9s | 截图中的对应证据 | #27 MediaFocus | 同一注视框留在来源上 | 找到原文位置；读字时画面稳定，5–8.5s 阅读 |
+| S03 · 9–16s | 一个短结论 | #31 LineReveal | 有关联才承接，无关联直接切镜 | 先结论后细节；10–15s 阅读与落定 |
+
+这些时间仅演示记录方法，不是通用镜头模板，也不是读者实测标准。脚本输入示例 [semantic-plan.example.json](assets/semantic-plan.example.json) 使用显式测试数据；实际来源、阅读时间和转场由本片内容决定。
+
+### 两套 Skill 与一个运行时
+
+| 层 | 负责什么 |
+|---|---|
+| Motion Skill | 内容判断、镜头选型、阅读时间、对象交接、验收记录 |
+| 官方 Remotion Agent Skills | React 视频、时间轴、素材与 Studio 的实现规范 |
+| Remotion npm 依赖 | 实际预览与渲染；版本继续固定为 4.0.538 |
+
+首次使用，先按下文安装本仓库，再通过官方命令安装 Remotion Agent Skills：
+
+```sh
+npx skills add remotion-dev/skills
+```
+
+这条命令会联网安装到所选 Agent 环境，由使用者主动运行；Motion Skill 不自动替你安装。官方 Skill 正文不随本仓库分发。参考 [官方说明](https://www.remotion.dev/docs/ai/skills) 和 [接入边界](references/remotion-integration.md)。不同 Agent 的安装目录可能不同，可用 `--skills-root` 指定。
+
+```sh
+# 以下在 motion-skill 仓库根目录运行，输出使用新路径
+python3 scripts/motion.py preflight-remotion --project /absolute/project
+python3 scripts/motion.py select-motion assets/semantic-plan.example.json \
+  --out /tmp/motion-selection.json --explain /tmp/motion-shots.md
+```
+
+`select-motion` 接收 **Agent 已核对的语义、来源、素材用途和阅读窗口**，不是原始音视频识别模型，也不会自动改写影片。输出是 `planned_not_wired`；实际导入与调用后另存使用清单、做源码检查和画面复看。未覆盖的关系可以按目录做 custom 实现，不为通过选择器而扭曲内容。详见 [内容到镜头](references/semantic-orchestration.md) 和 [接入组件](references/production-pipeline.md)。
+
+[本地复用与转写缓存](references/local-fastpatch.md) 只保存于使用者本机；公开包没有作者的私人基准、录音或缓存。没有自己的基准时，从新工程或已有公开 reference 开始，不能宣称已复刻私人 AME 原片。
 
 ## 适合谁
 
@@ -43,8 +90,8 @@ Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 
 |---|---|
 | 只有文案，不录音 | 支持 `script` 模式，需 Agent 编排镜头与布局 |
 | 录音＋动效 | 支持 `voice` 模式，原声1×，默认要求同步字幕 |
-| 动效音效（点击、滑动、落定等） | 可作为制作要求；当前无内置音效库、独立开关或自动配音效管线，需另行接入有权使用的音源与时间轴 |
-| 背景音乐 | 可作为制作要求；需另行选曲、确认许可并混音，当前不自动添加 |
+| 动效音效（点击、滑动、落定等） | 可作为制作要求；新工程支持显式 `--audio-kind sfx` 输入；无内置音效库、独立开关或自动配音效，落点与混音需另做 |
+| 背景音乐 | 可作为制作要求；新工程支持显式 `--audio-kind music` 输入；需另行选曲、确认许可并混音，不自动添加 |
 
 **不录口播 ≠ 必须无声，录了口播 ≠ 不能加音效。** 口播、动效音效、背景音乐是三个可分别选择的声音层。当前默认不自动添加音效或音乐；有需要请在提示词中明确，实际工程仍需实现与听检。
 
@@ -99,6 +146,7 @@ Codex需要有可用的联网搜索/下载能力；Skill本身没有内置素材
 | 内容 | 核对后的数量 / 状态 |
 |---|---|
 | 机制研究 | **96 项，19 类**，目录按 ID 对应源码 |
+| 可导入生产组件 | **10 个**；逐个记录实现与研究编号，不自动装配成影片 |
 | 通用语义 renderer | **5 类**：collect / connect / compare / evidence / conclusion |
 | 导演与工程能力 | [12 项能力矩阵](docs/FEATURES.md)，逐项标明通用模板 / reference / 限制 |
 | 本 reference | **7 段语义镜头、25 条字幕、1 张实拍照片、5.4 秒实拍视频** |
@@ -137,7 +185,11 @@ python3 scripts/motion.py doctor --deps "$PWD/node_modules"
 python3 scripts/motion.py new --dest /tmp/my-motion-film --deps "$PWD/node_modules"
 ```
 
-第二条先生成明确标注的**静音结构示例**。真实口播需要已核对的 transcript、story 和字幕数据，再带 `--media`、`--story`、`--transcript`、可选 `--captions` 创建新工程。见 [GETTING_STARTED](docs/GETTING_STARTED.md)。
+第二条先生成明确标注的**静音结构示例**。默认 `build` / `verify:frames` 只处理本片；新工程要浏览研究库时另运行 `npm run build:studies`，修改研究库时运行 `npm run verify:studies`。真实口播需要已核对的 transcript、story 和字幕数据，再带 `--media`、`--story`、`--transcript`、可选 `--captions` 创建新工程。见 [GETTING_STARTED](docs/GETTING_STARTED.md)。
+
+## 检查本次合并
+
+可运行 `npm run verify:production` 检查选型、字幕与隐私边界；`npm run verify:template` 验证新工程。已有 Chrome 时，`npm run verify:components` 用合成数据渲染七个新组件的代表帧，结果仅存本机 `.cache/`。完整命令和已核验范围见 [验证记录](verification/1.1.1-beta.1.md)。
 
 ## 换成你喜欢的配色
 

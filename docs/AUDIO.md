@@ -1,3 +1,5 @@
+> **1.1.1-beta.1 更新**：以下 reference 的原声说明保持有效。新生成工程增加显式 `new --audio-kind voice|sfx|music`（默认 voice）。sfx/music 需要明确 story，不需要伪造转写；这只是已授权音源的输入，不自动选曲、识别拍点或混音。详见 [生产入口](../references/production-pipeline.md#音频入口)。
+
 # 文案、口播、音效与背景音乐
 
 [首页](../README.md) · [提示词](PROMPTS.md) · [开始制作](GETTING_STARTED.md)
