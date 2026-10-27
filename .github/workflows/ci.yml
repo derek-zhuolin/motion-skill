@@ -16,6 +16,10 @@ jobs:
           python-version: '3.12'
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: npm run verify:rules
+      - name: Install audio test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends ffmpeg
       - run: npm run verify:production
       - run: npm run check
       - run: npm run build
