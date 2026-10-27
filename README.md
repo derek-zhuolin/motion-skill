@@ -2,9 +2,9 @@
 
 **给有想法、想表达，但不想出镜的人：用文案或录音，让观点通过画面与动效被看见。**
 
-Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 Remotion 工程**，支持按文稿编排无口播动效，也支持将已有录音编排成视频。默认 **16:9**，当前为 **1.1.1-beta.1 内测版**（整合本地 1.1.1-local.4）。
+Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 Remotion 工程**，支持按文稿编排无口播动效，也支持将已有录音编排成视频。默认 **16:9**，当前为**公开测试版**。具体版本与变更保留在[更新日志](CHANGELOG.md)。
 
-[更新日志](CHANGELOG.md) · [English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
+[本次 Release](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.1-beta.1) · [安装与更新](docs/UPDATING.md) · [更新日志](CHANGELOG.md) · [English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
 
 ## 先看 reference 效果
 
@@ -23,7 +23,7 @@ Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 
 
 本 reference 在 **Codex + GPT-6.1 Sol** 中完成（模型名称按作者提供的标注），本地 Whisper 负责转写，Remotion 负责画面渲染。作者参与了视觉方向、实拍补充、ending 与字幕的反馈。它是一个真实迭代案例，不是“一条 prompt 保证任意音频全自动成片”的能力承诺。
 
-## 本次更新：先讲清镜头，再动手
+## Motion Skill 更新｜更连贯的动效编排
 
 **默认读取 Remotion Best Practices → 提前展示编号镜头表 → 按内容选动效 → 先看 15–20 秒样片。**
 
@@ -178,7 +178,27 @@ npm run render
 
 ## 安装 Skill，制作自己的片子
 
-将整个仓库放到你的 Agent 可读取的 Skill 目录，保持文件结构，显式调用 `/motion-video` 或 `$motion-video`。Codex 的常见安装位置是 `~/.codex/skills/motion-video`；也可以从任何本地目录读取 `SKILL.md`。此步骤不修改 Agent 的全局配置。
+首次安装可使用官方 Skills CLI（Node.js 22.20+），按提示选择你的 Agent：
+
+```sh
+npx skills add derek-zhuolin/motion-skill --skill motion-video -g
+```
+
+通过上述方式安装、且没有在 Skill 文件夹内放自定义改动或私人文件时，之后只更新 Motion Skill：
+
+```sh
+npx skills update motion-video -g
+```
+
+这是已有 Skills CLI 的命令，不是本仓库新增的自动更新器。更新跟随安装来源；上面安装方式跟随仓库默认分支。**改过 Skill、手动复制或使用 Fork 的用户，先看[安装与更新](docs/UPDATING.md)**，不要直接覆盖。项目内安装使用 `-p` 更新；不要省略 `motion-video` 去更新所有 Skill。
+
+**不会操作命令？** 把下面这句话直接发给你的 Agent：
+
+> 请把我的 Motion Skill 更新到 https://github.com/derek-zhuolin/motion-skill 的最新版。先确认实际安装位置和来源，备份并保留我的修改、私人素材和已有视频；有冲突先告诉我。按原安装方式更新，不顺带更新其他 Skill，不上传文件。完成后核对版本与基本检查。
+
+更新后让 Agent 核对实际安装目录里的 `package.json` 和 `CHANGELOG.md`；如果当前会话仍使用旧规则，新开会话后再调用。想接收后续发布消息，可在 GitHub 选择 `Watch → Custom → Releases`；下载过的副本仍需主动更新。
+
+也可以保留原来的完整仓库安装方式，保持文件结构，显式调用 `/motion-video` 或 `$motion-video`。Skills CLI 的 Codex 安装通常在 `~/.agents/skills/motion-video`；手动安装也可能在 `~/.codex/skills/motion-video`。先确认实际使用的目录，避免重复安装；两种方式不会自动互相同步。
 
 ```sh
 python3 scripts/motion.py doctor --deps "$PWD/node_modules"

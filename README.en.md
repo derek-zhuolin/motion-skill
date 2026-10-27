@@ -1,8 +1,8 @@
 # Motion Skill — Voice-to-video for creators who prefer to stay off camera
 
-[中文完整文档](README.md) · [FAQ (中文)](docs/FAQ.md) · [Contributing](CONTRIBUTING.md)
+[Release notes](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.1-beta.1) · [中文完整文档](README.md) · [FAQ (中文)](docs/FAQ.md) · [Contributing](CONTRIBUTING.md)
 
-**Have ideas to share but prefer not to appear on camera? Start with a written idea or a voice recording.** Motion Skill is a Codex / Agent skill and editable Remotion project for combining narration, real-world footage, motion graphics and synchronized captions. It also supports script-driven motion graphics without narration. Current source version: **1.1.1-beta.1**, integrating local **1.1.1-local.4**. See the [changelog](CHANGELOG.md).
+**Have ideas to share but prefer not to appear on camera? Start with a written idea or a voice recording.** Motion Skill is a Codex / Agent skill and editable Remotion project for combining narration, real-world footage, motion graphics and synchronized captions. It also supports script-driven motion graphics without narration. Currently in **public beta**; exact versions remain in the [changelog](CHANGELOG.md).
 
 ## Watch the reference
 
@@ -68,7 +68,15 @@ npm run preview
 
 Open `http://127.0.0.1:4341/`. Export with `npm run render`. Set `REMOTION_BROWSER_EXECUTABLE` if your installed browser is not found. The preparation script extracts narration from the authorized public demo and downloads the attributed reference stock assets; the private original recording is not distributed.
 
-Install the full repository in an Agent-readable skill directory, preserving its structure; the skill name is `motion-video`. See [getting started](docs/GETTING_STARTED.md) for creating your own project.
+For a first install with the official Skills CLI (Node.js 22.20+), run `npx skills add derek-zhuolin/motion-skill --skill motion-video -g` and choose your Agent. Update that managed global install with `npx skills update motion-video -g`; for a project installation use `-p` instead. This follows the original source, normally the default branch, not a stable-release channel. Back up custom changes and private files first: the CLI replaces installed files rather than merging your edits. Manual copies and forks require a separate update path. See [installation and updates](docs/UPDATING.md).
+
+Prefer to ask your Agent? Copy this prompt:
+
+> Update my Motion Skill from https://github.com/derek-zhuolin/motion-skill. Identify the actual installation and source first; back it up and preserve my custom changes, private assets and existing videos. Explain conflicts before merging. Use the existing installation method, leave unrelated skills alone and do not upload files. Verify the installed version and basic checks afterward.
+
+Check `package.json` and `CHANGELOG.md` in the actual installed skill. Start a new Agent session if it still uses older guidance. To receive future release notifications, choose `Watch → Custom → Releases` on GitHub; installed copies still need an explicit update.
+
+The full-repository manual installation remains supported; the skill name is `motion-video`. See [getting started](docs/GETTING_STARTED.md) for creating your own project.
 
 ## What is included, and what is not
 
