@@ -47,4 +47,6 @@
 
 先试听已有授权曲目或经授权生成的配乐，再选择起音与语义事件，使用 [律动 helper](../references/music-driven-motion.md) 驱动对象动作和机位。配音、音乐、SFX按项目显式分轨；本仓库没有自动混音服务。新 [Playground](../examples/rhythm-playground/README.md) 使用合成测试音，不改变旧 reference 的声音。
 
-使用 ACE-Step 前先读 [首次下载与等待说明](ACE_STEP.md)：模型可能占数GB至约10GB或更多，第一次可能等待较久；不要静默安装模型。生成配乐、制作动作音效与选节奏落点是不同步骤。
+需要本地生成音乐，可从 [ACE-Step 官方 GitHub](https://github.com/ace-step/ACE-Step-1.5) 按 [官方中文安装指南](https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/zh/INSTALL.md) 自行安装；安装 Motion Skill 不包含这一步。已装好可复用，也可直接提供有许可的音乐。
+
+**第一次模型下载较大、可能等待很久。** 先读 [下载、空间与等待说明，以及可复制的 Agent 提示词](ACE_STEP.md)，下载前告知使用者；后续通常可复用缓存。生成配乐、制作动作音效与选节奏落点是不同步骤。

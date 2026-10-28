@@ -77,6 +77,8 @@ python3 scripts/transcript_cache.py put --media /absolute/audio --transcript /ab
 
 [律动 Playground](examples/rhythm-playground/README.md) 提供同一时间与测试音的对照；合成测试音不是 ACE-Step 作品。Motion 不内置音乐模型、音效库或自动混音服务。使用 ACE-Step 前须说明 [首次模型下载、等待与效果边界](docs/ACE_STEP.md)，不在未告知时自动下载数 GB 模型。新音源产生后重新检查锚点与混音，保留已经授权的配音。
 
+需要 ACE-Step 时先检查已有安装与模型缓存；缺失则提供 [官方 GitHub](https://github.com/ace-step/ACE-Step-1.5) 与 [中文安装指南](https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/zh/INSTALL.md)，按用户硬件选择安装方式，明确首次下载较大、可能等待很久。程序和模型由使用者从官方来源安装，不随 Motion Skill 分发；下载源码不等于安装完成。已有授权音乐可跳过此步骤。
+
 ## 只检查本次改动，不绕回整座研究库
 
 默认先交 15–20 秒、包含完整意思的真实内容样片。用户验收通过后才扩整片；明确要求其他片长或直接整片时，以该次用户要求为准，不额外设确认。验收按 `references/pilot-acceptance.md`，技术检查通过不自动将用户验收改成 accepted。
