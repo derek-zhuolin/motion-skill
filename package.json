@@ -12,7 +12,11 @@
     "preview": "python3 examples/voice-to-video/serve.py --port 4341",
     "render": "npm --prefix examples/voice-to-video run render",
     "verify:production": "python3 -m unittest discover -s scripts -p \"test_*.py\"",
-    "verify:components": "node scripts/verify-components.mjs"
+    "verify:components": "node scripts/verify-components.mjs",
+    "verify:rhythm": "node scripts/test-rhythm.mjs && tsc -p examples/rhythm-playground/tsconfig.json",
+    "build:rhythm": "node examples/rhythm-playground/build.mjs",
+    "preview:rhythm": "python3 -m http.server 4343 --bind 127.0.0.1 --directory examples/rhythm-playground/dist",
+    "verify:rhythm-build": "node scripts/verify-rhythm-build.mjs"
   },
   "dependencies": {
     "remotion": "4.0.538",
@@ -28,7 +32,7 @@
     "@types/react": "19.2.7",
     "esbuild": "0.28.1"
   },
-  "version": "1.1.1-beta.1",
+  "version": "1.2.0-beta.1",
   "engines": {
     "node": ">=22"
   }

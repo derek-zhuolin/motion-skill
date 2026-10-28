@@ -1,0 +1,70 @@
+{
+  "fixture_notice": "Authored synthetic planning fixture; not a real product claim or a rendering proof. This extension does not modify the legacy selector schema.",
+  "duration": 8,
+  "shots": [
+    {
+      "id": "organize",
+      "meaning": "把散开的字段归入同一个记录",
+      "focus_object": "record",
+      "object_ids": ["record", "cursor"]
+    },
+    {
+      "id": "inspect",
+      "meaning": "保留同一记录，停稳后查看有疑问的字段",
+      "focus_object": "record",
+      "object_ids": ["record", "cursor"]
+    }
+  ],
+  "orchestration": {
+    "version": 1,
+    "events": {
+      "start": 0,
+      "organized": 1.6,
+      "organizedRead": 3.5,
+      "handoff": 4,
+      "inspectMounted": 3.6,
+      "inspectReady": 4,
+      "inspectRead": 7.6,
+      "end": 8
+    },
+    "objects": [
+      {"id": "record", "space": "world", "geometry": [{"property": "transform", "owner": "scene.recordAt"}]},
+      {"id": "cursor", "space": "world", "geometry": [{"property": "transform", "owner": "scene.cursorAt"}]}
+    ],
+    "evidence": [],
+    "shots": [
+      {
+        "shotId": "organize",
+        "role": "process",
+        "narration": "先整理资料。",
+        "visual": "三个字段沿不同路径归到同一条记录，接触后停稳。",
+        "annotation": "过程示意，不代表已经完成真实任务",
+        "startEvent": "start",
+        "endEvent": "handoff",
+        "readableFromEvent": "organized",
+        "readableUntilEvent": "organizedRead",
+        "minReadSeconds": 1.5,
+        "readBasis": "字段归位后保留完整阅读窗口；仍需真人看片。",
+        "motionIntent": "group-and-settle",
+        "reference": {"kind": "adapter", "id": "clay-join", "version": "registry-v1", "entry": "assets/runtime/src/production/Mechanisms.tsx#ClayJoin", "skin": "existing theme; keep material and typography"},
+        "handoff": {"to": "inspect", "event": "handoff", "objectId": "record", "kind": "focus", "reason": "跟随同一条记录查看字段，不换一张无关卡片。"}
+      },
+      {
+        "shotId": "inspect",
+        "role": "context",
+        "narration": "有疑问的地方，再核对。",
+        "visual": "焦点落在记录内的异常字段，其余内容让位，镜头停稳。",
+        "annotation": "异常标记只提示待查，不表示任务失败或成功。",
+        "startEvent": "inspectMounted",
+        "endEvent": "end",
+        "readableFromEvent": "inspectReady",
+        "readableUntilEvent": "inspectRead",
+        "minReadSeconds": 2,
+        "readBasis": "保留稳定阅读，不要求每拍都有运动。",
+        "motionIntent": "hold",
+        "reference": {"kind": "custom", "id": "record-inspection", "version": "design-1", "entry": "scene.tsx#RecordInspection", "skin": "same record material", "reason": "按具体字段布局组合焦点与注解；该入口待项目实现，不是公开包已接线的组件。"},
+        "handoff": null
+      }
+    ]
+  }
+}

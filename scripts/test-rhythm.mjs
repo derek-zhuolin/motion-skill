@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {mkdtemp,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {resolve,join} from 'node:path';
+import {pathToFileURL,fileURLToPath} from 'node:url';
+const root=resolve(fileURLToPath(new URL('..',import.meta.url)));
+const at=process.argv.indexOf('--deps');const deps=at>=0?resolve(process.argv[at+1]):resolve(root,'node_modules');
+const require=createRequire(join(deps,'_motion_test.cjs'));const {build}=require('esbuild');
+const temp=await mkdtemp(join(tmpdir(),'motion-rhythm-'));
+try{
+ await build({entryPoints:[join(root,'assets/runtime/src/production/rhythm.ts')],bundle:true,platform:'node',format:'esm',outfile:join(temp,'rhythm.mjs'),logLevel:'silent'});
+ const {createRhythmScore,cueProgress,sampleRhythmTrack,sampleRhythmCamera}=await import(pathToFileURL(join(temp,'rhythm.mjs')));
+ const cues=[['start',0],['arrive',1],['read',3],['end',4]].map(([id,at])=>({id,at,source:'editorial'}));
+ const score=createRhythmScore(4,cues);
+ const keys=[{event:'start',value:0},{event:'arrive',value:10},{event:'read',value:10},{event:'end',value:0}];
+ assert.equal(sampleRhythmTrack(2,score,keys,0),10,'reading hold stays exact');
+ const order=[3.8,.4,2.2,0,4,.4];assert.equal(sampleRhythmTrack(order[1],score,keys,0),sampleRhythmTrack(order[5],score,keys,0),'seek deterministic');
+ assert.equal(sampleRhythmTrack(.6,score,keys,7,{enabled:false}),7);
+ assert.equal(sampleRhythmTrack(.6,score,keys,7,{strength:0}),7);
+ assert.equal(sampleRhythmTrack(-1,score,keys,0),0);assert.equal(sampleRhythmTrack(5,score,keys,0),0);
+ for(const t of [1,3])assert.ok(Math.abs(sampleRhythmTrack(t-.0001,score,keys,0)-sampleRhythmTrack(t+.0001,score,keys,0))<.001,'boundary continuous');
+ assert.equal(cueProgress(-1,score,'start','arrive'),0);assert.equal(cueProgress(2,score,'start','arrive'),1);
+ const tracks={x:keys,y:keys,scale:keys.map(k=>({...k,value:1+k.value/100}))};
+ assert.deepEqual(sampleRhythmCamera(2,score,tracks,{x:800,y:450,scale:1},{enabled:false}),{x:800,y:450,scale:1});
+ assert.throws(()=>createRhythmScore(4,[...cues,cues[0]]),/duplicate/);
+ assert.throws(()=>createRhythmScore(4,[{id:'bad',at:NaN,source:'editorial'}]),/finite/);
+ assert.throws(()=>createRhythmScore(4,[{id:'bad',at:5,source:'editorial'}]),/outside/);
+ assert.throws(()=>cueProgress(0,score,'read','arrive'),/advance/);
+ assert.throws(()=>sampleRhythmTrack(0,score,[{event:'missing',value:0},keys[1]],0),/Unknown/);
+ assert.throws(()=>sampleRhythmTrack(0,score,[keys[1],keys[0]],0),/increasing/);
+ assert.throws(()=>sampleRhythmTrack(Infinity,score,keys,0),/finite/);
+ assert.throws(()=>sampleRhythmCamera(1,score,{...tracks,scale:keys},{x:0,y:0,scale:1}),/positive/);
+ console.log('rhythm: deterministic seek, hold, boundaries, disabled pose and invalid input tests passed');
+}finally{await rm(temp,{recursive:true,force:true});}

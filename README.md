@@ -4,7 +4,29 @@
 
 Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 Remotion 工程**，支持按文稿编排无口播动效，也支持将已有录音编排成视频。默认 **16:9**，当前为**公开测试版**。具体版本与变更保留在[更新日志](CHANGELOG.md)。
 
-[本次 Release](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.1-beta.1) · [安装与更新](docs/UPDATING.md) · [更新日志](CHANGELOG.md) · [English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
+[本次 Release](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.2.0-beta.1) · [安装与更新](docs/UPDATING.md) · [更新日志](CHANGELOG.md) · [English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
+
+## 本次更新：工程化编排与音乐律动
+
+**先让画面表达清楚，再让动作跟音乐呼吸。** 新增能力都是可选扩展，不重写旧工程或替换已选风格。
+
+1. **工程断点**：重点运镜与交接检查；显式文件指纹检测旧产物/旧音轨报告；计划、接线、画面、播放、用户认可分开记录。
+2. **编排与保真**：同一命名事件表生成镜头表与风险窗口；过程不冒充完成；新增人工选音乐起音的律动 helper，支持分组、停顿和镜头变化。
+3. **公开案例与迁移**：无私人内容的发票/库存两变体 Playground，保留旧 reference 和10个稳定 adapter；新扩展按项目选择启用。
+
+[三步升级与实际边界](docs/ORCHESTRATION_UPGRADE.md) · [律动 Playground 源码与启动](examples/rhythm-playground/README.md) · [下载预构建试验包（约0.9 MB）](https://github.com/derek-zhuolin/motion-skill/releases/download/v1.2.0-beta.1/motion-rhythm-playground.zip) · [编排合同](references/orchestration-contract.md) · [本版验证](verification/1.2.0-beta.1.md)
+
+```sh
+# 在仓库根目录；复用已安装且版本匹配的依赖则跳过 npm ci
+npm ci
+npm run build:rhythm
+npm run preview:rhythm
+# 浏览器打开 http://127.0.0.1:4343
+```
+
+示例含可播放、可拖动的同时间轴对照；音源为源码生成的 **116 BPM 测试节奏，并非 ACE-Step 作品**。它验证可复现的编排与时间，不承诺用户成片品质。
+
+**ACE-Step 首次使用提示：模型下载较大，核心模型约10GB，所选组合与依赖可能更多；首次下载、加载和音乐生成分别耗时。** 本机29秒配乐单次生成约4分4秒，不含下载，不能推广为性能保证。试听后再编排，不保证自动对准强拍。有现成授权音乐可跳过模型安装。详见 [下载、等待和效果说明](docs/ACE_STEP.md)。
 
 ## 先看 reference 效果
 

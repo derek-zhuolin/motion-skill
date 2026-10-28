@@ -25,4 +25,7 @@ jobs:
       - run: npm run build
       - run: npm run verify:frames
       - run: npm run verify:template
+      - run: npm run verify:rhythm
+      - run: npm run build:rhythm
+      - run: npm run verify:rhythm-build
       - run: npm run verify:privacy

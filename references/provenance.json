@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1-beta.1",
+  "version": "1.2.0-beta.1",
   "display_name": "Motion Skill",
   "invocation": "motion-video",
   "motion_studies": 96,
@@ -73,6 +73,12 @@
     "model_calls": 0,
     "plan_is_not_wiring_evidence": true
   },
-  "integrated_from_local": "1.1.1-local.4",
-  "public_base_commit": "9c6b308087f246f366b4750a560cbede631e9e95"
+  "integrated_from_local": "selected focus.2 and rhythm experiment changes; private cases excluded",
+  "public_base_commit": "761d11f7b4af2b5d7acd20da62c00884d738ebdd",
+  "optional_extensions": {
+    "focus_camera": "0.1",
+    "orchestration": "1",
+    "music_driven_motion": "1"
+  },
+  "music_generation_bundled": false
 }

@@ -1,0 +1,12 @@
+{
+  "width": 1600, "height": 900, "duration": 12, "maxZoom": 1.6,
+  "safeArea": {"x": 80, "y": 145, "width": 1440, "height": 600},
+  "protectedRegions": [{"x":0,"y":750,"width":1600,"height":150}],
+  "targets": [{"id":"event-record","kind":"object","rect":{"x":917,"y":305,"width":166,"height":230}}],
+  "cues": [{
+    "id":"one-important-clue","keyword":"异常事件","targetId":"event-record","mode":"focus-return",
+    "start":3,"arrive":3.5,"holdUntil":5,"end":5.6,"zoom":1.35,"minReadSeconds":1.2,
+    "anchor":{"x":736,"y":396},
+    "annotation":{"label":"事件记录 · 结构示意","detail":"时间 / 对象 / 事件","width":400,"height":94}
+  }]
+}

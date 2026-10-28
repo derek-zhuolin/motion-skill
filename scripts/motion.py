@@ -101,6 +101,8 @@ def new_project(args):
     if transcript and not transcript.is_file():
         raise ValueError("Transcript missing")
     if report and not args.story and audio_kind == 'voice':
+        if not getattr(args, 'captions', None):
+            draft.pop('captions', None)
         draft = {**draft, "mode": "voice", "duration": report["duration"],
                  "scenes": [], "source": {"transcript_verified": False}}
     if report and not report["has_audio"]:

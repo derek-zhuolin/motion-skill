@@ -5,7 +5,7 @@ description: 显式调用 Motion Skill / Motion video 时，优先继承已选�
 
 # Motion Skill · Motion video
 
-公开测试版 **1.1.1-beta.1**，整合本地 `1.1.1-local.4`。旧公开示范片与版本保留。
+公开测试版 **1.2.0-beta.1**。增加可选重点运镜、编排证据与音乐驱动律动；旧公开示范片、10个稳定 adapter 和既有工程保留。
 
 ## 默认入口：规范 → 编排清单 → 实现
 
@@ -54,6 +54,28 @@ python3 scripts/transcript_cache.py put --media /absolute/audio --transcript /ab
 先一个主焦点，再安排对象交接。保护正在读的对象，不冻结整幅画面；允许配角提前准备。转场必须解释深入、选择、联系、对比等语义，不能每句重开“标题＋中央卡片”。音频、文字、遮罩与机位共用命名事件；需要新的组合时才读 `references/motion-combinations.md`。继承好片的字体、材质、运动习惯与连续性；镜头结构按当前语义重选。复用轨道原件，不固定使用旧片的镜头顺序。先写两种简短构思及取舍，再实现更适合当前意思的一种；不同关系不要总用同一组合。
 
 真实素材和原 Logo 保留身份与来源；Interflow 默认蓝 #0070DB、黑 #141414、白和灰，不自动改米白。粘土适度，禁止为了动效加无意义漂移。音乐和效果音按已有授权复用；没有音源就明确静音，不编造节拍识别或效果数据。
+
+## 可选：重点词运镜（可选 beta）
+
+只有用户需要突出某个重点，或当前语义确实需要局部证据时，才按 [重点词运镜扩展](references/focus-camera.md) 显式启用。保留 Motion 材质与动作，只补两类景别：局部停留后拉远揭示；全貌推近关键词对应对象、停稳短注解，再退回全貌。不要逐句缩放，不默认开启整片机位变化。关键词绑定具体对象，必要字幕留在屏幕层；不默认给整片加品牌角标或页脚，品牌按本片目的出现。注解补充结构或边界，避免复述口播。未绑定或无安全阅读位置时不强行添加。
+
+扩展模块：`production/focus-camera.ts`、`production/FocusCamera.tsx`；新工程随 runtime 提供但默认关闭，既有工程可运行 `scripts/install_focus_camera.py --project /absolute/project`，冲突即停止，不自动改片。先做同帧开/关 Playground 与前中后检查，同帧审片后再用于正式影片。本版是 custom experimental extension，不增加稳定 registry 的 10 个 adapter，不声称 selector 已执行或自动识别重点词。
+
+## 混合媒体与任务交接：先检查耦合
+
+局部交接或真实视频卡顿返修，按 [交接编排与检查](references/handoff-orchestration.md) 明确过程/结果证据、单一事件图、可读覆盖、媒体预热与几何归属；再运行 `scripts/validate_handoffs.py plan.json --out report.json`。输入/切换等过程不能用成功对号代替；完成标识须有真实结果证据。复用组件时核对内部时钟，不让焦点框、光标和相机各自重新缓动。真实视频只预热媒体节点，保留原入点与速度。
+
+合同检查只核声明关系；还要看实际接线和原速播放的 waiting/resume 事件。局部返修保留其他镜头、声音和来源基准；不为通过检查重做整片，不把合同通过当作流畅或审美验收。
+
+## 可选：工程编排与音乐律动
+
+局部修复先回答“画面承担什么动作”，再调机位；播放图标不能代替任务过程，成功标识必须有结果证据。语义、组件来源、对象职责与几何 owner 可用现有 semantic-plan 的 `orchestration` v1 扩展记录，运行 `scripts/orchestration.py` 生成 SHOTBOOK 和风险窗口。详见 [编排合同](references/orchestration-contract.md)。
+
+发布预览前，对显式源码、音轨、素材、配置和构建产物建立指纹；任一依赖改变，旧报告标 stale。五层状态分开：计划、接线、画面、播放、用户接受；哈希一致不自动升级视觉状态。按 [三步工程化升级](docs/ORCHESTRATION_UPGRADE.md) 做范围明确的回归，不强制全项目重做。
+
+用户要跟音乐调整画面时，先选定/试听已有授权音乐，或在明确授权后使用外部生成服务；再挑真实起音候选、口播锚点和语义停顿。使用 [音乐驱动编排](references/music-driven-motion.md) 的可选 helper，以 composition 时间控制分组、停留和机位，真实视频和配音不随音乐全局变速。不要每拍都缩放，不把频谱峰值说成可靠强拍识别。没有音乐时可静音制作。
+
+[律动 Playground](examples/rhythm-playground/README.md) 提供同一时间与测试音的对照；合成测试音不是 ACE-Step 作品。Motion 不内置音乐模型、音效库或自动混音服务。使用 ACE-Step 前须说明 [首次模型下载、等待与效果边界](docs/ACE_STEP.md)，不在未告知时自动下载数 GB 模型。新音源产生后重新检查锚点与混音，保留已经授权的配音。
 
 ## 只检查本次改动，不绕回整座研究库
 

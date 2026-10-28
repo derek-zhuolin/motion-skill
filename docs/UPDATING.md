@@ -1,6 +1,6 @@
 # 安装与更新
 
-[回到首页](../README.md) · [本次 Release](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.1.1-beta.1) · [更新日志](../CHANGELOG.md)
+[回到首页](../README.md) · [本次 Release](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.2.0-beta.1) · [更新日志](../CHANGELOG.md)
 
 更新用一句话：**“把我的 Motion Skill 更新到官方仓库最新版，先备份并保留我的修改。”**
 
@@ -60,3 +60,9 @@ npx skills update motion-video -p
 2026-10-27 按官方文档及本机 Skills CLI **1.7.4** 核对；独立项目中验证安装与定向更新，不操作现有全局 Skill。CLI 文档与实现有一处差异：该版本的 `check`、`update`、`upgrade` 进入同一更新流程。因此这里**不提供 `skills check` 作为只读检查命令**，也不杜撰 `/update`、`motion update` 或尚未实现的快捷键。
 
 官方参考：[Skills CLI](https://github.com/vercel-labs/skills) · [命令文档](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) · [GitHub Fork 同步](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/syncing-a-fork)。CLI 后续版本可能改变行为；维护这份说明时同时核对实际实现，不能只复制文档。
+
+## 1.2.0-beta.1 迁移范围
+
+现有作品无需重建；新扩展不会自动改写旧场景。新项目可从runtime使用focus/rhythm模块，已有项目先在副本选择性导入，核对依赖与同名文件。`install_focus_camera.py` 遇到不同文件会拒绝覆盖。编排合同是既有semantic-plan的可选version=1扩展；不要为此重做已认可镜头。
+
+克隆声音、素材、缓存、`.local`和私人基准留在原处。已装local补丁的使用者先备份，比较代码/引用再合并；不要直接用Skills CLI覆盖定制目录。重新构建后生成新指纹与审片记录，旧报告不能用于新版本。详见 [三步升级](ORCHESTRATION_UPGRADE.md)。

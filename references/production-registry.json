@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1-beta.1",
+  "version": "1.2.0-beta.1",
   "representation_note": "Production adapters are reusable primitives; Agent still designs the narrative and trajectories. SVG clay simulates volume and is not mesh 3D.",
   "adapters": [
     {

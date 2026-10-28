@@ -20,9 +20,11 @@ def ffprobe_binary():
 patterns={'home_path':re.compile(r'/(?:Users|home)/[^\s/"\']+/'),'private_key':re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),'credential':re.compile(r'(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{24,})'),'email':re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')}
 issues=[];count=0
 for p in files():
+ rel=p.relative_to(ROOT).as_posix()
+ if p.is_symlink():
+  count+=1;issues.append({'file':rel,'kind':'symlink'});continue
  if not p.is_file():continue
- rel=p.relative_to(ROOT).as_posix();count+=1
- if p.is_symlink():issues.append({'file':rel,'kind':'symlink'});continue
+ count+=1
  if any(part in {'.local','.cache','node_modules','__pycache__','backups'} for part in p.relative_to(ROOT).parts):issues.append({'file':rel,'kind':'local_cache_or_backup'})
  if p.suffix.lower() in {'.mp4','.mov','.webm','.mkv','.aac','.flac','.ogg'} and rel!='demo/motion-skill-reference.mp4':issues.append({'file':rel,'kind':'unreviewed_source_media'})
  if p.name.startswith('.env') or p.suffix.lower() in {'.m4a','.wav','.mp3','.pem','.key'}:issues.append({'file':rel,'kind':'private_source_or_secret_file'})

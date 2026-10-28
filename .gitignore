@@ -1,3 +1,4 @@
+node_modules
 node_modules/
 .cache/
 __pycache__/
@@ -26,3 +27,6 @@ evidence/
 outputs/
 backups/
 *.zip
+
+# Generated rhythm demo; build from source for the exact revision
+examples/rhythm-playground/site/

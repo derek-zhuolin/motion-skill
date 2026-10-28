@@ -1,0 +1,11 @@
+{
+  "version":1,"fps":30,"clock":"composition",
+  "boundaries":[{
+    "id":"task-to-evidence","clock":"composition","usesMountClock":false,
+    "geometryOwner":"shared-input-state","nestedInterpolation":false,
+    "role":"process","componentRole":"process-indicator","component":"field-focus-rail","completionEvidence":false,
+    "handoff":"shared-carrier","cameraFocusAt":3,
+    "outgoing":{"visibleUntil":3.2,"readableUntil":3},
+    "incoming":{"visibleFrom":2.7,"readableFrom":3,"mediaStart":3,"premountSeconds":1.2}
+  }]
+}
