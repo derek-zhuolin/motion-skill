@@ -1,0 +1,67 @@
+.fusion-film{position:relative;width:1280px;height:720px;background:#f6f8fb;overflow:hidden;color:#23272e;font-family:InterflowCN,-apple-system,sans-serif}
+.fusion-film .ss-stage{overflow:hidden;background:#f6f8fb;--ss-font:InterflowCN,-apple-system,sans-serif;--ss-text-strong:#252b34;--ss-text:#77818f;--ss-text-faint:#9ba5b3;--ss-radius-window:16px}
+/* There is no browser-time motion in this adapter. Native kit markup stays
+   intact; the film frame supplies all moving style properties. */
+.fusion-film *,.fusion-film *::before,.fusion-film *::after{animation:none!important;transition:none!important;box-sizing:border-box}
+.fusion-overline{position:absolute;left:76px;top:30px;font-size:25px;font-weight:600;letter-spacing:-.035em;color:#313944}
+.fusion-window{position:absolute;box-shadow:0 0 0 1px #273c5812,0 25px 60px -25px #1e38574a!important;overflow:hidden}
+.fusion-window .ss-window__heading{font-size:16px;font-weight:550}
+.fusion-window .ss-window__bar{padding-right:24px}
+.fusion-body{position:relative!important;height:calc(100% - 38px);overflow:visible!important;background:#fff}
+.fusion-toolbar{display:flex;align-items:center}
+.fusion-share-trigger{display:flex;gap:9px;align-items:center;color:#47596e;font-size:16px;border:1px solid #dce5ef;padding:7px 14px;border-radius:7px;line-height:1}
+.fusion-form{position:absolute;left:72px;right:72px;top:58px;will-change:opacity,translate}
+.fusion-form-kicker{font-size:17px;color:#8c97a5;margin-bottom:14px}
+.fusion-form-heading{font-size:37px;line-height:1.3;letter-spacing:-.05em;font-weight:650;display:block;color:#222a34}
+.fusion-field-wrap{margin-top:44px}
+.fusion-title-field{--ss-control:62px;--ss-radius-md:11px;gap:12px}
+.fusion-title-field .ss-field__label{font-size:17px;font-weight:500;color:#667485}
+.fusion-title-field .ss-field__box{font-size:25px;padding:0 18px}
+.fusion-title-field .ss-field__value{height:35px}
+.fusion-title-field .ss-field__caret{height:25px!important}
+.fusion-field-hint{display:block;font-size:15px;margin-top:12px;color:#8b96a4}
+.fusion-form-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:38px;gap:24px}
+.fusion-preview{font-size:17px;color:#7d8998;display:flex;flex-direction:column;gap:7px}
+.fusion-preview-label{font-size:12px;letter-spacing:.08em;color:#a1a9b4}
+.fusion-create{height:54px;padding:0 23px;display:flex;align-items:center;gap:34px;color:white;border-radius:10px;font-size:19px;line-height:1;font-weight:550;box-shadow:0 4px 9px #0070db1a;flex:none}
+.fusion-form-foot{display:flex;align-items:center;gap:8px;color:#a0a9b3;font-size:13px;margin-top:43px;padding-top:22px;border-top:1px solid #eff2f6}
+.fusion-project{position:absolute;left:70px;right:70px;top:37px;will-change:opacity,translate}
+.fusion-project-kicker{display:flex;align-items:center;gap:10px;font-size:14px;color:#929eac;line-height:1.3}
+.fusion-project-heading{display:block;font-size:34px;font-weight:650;letter-spacing:-.045em;margin-top:16px;color:#222c39;line-height:1.3}
+.fusion-project-meta{display:flex;align-items:center;gap:13px;font-size:15px;color:#8e9aa8;margin-top:12px}
+.fusion-meta-divider{width:3px;height:3px;border-radius:50%;background:#bcc5cf}
+.fusion-list-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e9eef4;margin-top:37px;padding-bottom:14px;color:#39495b;font-size:18px;font-weight:550}
+.fusion-list-head>span:last-child{font-size:13px;font-weight:400;color:#98a3b1}
+.fusion-list{position:relative;height:258px;margin-top:17px}
+.fusion-slot{position:absolute;left:0;right:0;top:0;height:80px;transform-origin:center;will-change:translate,scale}
+.fusion-task-row{height:76px;border:1px solid #edf0f4;border-radius:12px;--ss-row-title:23px;--ss-row-line:30px;--ss-row-gap:0px;column-gap:16px;padding-inline:21px!important}
+.fusion-task-row .ss-row__title{font-weight:500;letter-spacing:-.025em}
+.fusion-row-end{display:flex;align-items:center;gap:30px}
+.fusion-row-end .ss-badge{font-size:12px;padding:6px 11px}
+.fusion-grip{display:grid;place-items:center;width:20px;height:30px;color:#acb6c3}
+.fusion-add-row{display:flex;align-items:center;gap:11px;color:#9ba7b5;font-size:17px;height:46px;padding-left:22px;margin-top:3px}
+.fusion-project-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eef1f5;padding-top:24px;margin-top:14px;color:#a1abb7;font-size:12px}
+.fusion-save-indicator{display:flex;gap:7px;align-items:center}
+.fusion-share-pop{position:absolute;z-index:10;background:white;border:1px solid #dce4ed;border-radius:14px;padding:25px 24px 20px;box-shadow:0 22px 55px -13px #1d365433,0 3px 9px #1b365415;transform-origin:top right;will-change:opacity,translate,scale}
+.fusion-pop-title{display:flex;justify-content:space-between;align-items:center;font-size:23px;color:#2b3542;font-weight:600;line-height:1.3}
+.fusion-pop-title>.ss-icon{color:#9ba7b5}
+.fusion-pop-project{font-size:15px;color:#8f9ba9;margin-top:7px}
+.fusion-pop-rule{height:1px;background:#edf1f5;margin-top:19px;margin-bottom:20px}
+.fusion-pop-label{font-size:13px;color:#8c98a7;margin-bottom:8px}
+.fusion-audience{display:flex;align-items:center;gap:10px;font-size:18px;color:#405166;background:#f5f7fa;border:1px solid #e6ecf2;border-radius:9px;height:53px;padding:0 13px}
+.fusion-audience>.ss-icon:last-child{margin-left:auto;color:#9aa8b7}
+.fusion-audience-icon{display:grid;place-items:center;color:#76889d}
+.fusion-pop-summary{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:15px;font-size:13px;color:#9aa6b5}
+.fusion-pop-summary .ss-badge{font-size:11px;padding:4px 7px;color:#7f8b9b}
+.fusion-send-button{position:relative;height:52px;display:grid;place-items:center;margin-top:23px;border-radius:9px;font-size:17px;line-height:1.3;font-weight:550}
+.fusion-send-idle,.fusion-send-done{position:absolute;display:flex;align-items:center;gap:10px}
+.fusion-pop-confirm{height:18px;margin-top:13px;display:flex;align-items:center;justify-content:center;color:#8fa18e;font-size:11px}
+.fusion-cursor{position:absolute;width:0;height:0;z-index:100;pointer-events:none;transform-origin:0 0}
+.fusion-cursor .ss-cursor{display:block!important}
+.fusion-cursor .ss-cursor__press{transform:none!important}
+.fusion-film-note{position:absolute;right:28px;bottom:16px;color:#a1acbb;font-size:11px;letter-spacing:.02em}
+
+.fusion-create{width:212px;justify-content:space-between;gap:12px}.fusion-create-labels{position:relative;display:block;width:115px;height:25px;line-height:25px}.fusion-create-labels>.ss-text{position:absolute;inset:0}.fusion-send-idle>.ss-text{width:112px;text-align:left}.fusion-send-done>.ss-text{width:119px;text-align:left}
+
+/* Theme/feedback geometry is owned by this adapter, not a browser clock. */
+.fusion-film{font-family:var(--ss-font,InterflowCN,sans-serif)}.fusion-film .ss-stage{--ss-font:inherit}.fusion-create{box-shadow:0 4px 9px color-mix(in srgb,var(--ss-accent) 12%,transparent)}.fusion-send-idle>.ss-text,.fusion-send-done>.ss-text{width:auto;white-space:nowrap}

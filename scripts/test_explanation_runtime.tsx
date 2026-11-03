@@ -1,0 +1,20 @@
+/** CPU-only React markup regression; no pixels, video render, browser or model call. */
+import assert from 'node:assert/strict';
+import React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {DocumentFilter} from '../assets/runtime/src/production/ExplanationFilm';
+import {ExplanationPlan} from '../assets/runtime/src/production/explanation-types';
+const object={kind:'document',owner:'原文',title:'两段原文',segments:[{id:'a',text:'内容 A'},{id:'b',text:'内容 B'}]} as const;
+const base={object_id:'doc',cue_ids:['cue-1'],meaning:'定位原文',owner:'原文',uses:[],handoff_from:null,component:'DocumentFilter',readable_window:[3,4]};
+const split={...base,id:'split',relation:'split',before:'whole',after:'parts',start:0,end:2,start_frame:0,end_frame:60,action_window:[.1,1.1]};
+const first={...base,id:'first',relation:'filter',before:'parts',after:'selected-a',selected_ids:['a'],start:2,end:4,start_frame:60,end_frame:120,action_window:[2.1,3]};
+const next={...first,id:'next',before:'selected-a',after:'still-a',start:4,end:6,start_frame:120,end_frame:180,action_window:[4.1,5]};
+const plan={objects:{doc:object},events:[split,first,next],theme:{blue:'#2055C9',ink:'#162B36',paper:'#F3F7FC',green:'#C9F176'}} as unknown as ExplanationPlan;
+const picture=(event:typeof first,t:number)=>renderToStaticMarkup(<DocumentFilter object={plan.objects.doc} event={event as any} plan={plan} t={t}/>);
+assert.ok(picture(next,4)===picture(first,3.99),'A following filter must start at the previous visible selection');
+assert.ok(picture(next,5.5)===picture(first,3.99),'Repeating the same selection must not reset and animate from the unfiltered state');
+const changed={...next,selected_ids:['b']};
+const rowTransforms=(html:string)=>Object.fromEntries([...html.matchAll(/data-object="(doc-[ab])"[^>]*transform="([^"]+)"/g)].map(m=>[m[1],m[2]]));
+assert.deepEqual(rowTransforms(picture(changed,4)),rowTransforms(picture(first,3.99)),'Changing selection starts from the actual prior row positions');
+assert.ok(rowTransforms(picture(changed,5.5))['doc-b'].includes('translate(1040 460)'),'The next selected row reaches the focus position');
+console.log('Document filter handoff: 4 runtime assertions passed');

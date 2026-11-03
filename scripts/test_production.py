@@ -24,6 +24,16 @@ class ProductionRegression(unittest.TestCase):
         return audit_production(self.manifest,self.root,self.registry)
     def test_wired(self):
         self.assertFalse(self.audit()['blocking'])
+    def test_ui_extension_uses_real_caller_without_claiming_study_id(self):
+        (self.root/'src/production/ProductUIFilm.tsx').write_text('export function ProductUIFilm(){}')
+        (self.root/'src/Film.tsx').write_text("import {ProductUIFilm} from './production/ProductUIFilm'; const film=<ProductUIFilm/>;")
+        self.manifest['mechanisms'][0]['adapter']='stageshow-ui-flow'
+        result=self.audit();self.assertFalse(result['blocking']);self.assertIsNone(result['wired'][0]['study_id'])
+    def test_ui_extension_name_only_still_rejected(self):
+        (self.root/'src/production/ProductUIFilm.tsx').write_text('export function ProductUIFilm(){}')
+        (self.root/'src/Film.tsx').write_text('const label="ProductUIFilm";')
+        self.manifest['mechanisms'][0]['adapter']='stageshow-ui-flow'
+        self.assertTrue(self.audit()['blocking'])
     def test_unused_reference_rejected(self):
         self.manifest['mechanisms'][0]['adapter']='study-only-69'
         self.assertTrue(self.audit()['blocking'])
@@ -43,7 +53,7 @@ class ProductionRegression(unittest.TestCase):
         self.assertTrue(self.audit()['blocking'])
     def media_args(self, kind):
         deps=self.root/'deps'
-        for name, version in [('remotion','4.0.538'),('@remotion/player','4.0.538'),('react','19.2.3')]:
+        for name, version in [('remotion','4.0.538'),('@remotion/player','4.0.538'),('react','19.2.3'),('react-dom','19.2.3'),('lucide-react','1.61.0')]:
             folder=deps/name;folder.mkdir(parents=True,exist_ok=True)
             (folder/'package.json').write_text(json.dumps({'version':version}))
         audio=self.root/'effect.wav'

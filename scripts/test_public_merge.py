@@ -14,7 +14,7 @@ class PublicMergeTests(unittest.TestCase):
         deps = root / 'deps'
         for name, version in {'remotion':'4.0.538', '@remotion/player':'4.0.538',
                               '@remotion/bundler':'4.0.538', '@remotion/renderer':'4.0.538',
-                              'react':'19.2.3'}.items():
+                              'react':'19.2.3','react-dom':'19.2.3','lucide-react':'1.61.0'}.items():
             p = deps / name / 'package.json'
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps({'version':version}))
@@ -30,6 +30,19 @@ class PublicMergeTests(unittest.TestCase):
             motion.new_project(args)
             self.assertEqual(json.loads((dest/'src/compiled-plan.json').read_text())['captions'],captions)
             self.assertIn('<CaptionFrame', (dest/'src/DirectedFilm.tsx').read_text())
+
+    def test_example_opt_out_does_not_disable_voice_captions(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); media = root / 'voice.wav'; media.write_bytes(b'fixture')
+            args = SimpleNamespace(dest=str(root/'film'), deps=str(self.make_deps(root)),
+                                   media=str(media), story=None, transcript=None,
+                                   captions=None, audio_kind='voice')
+            with patch.object(motion, 'probe', return_value={'duration':2,'has_audio':True,'has_video':False}), \
+                 patch.object(motion.subprocess, 'run'):
+                motion.new_project(args)
+            plan = json.loads((root/'film/src/compiled-plan.json').read_text())
+            self.assertTrue(plan['captions']['enabled'])
+            self.assertIn('MISSING_CAPTIONS', [e['code'] for e in plan['audit']['blocking']])
 
     def test_pack_excludes_private_cache_outputs_and_public_demo(self):
         with tempfile.TemporaryDirectory() as tmp:

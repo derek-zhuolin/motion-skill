@@ -14,6 +14,7 @@ from production import audit_production
 from semantic_motion import recommend, summarize
 from remotion_preflight import locate
 from reuse import list_baselines, reuse_project
+from open_direction import parse_srt, main as direction_main
 
 SKILL = Path(__file__).resolve().parents[1]
 RELATION_EFFECTS = {
@@ -91,6 +92,10 @@ def new_project(args):
     for name, version in versions.items():
         if not (deps/name/"package.json").is_file() or read(deps/name/"package.json").get("version") != version:
             raise ValueError("Missing/incompatible dependencies: " + name)
+    from install_product_ui import missing_ui_dependencies
+    ui_missing = missing_ui_dependencies(deps)
+    if ui_missing:
+        raise ValueError('Missing/incompatible UI dependencies; no project created: '+json.dumps(ui_missing,ensure_ascii=False))
     input_media = Path(args.media).expanduser().resolve() if args.media else None
     report = probe(input_media) if input_media else None
     audio_kind = getattr(args, 'audio_kind', 'voice')
@@ -101,8 +106,9 @@ def new_project(args):
     if transcript and not transcript.is_file():
         raise ValueError("Transcript missing")
     if report and not args.story and audio_kind == 'voice':
-        if not getattr(args, 'captions', None):
-            draft.pop('captions', None)
+        # An example opt-out must not leak into a new voice draft.
+        if not getattr(args, "captions", None):
+            draft.pop("captions", None)
         draft = {**draft, "mode": "voice", "duration": report["duration"],
                  "scenes": [], "source": {"transcript_verified": False}}
     if report and not report["has_audio"]:
@@ -115,6 +121,12 @@ def new_project(args):
         raise ValueError('SFX/music input cannot satisfy voice mode; supply narration separately')
     if report and audio_kind != 'voice' and not args.story:
         raise ValueError('SFX/music needs an explicit story duration; no inferred narration timeline')
+    parsed_srt = None
+    if transcript and transcript.suffix.lower() == '.srt':
+        parsed_srt = parse_srt(transcript, draft.get('fps', 30), report['duration'] if report else draft.get('duration'))
+        if not getattr(args, 'captions', None):
+            draft['captions'] = parsed_srt
+        draft['source'] = {**draft.get('source', {}), 'transcript_verified': False}
     shutil.copytree(SKILL/"assets/runtime", dest)
     # Studio uses public/; the standalone Player uses site/. Keep one asset source.
     if not (dest/"public").exists(): (dest/"public").symlink_to("site", target_is_directory=True)
@@ -136,6 +148,8 @@ def new_project(args):
         save(dest/"inputs/media-probe.json", report)
     if transcript:
         shutil.copy2(transcript, dest/"inputs"/("transcript"+transcript.suffix))
+    if parsed_srt:
+        save(dest/'inputs/subtitle-anchors.json', parsed_srt)
     save(dest/"inputs/story.json", draft)
     compiled = compile_story(draft)
     save(dest/"src/compiled-plan.json", compiled)
@@ -166,8 +180,19 @@ def pack(args):
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == 'explain':
+        from explainer import main as explain_main
+        return explain_main(sys.argv[2:])
+    if len(sys.argv) > 1 and sys.argv[1] == 'brief':
+        from audio_brief import main as brief_main
+        return brief_main(sys.argv[2:])
+    if len(sys.argv) > 1 and sys.argv[1] == 'direction':
+        return direction_main(sys.argv[2:])
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest="command", required=True)
+    sub.add_parser("explain", help="Stateful explanation recipes: compile/build/mesh/recipes; use explain --help")
+    sub.add_parser("direction", help="Open direction: srt/assets/catalog/select/review/remember; use direction --help")
+    sub.add_parser("brief", help="Prepare audio, accepted style and reusable details; no ASR or render")
     d = sub.add_parser("doctor")
     d.add_argument("--deps")
     q = sub.add_parser("probe")

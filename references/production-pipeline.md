@@ -4,7 +4,7 @@
 
 ## 选择与接入
 
-96 项是研究范围，不设每片使用数量。按本片的信息关系筛候选，用真实素材试验，再保留能接成片的机制。`catalog.json` 的 `production_status` 与 `production-registry.json` 区分参考小样和正式 adapter。当前实际组件以 production-registry.json 为准；本次合并新增数字、对照、逐行、素材取景、圈注与焦点交接组件。未登记的其余研究仍是 study_only；需要时先实现源码，不能只填 ID。
+96 项是研究范围，不设每片使用数量。按本片的信息关系筛候选，用真实素材试验，再保留能接成片的机制。`catalog.json` 的 `production_status` 与 `production-registry.json` 区分参考小样和正式 adapter。当前实际组件以 production-registry.json 为准；本地补丁新增数字、对照、逐行、素材取景、圈注与焦点交接组件。未登记的其余研究仍是 study_only；需要时先实现源码，不能只填 ID。
 
 工程复制后从 registry 指定的 `src/production/Mechanisms.tsx` 或 `DetailMechanisms.tsx` 导入组件，按本片改写 DirectedFilm。参数是内容、主题和由统一时间轴算出的状态，不是自动导演。`motion.ts` 提供单调三次轨道和摄影机变换；连续段共享切线，有意停留允许归零，不能为刷指标添加无意义漂移。
 
@@ -30,8 +30,6 @@
 
 `new --media /absolute/audio --audio-kind voice|sfx|music` 默认 voice 保持兼容。voice 使用原速与真实转写；sfx/music 必须提供明确 story，不改变文稿时间、不要求伪造转写。其 source.sfx_url / music_url 由模板按同一帧轴播放；音量与落点仍需制作和实际听检。脚本不检测拍点，不自动合成声音或下载依赖。
 
-## 保留参考的组件外观
+## 保留数字动效的视觉细节
 
-NumberReel 的 fontFamily、edgeFade、motionBlur、separatorScale、separatorGap 可承接已选片的数字外观；默认渐隐开启、模糊峰值 2.2px、分隔符比例 0.62、两侧间距各 9px。字号和位置由本片传入。不要在抽取组件时丢失这些细节，再将差异称为“新动效”。
-
-修改机制选择、运动路径或阅读时间之前，先记录已选视觉中需要保持的属性。合并检查用同内容同帧对照；它验证本次组件替换，不表示另一条故事已自动重编排，更不保证任何输入都能获得相同观感。
+NumberReel 支持 fontFamily、edgeFade、motionBlur、separatorScale、separatorGap；按已选影片设置，组件抽取不能悄悄抹掉参考片的渐隐、模糊和分隔符。新项目变更与既有影片的 adapter 保留各自边界。

@@ -1,0 +1,5 @@
+import path from 'node:path';import fs from 'node:fs/promises';import{fileURLToPath}from'node:url';import{createRequire}from'node:module';
+const here=path.dirname(fileURLToPath(import.meta.url)),root=path.resolve(here,'../..'),deps=process.env.MOTION_NODE_MODULES||path.join(root,'node_modules'),out=process.env.MOTION_DEMO_OUT||path.join(here,'site');
+const req=createRequire(import.meta.url),esbuild=req(path.join(deps,'esbuild'));
+await fs.mkdir(out,{recursive:true});await esbuild.build({entryPoints:[path.join(here,'App.tsx')],outfile:path.join(out,'app.js'),bundle:true,minify:true,format:'esm',jsx:'automatic',alias:Object.fromEntries(['react','react-dom','remotion','@remotion/player'].map(x=>[x,path.join(deps,x)])),define:{'process.env.NODE_ENV':'"production"'}});
+await fs.copyFile(path.join(here,'index.html'),path.join(out,'index.html'));await fs.cp(path.join(root,'assets/runtime/site/assets/fonts'),path.join(out,'assets/fonts'),{recursive:true});console.log('Built directed-polish demo');

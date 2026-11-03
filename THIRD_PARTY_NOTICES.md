@@ -21,3 +21,8 @@ Motion-study sources, incomplete historical provenance and media attributions ar
 ## 外部 Agent 指南依赖
 
 Remotion Agent Skills：https://github.com/remotion-dev/skills 。由使用者另行安装，本文档仅链接并由定位器读取本机入口；不重新分发其正文，不改写上游许可。软件运行时仍适用 Remotion 自身条款。Emil Kowalski 的设计原则参考见 [迁移说明](references/emil-motion-reference.md)，仅归纳原则，不分发其仓库代码或全文。
+
+
+## Stageshow UI 与细节案例
+
+Stageshow 来源 https://github.com/benjitaylor/skills ，随目录保留 LICENSE / NOTICE；图标另见 kit/brands/SOURCES.md。polish32 截图中摄影来源：https://www.pexels.com/photo/26063370/ 、https://www.pexels.com/photo/12185573/ 、https://www.pexels.com/photo/16367558/ 。不分发原声或原照片文件。

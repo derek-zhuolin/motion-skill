@@ -1,11 +1,53 @@
 ---
 name: motion-video
-description: 显式调用 Motion Skill / Motion video 时，优先继承已选影片的实际镜头与素材，制作连续品牌短片或原声解释视频；按需检查，不自动调用模型、上传或发布。
+description: 显式调用 Motion Skill / Motion video 时，从原话、SRT 和本地素材提炼语义事件，按内容选择与改造动效，制作连续品牌短片或原声解释视频；涉及产品界面时自动选用 Stageshow UI 部件与参考规则；按需检查，不自动调用模型、上传或发布。
 ---
 
 # Motion Skill · Motion video
 
-公开测试版 **1.2.0-beta.1**。增加可选重点运镜、编排证据与音乐驱动律动；旧公开示范片、10个稳定 adapter 和既有工程保留。
+本地定制版 **1.2.0-beta.1+local.11-directed-polish**。保留既有材质、节奏与交接扩展；新增有状态解释、本地媒体呈现与有边界的程序化粘土 3D，不宣称自动审美或任意 3D 生成。
+
+本地工程升级新增 [有状态的解释组件](references/explanation-recipes.md)：`motion.py explain` 可以把 Agent 已判断的拆分、筛选、反馈事件接到实际组件，并用本地图片/视频展示具体对象与结果，另有程序化粘土装配体的真实 3D 路径。动作时长与口播解释时长分开。此扩展已增加 24 秒原声的跨画面 Live 候选，代码经过两路审查与针对性修复；样片尚待语义、素材与视觉接受，不能当作已验收的全自动成片能力；未覆盖的语义继续走下方开放编排和 custom。
+
+## 已认可视觉基准与新音频入口
+
+默认用 [连续粘土方向](references/directed-motion.md) 与 [视觉档案](references/directed-profile.json) 继承 polish32 已认可的字体、蓝色、柔和粘土、主次、阅读和交接质量；明确的本次品牌或用户要求优先。短版与完整 [调用提示词](references/audio-directed-prompt.md) 随包提供。用户只要给音频和目的，不需要点组件名。
+
+新音频先运行 `python3 scripts/motion.py brief --audio /absolute/audio.mp3 --out /absolute/new-run`，再核对转写、按新意思设计并实际接入组件。该命令保存音源指纹、要求和源码，不是自动导演或成片生成器。读取本机 `.local/accepted-motion.json` 可找到认可原片；没有原片也要准确说明，不能把组件小样称为认可影片。
+
+本片具体镜头和秒数不是通用模板。每段先问“动作后看懂什么”，保留完整 UI 与对象身份，主动作错开，快段可用真实图像，结果完全出现后留读。至少寻找一个合乎内容的记忆点，不强行给每段加同一套动效。按关键帧和原速播放修正，测试通过不替代视觉接受。单片已认可；下一段音频的迁移效果仍待实测。
+
+## 产品界面：自动使用 Stageshow UI 层
+
+在 Motion 任务中，只要内容涉及产品窗口、表单、任务列表、拖拽、图表、聊天、通知或手机操作，自动读 [产品 UI 接入](references/stageshow-ui.md)，并按其中索引选用 Stageshow 真实部件与 Gold 原例，不需要用户再次点名。普通 Motion 调用仍按内容选择文字、图形、真实素材、IP 与空间表达；已选材质、字体、品牌和原有动效能力继续保留，UI 不强制全片换成第三方风格。
+
+先看最接近原例的完整动作和实际展示尺寸，再改成当前产品。输入/选择/拖动/完成须有具体对象、可见过程和依赖反馈。界面用于影片时使用统一 frame 时间源，不能把浏览器 CSS 动画或异步 Act 脚本直接当成已可导出的 Motion 组件。
+
+正式随包提供本地 Stageshow kit、Gold 参考、`ProductUIFilm` 创建→排序→分享，以及 `UISwipeArchive`、`UIPhoneExpand`、`UIConversationCards`、`UIFreeDrag`、`UIUpload`、`UIPresence`、`UIChartScrub`、`UIAggregate` 八组独立 frame 组件。按语义关系选择和组合，输入内容/时长/品牌可配置；其余未登记原例进入影片前仍需逐项适配。详细入口、依赖、参数和范围见上述 reference 及 [UI 索引](references/stageshow-index.json)。
+
+完整实际入口见 [组件目录与调用](references/component-catalog.md)：原有10个核心 adapter、9个 UI frame 组件（含任务流）、10个原有扩展，以及33种可组合 UI 部件、33种 Icon。目录区分 `frame_component`、扩展、可组合外观与浏览器行为；可组合不代表其内部网页动画已统一为 frame，96项研究仍是研究资料，不能当作96个生产组件。原生光标与其它部件按目录分别展示。
+
+处理音频时，先按 [音频到界面表达](references/ui-narrative.md) 把语句翻译成可见的筛选、深入、选择、安排等关系，再选动作和载体；不固定套四幕或每句都用手机。原声与已核对转写提供时间锚点，组件由同一 frame 驱动。
+
+产品 UI 默认收紧空等、允许辅助动作重叠，在抓取/落定/展开处使用有因果的轻回弹；保护输入结果、重排结果和完成反馈的阅读窗口。用户说慢时先调整事件与交接，不把全片或原声统一加速。
+
+## 默认创作入口：开放式编排
+
+先读 [开放式编排](references/open-direction.md)。本节优先于下方历史工作流：默认本地素材，不自动抓取；有 SRT 就解析为时间锚点，按语义事件分镜，不固定一句一镜。Agent 按内容直接选择构思；确有实质分歧时再比较备选，不逐镜审批。
+
+先使用 `motion.py direction assets/catalog` 查看当前素材和全量研究，再由 Agent 提出适配候选，运行 `direction select`。可选 adapter、study 适配或 custom 新动作，不受旧七类选择器限制。实际实现后以截图、调用位置和针对性复审记录运行 `direction review`，再 `direction remember` 记录近期构图/媒介/主动作。具体字段和命令见上述文档；这些工具不替代语义理解或像素检查。
+
+默认继承当前品牌身份，不继承旧片布局；IP 按叙事需要出场。缺素材时变更表达或准确报告缺口，不退回固定卡片。旧 `select-motion` 保留给已有计划兼容；新主题默认走开放入口。旧片修改仍只改相关镜头。
+
+用户认可的字体、排版、材质和局部运动分别保留；构图自由不代表可以丢掉已选粘土视觉。同一对象跨镜保留材质、体积与身份；明确区分真实 3D、渲染图资产、SVG 模拟体积，不因组件名含 Clay 就宣称满足 3D 期待。符号须有可见释义，MG 动作要表达具体变化；“调用了组件”“截图存在”均不等于表达合格。
+
+`direction review` 必须记录含义、材质、连续性的实际观察与 pass/needs_revision/not_applicable。有未解决项不能写成可复用的正向经验。用 `direction feedback` 记录用户对不同维度的明确反馈；既保留认可的字体，也保留被指出的内容问题。没有音频依据时不先编造功能、角色或关系填满画面。
+
+## 内容连续版：先重点信息，再可见事件
+
+制作语音动效、IP 表达或用户要求连续内容时，优先按 [内容连续表达](references/content-events.md) 做：识别重点与来源 → 定义前后状态变化 → 选择素材和持续对象 → 安排主次与交接 → 最后加入必要运镜与声音。先用关键状态图说明新增理解，不能把移动次数当信息密度。此顺序先于下面的效果选择；不把某条片子的文字、四个角色或黑色面板固定为模板。
+
+用 `assets/content-events.example.json` 记录可见事件，运行 `python3 scripts/content_events.py check plan.json --out event-check.json`；需要交接时用 `compile` 输出共享事件表和短镜头表。检查只核声明状态/来源/反馈，不自动理解原声、不判断审美、不证明组件已接线。IP 任务由内容决定，重点标注和完成反馈必须有实际可见变化。使用 `.local` 登记的 `content-events` 本机认可基准时，只继承风格与表达方式，新内容重排事件。
 
 ## 默认入口：规范 → 编排清单 → 实现
 
@@ -13,14 +55,15 @@ description: 显式调用 Motion Skill / Motion video 时，优先继承已选�
 
 动手前按 `references/semantic-orchestration.md` 给用户一张**简短镜头编排清单**：时间/本段意思、主焦点、主效果编号与名字、辅助效果、进出场和交接对象、选择原因、可读窗口。先说再做；这份清单不是新增逐镜审批。数字快照、数字变化、关键词层级、证据截图、主体运动的视频要分别判断。每镜一个主表达；效果数量随内容，不规定10或15组。
 
-由当前 Agent 读内容和核对素材。对已覆盖的数字、关键词、真实素材等关系，填写 `assets/semantic-plan.example.json` 的结构，再运行 `select-motion plan.json --out selection.json --explain shot-plan.md`。这一步按语义与近期使用记录给适配候选，不能把同一套 AME 镜头顺序套到所有内容；相关性优先，变化不靠随机或硬凑。返回 planned 不代表已调用。实际导入 `production-registry.json` 中的组件后，记录 actual-used 清单并审查源代码与画面；没实现的研究保持 study_only。仅修改某一镜时只重选受影响镜头。新关系不必硬塞进这几类：可按 catalog 选研究并定制实现，在同一编排表中标 custom、来源编号和代码位置；用相关源码与实际画面验证，不冒称选择器或生产接线审计已通过。
+由当前 Agent 读内容和核对素材。新主题默认使用上方开放式编排。仅当维护既有 `semantic-plan.example.json` 格式的旧项目时，才使用 `select-motion` 兼容入口。两条入口均须实际导入组件并检查画面；planned 不代表接线，更不代表语义或材质通过。旧项目出现原选择器未覆盖的关系时，可转入开放入口或标注 custom，不把内容硬塞进旧七类。
+
 
 ## 先走最短的正确路径
 
-读取项目 AGENTS、当前任务及用户选定的视觉基准。新 run 保留原件。本机已登记授权基准时运行 `python3 scripts/motion.py baselines`，有已选原片就使用 `reuse` 继承实际影片代码、字体和授权素材；**不要先用五类默认卡片模板重建它**。
+读取项目 AGENTS、当前任务及用户选定的视觉基准。新 run 保留原件。在本机运行 `python3 scripts/motion.py baselines`，明确修改原片或复刻时可使用 `reuse` 继承实际影片代码、字体和授权素材；新主题只借用适用资产与机制，重新编排；**不要先用五类默认卡片模板重建它**。
 
-- **连续 Launch**：沿用用户选定影片的视觉语言。让一个载体贯穿发现、选中、展开、协作；按语义选少量转折，保留阅读停顿。
-- **原声解释**：沿用用户选定影片的字体、材质与节奏。同一视觉跨多句话，真实影像与示意关系分工；原声保持 1×，无视频不生成说话人脸。
+- **连续 Launch**：优先用户选定的全球品牌新玩法或 GTM。让一个载体贯穿发现、选中、展开、协作；按语义选少量转折，保留阅读停顿。
+- **原声解释**：按本片内容选视觉语言；用户指定 AME 才继承其风格。同一视觉跨多句话，真实影像与示意关系分工；原声保持 1×，无视频不生成说话人脸。
 - **修改/复盘**：直接读目标工程的相关镜头和时间表，不重跑转写、信源研究、模板生成或全研究库。
 - **没有可用基准**：才用 `new` 建标注清楚的结构草稿，并按实际内容写镜头。默认五类 renderer 不是电影感模板，也不会自动调用研究适配器。
 
@@ -28,8 +71,8 @@ description: 显式调用 Motion Skill / Motion video 时，优先继承已选�
 
 ```sh
 python3 scripts/motion.py baselines
-python3 scripts/motion.py reuse --baseline my-reference --dest /absolute/new-run --deps /absolute/existing-node_modules
-# 基准需登记自己的授权工程；公开包不含作者私人基准。见 references/local-fastpatch.md。
+python3 scripts/motion.py reuse --baseline global-launch --dest /absolute/new-run --deps /absolute/existing-node_modules
+# 其他已登记基准：gtm / ame；实际列表以 baselines 输出为准。
 ```
 
 ## 语音：同一段只转写一次
@@ -41,25 +84,29 @@ python3 scripts/transcript_cache.py get --media /absolute/audio
 python3 scripts/transcript_cache.py put --media /absolute/audio --transcript /absolute/transcript.json  --engine existing-local-engine
 ```
 
-缓存默认位于本 Skill 的 `.local/transcript-cache`，不进入分享包。命中只证明源与转写文件匹配，仍需检查语言、词时标、覆盖范围和专名；不自动把 verified 改为 true。只做短样片时优先处理选段及少量上下文，不默认整段转写两遍。复用现有可用本地引擎；启动前记录输入 hash、范围、引擎、预计时长和超时。已有转写任务仍在运行时不要并行开第二种实现；确需切换时先确认旧任务已退出，再只补缺失范围。不因尾部卡住重复跑完全部内容。本 Skill 不内置 ASR 模型或自动切换服务。
+缓存默认位于本 Skill 的 `.local/transcript-cache`，不进入分享包。命中只证明源与转写文件匹配，仍需检查语言、词时标、覆盖范围和专名；不自动把 verified 改为 true。只做短样片时优先处理选段及少量上下文，不默认整段转写两遍。本轮默认不新增或启动转录服务；缺转录先报告。用户另行启用转录时才复用现有可用本地引擎，启动前记录输入 hash、范围、引擎、预计时长和超时。已有转写任务仍在运行时不要并行开第二种实现；确需切换时先确认旧任务已退出，再只补缺失范围。不因尾部卡住重复跑完全部内容。本 Skill 不内置 ASR 模型或自动切换服务。
 
-## 已选视觉保持，编排按内容调整
+## 连续表达与轻量 IP（本地实验）
 
-用户要求延续已选效果时，先锁定字体、字号角色、配色、布局密度、材质、阴影、素材裁切与组件外观。调整的是当前内容的机制选择、对象交接与运动路径，不把换风格当作工作流升级。抽取通用组件不能丢掉原片的细节（如数字滚轮边缘渐隐、运动模糊、分隔符尺度）；用参数继承这些视觉属性。无法对应时先报告差异，不静默换成默认皮肤。
+用户需要高密度、动作接力或 IP 时，按 [连续表达与轻量 IP](references/continuity-ip.md) 规划：压缩无意义等待，保护可读窗口；对象接力与运镜共享命名事件；文字、IP 和路径分区，收尾整体居中略偏上。使用原始授权 PNG/SVG，IP 偶尔引导和强调，不强制每镜出现。没有指定图像生成时不调用 Image API，不要求每组生成图片，也不设置新的统一立体艺术画风。继承已选影片风格。
 
-合并或替换组件时，优先用同内容、同原声、同帧对照确认视觉变化。该检查只证明本次接入的范围，不能宣称所有片子自动保持同样审美。新内容仍需重新选择有意义的动效，不固定照搬已选片的镜头序列。
+可复用 runtime `production/ip-motion.tsx` 提供确定性的 IPActor、hopPose、blinkScale、track 和 CameraStage；具体素材与面部坐标属于项目。先用 `scripts/check_continuity_ip.py` 检查声明的时间与布局，再核对运行时画面、实际接线及原速声音；计划通过不是视觉验收。此扩展不修改稳定 adapter registry。先做用户指定时长的 Playground，验收后再扩片。
 
 ## 镜头与时间
 
-先一个主焦点，再安排对象交接。保护正在读的对象，不冻结整幅画面；允许配角提前准备。转场必须解释深入、选择、联系、对比等语义，不能每句重开“标题＋中央卡片”。音频、文字、遮罩与机位共用命名事件；需要新的组合时才读 `references/motion-combinations.md`。继承好片的字体、材质、运动习惯与连续性；镜头结构按当前语义重选。复用轨道原件，不固定使用旧片的镜头顺序。先写两种简短构思及取舍，再实现更适合当前意思的一种；不同关系不要总用同一组合。
+先一个主焦点，再安排对象交接。保护正在读的对象，不冻结整幅画面；允许配角提前准备。转场必须解释深入、选择、联系、对比等语义，不能每句重开“标题＋中央卡片”。音频、文字、遮罩与机位共用命名事件；需要新的组合时才读 `references/motion-combinations.md`。继承好片的字体、材质、运动习惯与连续性；镜头结构按当前语义重选。复用轨道原件，不固定使用旧片的镜头顺序。先明确本片构思与取舍，确有实质分歧时再比较备选；不同关系不要总用同一组合。
 
-真实素材和原 Logo 保留身份与来源；Interflow 默认蓝 #0070DB、黑 #141414、白和灰，不自动改米白。粘土适度，禁止为了动效加无意义漂移。音乐和效果音按已有授权复用；没有音源就明确静音，不编造节拍识别或效果数据。
+避免 PPT 感先检查画面语法，而不是只增加平移或动画数量：为交接说明对象如何改变用途、景别、裁切或信息关系；真实视频先辨认正在发生的动作，再决定如何承接。连续镜头不等于全片一镜到底，不相关内容可以直接切。数据先解释测试对象、分母、结果及边界，再用图形呈现关系；不要把数字拼成仪表盘或让装饰压住读数。按实际素材与品牌限制配色、字体和材质，不把某次白黑蓝或灰度处理硬设为所有品牌默认。
 
-## 可选：重点词运镜（可选 beta）
+检查快慢对比、停顿和声音落点：允许加速与留白，不机械等间隔，也不为密集而牺牲阅读；声音落点须人工编辑与实际听检，不宣称自动识别节拍。对象仍在画面内时不能因时间条件突然卸载。交接前、中、后看像素，原速检查画面和声音；浏览器性能、静态接线和用户审美验收分开记录，未能观看或听到就明确说明。参考 [连续运镜复盘](references/visual-direction-20261028.md)。
+
+真实素材和原 Logo 保留身份与来源；明确为 Interflow 项目时默认蓝 #0070DB、黑 #141414、白和灰，不自动改米白。粘土适度，禁止为了动效加无意义漂移。音乐和效果音按已有授权复用；没有音源就明确静音，不编造节拍识别或效果数据。
+
+## 可选：重点词运镜（本地实验）
 
 只有用户需要突出某个重点，或当前语义确实需要局部证据时，才按 [重点词运镜扩展](references/focus-camera.md) 显式启用。保留 Motion 材质与动作，只补两类景别：局部停留后拉远揭示；全貌推近关键词对应对象、停稳短注解，再退回全貌。不要逐句缩放，不默认开启整片机位变化。关键词绑定具体对象，必要字幕留在屏幕层；不默认给整片加品牌角标或页脚，品牌按本片目的出现。注解补充结构或边界，避免复述口播。未绑定或无安全阅读位置时不强行添加。
 
-扩展模块：`production/focus-camera.ts`、`production/FocusCamera.tsx`；新工程随 runtime 提供但默认关闭，既有工程可运行 `scripts/install_focus_camera.py --project /absolute/project`，冲突即停止，不自动改片。先做同帧开/关 Playground 与前中后检查，同帧审片后再用于正式影片。本版是 custom experimental extension，不增加稳定 registry 的 10 个 adapter，不声称 selector 已执行或自动识别重点词。
+扩展模块：`production/focus-camera.ts`、`production/FocusCamera.tsx`；新工程随 runtime 提供但默认关闭，既有工程可运行 `scripts/install_focus_camera.py --project /absolute/project`，冲突即停止，不自动改片。先做同帧开/关 Playground 与前中后检查，用户试完再决定稳定合入。本版是 custom experimental extension，不增加稳定 registry 的 10 个 adapter，不声称 selector 已执行或自动识别重点词。
 
 ## 混合媒体与任务交接：先检查耦合
 
@@ -71,13 +118,11 @@ python3 scripts/transcript_cache.py put --media /absolute/audio --transcript /ab
 
 局部修复先回答“画面承担什么动作”，再调机位；播放图标不能代替任务过程，成功标识必须有结果证据。语义、组件来源、对象职责与几何 owner 可用现有 semantic-plan 的 `orchestration` v1 扩展记录，运行 `scripts/orchestration.py` 生成 SHOTBOOK 和风险窗口。详见 [编排合同](references/orchestration-contract.md)。
 
-发布预览前，对显式源码、音轨、素材、配置和构建产物建立指纹；任一依赖改变，旧报告标 stale。五层状态分开：计划、接线、画面、播放、用户接受；哈希一致不自动升级视觉状态。按 [三步工程化升级](docs/ORCHESTRATION_UPGRADE.md) 做范围明确的回归，不强制全项目重做。
+发布预览前，对显式源码、音轨、素材、配置和构建产物建立指纹；任一依赖改变，旧报告标 stale。五层状态分开：计划、接线、画面、播放、用户接受；哈希一致不自动升级视觉状态。按 [三步工程化升级](references/engineering-upgrade.md) 做范围明确的回归，不强制全项目重做。
 
 用户要跟音乐调整画面时，先选定/试听已有授权音乐，或在明确授权后使用外部生成服务；再挑真实起音候选、口播锚点和语义停顿。使用 [音乐驱动编排](references/music-driven-motion.md) 的可选 helper，以 composition 时间控制分组、停留和机位，真实视频和配音不随音乐全局变速。不要每拍都缩放，不把频谱峰值说成可靠强拍识别。没有音乐时可静音制作。
 
-[律动 Playground](examples/rhythm-playground/README.md) 提供同一时间与测试音的对照；合成测试音不是 ACE-Step 作品。Motion 不内置音乐模型、音效库或自动混音服务。使用 ACE-Step 前须说明 [首次模型下载、等待与效果边界](docs/ACE_STEP.md)，不在未告知时自动下载数 GB 模型。新音源产生后重新检查锚点与混音，保留已经授权的配音。
-
-需要 ACE-Step 时先检查已有安装与模型缓存；缺失则提供 [官方 GitHub](https://github.com/ace-step/ACE-Step-1.5) 与 [中文安装指南](https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/zh/INSTALL.md)，按用户硬件选择安装方式，明确首次下载较大、可能等待很久。程序和模型由使用者从官方来源安装，不随 Motion Skill 分发；下载源码不等于安装完成。已有授权音乐可跳过此步骤。
+[律动 Playground](https://github.com/derek-zhuolin/motion-skill/tree/v1.2.0-beta.1/examples/rhythm-playground) 提供同一时间与测试音的对照；合成测试音不是 ACE-Step 作品。Motion 不内置音乐模型、音效库或自动混音服务。使用 ACE-Step 前须说明 [首次模型下载、等待与效果边界](references/ace-step-setup.md)，不在未告知时自动下载数 GB 模型。新音源产生后重新检查锚点与混音，保留已经授权的配音。
 
 ## 只检查本次改动，不绕回整座研究库
 
@@ -89,18 +134,7 @@ python3 scripts/transcript_cache.py put --media /absolute/audio --transcript /ab
 
 导出使用独立 public 素材目录和每次新建的 bundle 目录；不要把历史 MP4、下载链接、研究页面一起打包。缺依赖准确报错，不自动下载。导出之后检查音轨、时长和解码；不顺带更新浏览器或系统配置。
 
-本地素材优先。先查现有来源与实际图像/视频内容，按“证据、解释、情境”决定用途。缺关键素材再在当前授权范围内检索公开源并核对许可、裁切与语义；不以关键词搜索命中当作适配证据。此过程由当前 Agent 编排，不宣称本包内置全自动素材识别模型。
-
-## 字幕与真实素材（公开内测版）
-
-voice 模式默认补底部同步字幕，不用主标题代替字幕。Agent核对文字与断句，把帧级cues写入story.captions，或以new --captions传入。默认缺字幕会被plan拦截；只有用户明确不要字幕才写captions.enabled=false。字幕不抢主视觉，实际复看深色画面、实拍和片尾。字段见[入门](docs/GETTING_STARTED.md)。
-
-用户要求混剪时，具体场景用有来源的实拍，抽象关系用动效。用户明确授权联网获取素材、但未提供实拍时，可由Codex使用可用搜索与下载工具，按口播场景自行寻找有明确使用许可的公开照片和短视频，不逐张索取确认；记录作者、原始页面和许可证。搜索/下载受限时报告缺口，不自动购买，不把示意图或生成画面标成实拍。真实素材获取与镜头编排由Agent按已授权能力完成，不把源码中的示意图当实拍；示范工程见examples/voice-to-video。下载来源与作者保留，原件不自动打包。
-
-
-## 画幅与文案模式
-
-文案可用 script 模式，无音源就静音，不要求转写。默认为 16:9；用户要求其他比例时重排 Composition、Player、字幕和安全区并实际检查，不能只改尺寸。保留 `new --captions` 与 voice 默认字幕校验，详见 [入门](docs/GETTING_STARTED.md) 和 [画幅](docs/CUSTOMIZATION.md)。
+本地素材优先。先查现有来源与实际图像/视频内容，按“证据、解释、情境”决定用途。默认不自动抓取；缺关键素材时先调整表达或报告缺口。只有用户另行启用外部检索时，再在授权范围内检索公开源并核对许可、裁切与语义；不以关键词搜索命中当作适配证据。此过程由当前 Agent 编排，不宣称本包内置全自动素材识别模型。
 
 ## 按需资料，不要求全部通读
 
@@ -108,14 +142,10 @@ voice 模式默认补底部同步字幕，不用主标题代替字幕。Agent核
 - Remotion 依赖安装、定位及 GitHub 说明：`references/remotion-integration.md`。
 - 新音频：`references/audio-contract.md`。
 - 新语义计划 / 阅读预算：`references/direction.md`、`references/story-contract.md`。
-- 需要新机制：`catalog --relation ... --limit 4`，再读具体 adapter；不要整读 catalog。
+- 需要新机制：`direction catalog --query ... --out ...` 查候选，再看实现与预览；检索不足时分批浏览全目录，不只在旧 relation 映射中选。
 - 实际接入新 adapter：`references/production-pipeline.md`。
-- 再次出现停走或读不完：`references/continuity-review-20261027.md`。
-- 完整命令和旧兼容流程：`references/workflow-detailed.md`，仅查相关段落；旧文档与当前入口冲突时以本入口为准。
+- 再次出现停走或读不完：`references/continuity-review-20261027.md`；PPT 感与真实素材融合：`references/visual-direction-20261028.md`。
+- 完整命令和旧兼容流程：`references/workflow-detailed.md`，仅查相关段落。
 - 本补丁来源和测量边界：`references/local-fastpatch.md`。
 
-不修改原声速度、不编造内容、未知写未知；个人音视频和 `.local` 本机索引不得进入分享包。默认只做已授权本地修改；推送或发布需用户明确授权。交付说明基准、实际改动、准备/转写/编排/渲染用时和未确认的观感；不要把已有原片副本当新完成片。
-
-## 许可
-
-遵守 [LICENSE_SCOPE.md](LICENSE_SCOPE.md) 与 [ATTRIBUTION.md](ATTRIBUTION.md) 的分目录边界；96 项历史研究不新授 MIT，生产 adapter 是独立的通用实现，不授予第三方作品、素材或商标权。
+不修改原声速度、不编造内容、未知写未知；个人音视频和 `.local` 本机索引不得进入分享包。只做已授权本地修改。交付说明基准、实际改动、准备/转写/编排/渲染用时和未确认的观感；不要把已有原片副本当新完成片。

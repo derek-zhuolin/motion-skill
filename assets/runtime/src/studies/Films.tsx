@@ -1,4 +1,3 @@
-import palette from './palette.json';
 import React from 'react';
 import {CameraFrame,cameraStudies,cameraCombos,CameraOptions} from './CameraStudies';
 import {KimiStudy,KimiCombo,kimiStudies,kimiCombos} from './KimiStudies';
@@ -6,7 +5,7 @@ import {ExperimentalStudy,ExperimentalCombo,experimentalCombos,experiments} from
 import {ExtendedStudy,ExtraCombo} from './MoreFilms';
 import {useCurrentFrame} from 'remotion';
 
-const B=palette.accent,K=palette.ink,W=palette.paper;
+const B='#0070DB',K='#141414',W='#FFFFFF';
 export const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 const ease=(n:number)=>{n=clamp(n);return n*n*n*(n*(n*6-15)+10)};
 const mix=(a:number,b:number,t:number)=>a+(b-a)*t;
@@ -22,7 +21,7 @@ export const combos=[
  ...kimiCombos,
  ...experimentalCombos,
  {id:'discover',name:'从发现，到被记住',tag:'内容社区',note:'关键词 → 错速瀑布流 → 焦点抽卡 → 品牌展开',ids:[11,1,2,20],desc:'内容持续经过，一张卡成为主角，再展开为品牌画面。不是四张幻灯片，是同一个对象的四种状态。'},
- {id:'gallery',name:'让作品成为主角',tag:'品牌作品',note:'文字窗口 → 环绕画廊 → 追光 → 品牌展开',ids:[10,6,18,20],desc:'从字里看见作品，镜头拉开形成画廊，光线带出焦点，最后回到品牌。这里的作品为程序绘制的几何视觉小样。'},
+ {id:'gallery',name:'让作品成为主角',tag:'品牌作品',note:'文字窗口 → 环绕画廊 → 追光 → 品牌展开',ids:[10,6,18,20],desc:'从字里看见作品，镜头拉开形成画廊，光线带出焦点，最后回到品牌。这里的作品为原创几何视觉小样。'},
  {id:'process',name:'让想法找到搭档',tag:'方法与合作',note:'关键词 → 内容行嵌入 → 路径接力 → 粘土接合',ids:[11,13,9,19],desc:'词变成一行，行整理成需求，再沿路径找到互补能力。表现协作意图，不表示平台已自动匹配。'},
  {id:'contrast',name:'小预算，大创意',tag:'创意对比',note:'短词连击 → 留白 → 前后对比 → 品牌落点',ids:[11,43,36,20],desc:'用前后变化讲清一个创意，把节奏留给判断。演示不代表真实品牌改造结果。'},
  {id:'insight',name:'让洞察浮出水面',tag:'数据洞察',note:'图表生长 → 选框追踪 → 数字落定 → 一句判断',ids:[44,28,35,36],desc:'先看趋势，再聚焦一个信号。所有数字均为动效演示数据。'},

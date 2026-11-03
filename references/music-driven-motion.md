@@ -32,8 +32,8 @@ const reveal = cueProgress(t, score, 'start', 'arrive');
 
 重复数值代表保持不动，曲线不会在停顿中额外漂移。`sampleRhythmCamera` 返回一次解析的 `{x,y,scale}`，供镜头及世界空间注解共同消费；字幕保留屏幕空间。`enabled:false` 或 `strength:0` 返回提供的基准姿态。时间戳、缺失事件、倒序轨道和非法缩放会报错。它不做自然语言重点识别，不分析音频，也不修改视频入点或速度。
 
-可运行的两内容对照见 [Rhythm Playground](../examples/rhythm-playground/README.md)。它使用原创合成测试节奏，不是 ACE-Step 的效果展示。真实生成流程、首次下载和等待说明应与示例区别阅读，见 [音频说明](../docs/AUDIO.md)。
+可运行的两内容对照见 [Rhythm Playground](https://github.com/derek-zhuolin/motion-skill/tree/v1.2.0-beta.1/examples/rhythm-playground)。它使用原创合成测试节奏，不是 ACE-Step 的效果展示。真实生成流程、首次下载和等待说明应与示例区别阅读，见 [音频说明](ace-step-setup.md)。
 
 ## 验证边界
 
-`node scripts/test-rhythm.mjs` 验证实际 helper 的确定性、保持段、边界、开关和非法输入，不能证明画面有趣或音乐合拍。所有公开作品仍需要画面/听感人工审查；“已编排”“技术通过”“用户接受”分别记录。
+公开仓库的 `node scripts/test-rhythm.mjs` 验证实际 helper 的确定性、保持段、边界、开关和非法输入，不能证明画面有趣或音乐合拍。所有公开作品仍需要画面/听感人工审查；“已编排”“技术通过”“用户接受”分别记录。

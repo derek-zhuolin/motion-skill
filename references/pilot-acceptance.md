@@ -15,9 +15,8 @@
 
 ## 工程记录
 
-当前 `pilot_gate.py` 是“复用已有转写的原声 MP4 样片”记录检查器，要求 source_excerpt 与 mp4。纯文案、首次转写或仅 Playground 的任务不套这个检查器；按上述适用项记录真实预览/素材证据及人工反馈，不伪造音轨、转写复用或 MP4。它不负责解码媒体，技术字段由实际检查后填写。
-
-
 每段保存 `pilot-review.json`，包含 sample.duration/audio_speed/asr_reused、artifacts.mp4/source_excerpt、technical 检查和 human_review.status/direct_user_evidence。初始人类验收为 pending。`python3 scripts/pilot_gate.py /absolute/pilot-review.json` 只检查记录，不写入接受、不运行整片。
+
+`pilot_gate.py` 检查复用已有转写的原声 MP4 样片记录；纯文案、首次转写或仅预览不伪造该记录，按适用项说明实际预览与未完成的人工验收。
 
 人类确认必须来自本次用户选择/消息，禁止用自动测试结果、AI 自评或旧片已被接受来代替。样片被要求修改则记录 revise，先修当前问题；被用户接受后，再保持已选基准扩整片。内容或视觉方向发生实质改变时重新检查受影响的样片。

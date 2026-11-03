@@ -33,3 +33,8 @@ MIT不替任何第三方授予许可，不授权第三方商标或专利，也�
 - `demo/` 示范片、动图预览及来自示范片的截图：用于查看和本仓库内测展示；没有授予对讲述者声音、第三方素材或品牌的独立再利用授权。自己的项目请换成自己有权使用的素材。
 
 参考者、来源与核查边界见 [ATTRIBUTION](ATTRIBUTION.md)。如果后续能补齐逐项版权和许可证据，再由权利人决定是否扩大授权范围。
+
+
+## 本次连续细节补丁
+
+原创 DirectedPolish 与 SoftClay 辅助代码沿用本仓库适用的代码许可。`assets/runtime/vendor/stageshow` 保留上游 LICENSE、NOTICE 和逐项图标/素材来源，第三方商标不重新授权。`docs/polish32/comparison.png` 用于展示用户认可的构图与动画案例，不作为独立摄影素材包；照片来自 Pexels 的 Anthony Lian、Veronika Bykovich 与 Zhengdong Hu，原件不随本补丁分发。

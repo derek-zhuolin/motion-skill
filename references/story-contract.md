@@ -31,4 +31,4 @@ audit.ready_for_visual_review只表示声明与预算无阻塞，视觉/听感�
 
 ## 底部同步字幕
 
-voice模式默认要求captions={enabled:true,fps:30,cues:[{id,start_frame,end_frame,text}]}。帧区间左闭右开，不得重叠或超出媒体长度。用核对后的短句；不把主标题当字幕。用户明确不要字幕可设enabled:false。长句、手机阅读和片尾避让仍须实际检查。
+voice 模式默认要求 captions={enabled:true,fps:30,cues:[{id,start_frame,end_frame,text}]}。帧区间左闭右开，不得重叠或超出媒体长度；以核对后的短句为准，主标题不能替代字幕。用户明确不要字幕可设 enabled:false。长句、手机阅读和片尾避让仍须实际检查。

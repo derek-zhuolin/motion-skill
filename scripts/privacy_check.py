@@ -34,6 +34,7 @@ for p in files():
    for m in regex.finditer(content):
     # Copyright/licensing contacts and public package metadata are retained, never anonymized.
     if name=='email' and ('LICENSE' in p.name or p.name.endswith('-OFL.txt') or p.name.endswith('-NOTICE.txt') or p.name=='package-lock.json'):continue
+    if name=='email' and rel.startswith('assets/runtime/vendor/stageshow/examples/') and m.group().endswith('@example.invalid'):continue
     issues.append({'file':rel,'kind':name,'line':content[:m.start()].count('\n')+1})
  if p.suffix.lower()=='.mp4':
   binary=ffprobe_binary()

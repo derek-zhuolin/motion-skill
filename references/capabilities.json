@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "capabilities": [
+    {"id":"collect","name":"元素归集","status":"supported","fixture_scene":"see","entry":"visual.renderer=collect","evidence":"formal-render"},
+    {"id":"connect","name":"关系连线","status":"supported","fixture_scene":"understand","entry":"visual.renderer=connect","evidence":"formal-render"},
+    {"id":"conclusion","name":"结论收束","status":"supported","fixture_scene":"handoff","entry":"visual.renderer=conclusion","evidence":"formal-render"},
+    {"id":"compare","name":"并列比较","status":"implemented_pending_demo","entry":"visual.renderer=compare","evidence":null},
+    {"id":"evidence","name":"证据展示","status":"implemented_pending_demo","entry":"visual.renderer=evidence + local asset","evidence":null},
+    {"id":"clay-assembly","name":"黏土组件接合","status":"research_only","entry":"studies.html","evidence":null},
+    {"id":"type-window","name":"文字作为窗口","status":"research_only","entry":"studies.html","evidence":null}
+  ],
+  "study_count":96,
+  "note":"示例中出现不代表任意题材自动编排成功；正式成片仍需视觉和听感确认。"
+}

@@ -6,7 +6,7 @@
     "semantic_runtime_patterns": 5,
     "production_adapters": 10
   },
-  "count_note": "96项已有二维研究；源代码保留17个历史预设入口，当前UI只开放96项研究与五类语义结构，不宣称新增96种技法或自动18组新成片。",
+  "count_note": "96项研究；当前可导入的基础adapter以production-registry.json为准。一项研究可派生多个组件，不等于每片配额或96套自动导演。",
   "effects": [
     {
       "id": 1,
@@ -23,7 +23,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -47,7 +47,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -71,7 +71,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -95,7 +95,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -119,7 +119,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -143,7 +143,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -167,7 +167,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -191,7 +191,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -215,7 +215,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -239,7 +239,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -247,10 +247,10 @@
       },
       "preview": "studies.html?effect=10",
       "production_status": "production_adapter",
+      "production_adapter": "keyword-window",
       "production_adapters": [
         "keyword-window"
-      ],
-      "production_adapter": "keyword-window"
+      ]
     },
     {
       "id": 11,
@@ -267,7 +267,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -275,10 +275,10 @@
       },
       "preview": "studies.html?effect=11",
       "production_status": "production_adapter",
+      "production_adapter": "keyword-rhythm",
       "production_adapters": [
         "keyword-rhythm"
-      ],
-      "production_adapter": "keyword-rhythm"
+      ]
     },
     {
       "id": 12,
@@ -295,7 +295,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -319,7 +319,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -343,7 +343,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -367,7 +367,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -391,7 +391,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -415,7 +415,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -439,7 +439,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -463,7 +463,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -471,10 +471,10 @@
       },
       "preview": "studies.html?effect=19",
       "production_status": "production_adapter",
+      "production_adapter": "clay-join",
       "production_adapters": [
         "clay-join"
-      ],
-      "production_adapter": "clay-join"
+      ]
     },
     {
       "id": 20,
@@ -491,7 +491,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/Films.tsx",
         "mode": "study",
@@ -515,7 +515,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -539,7 +539,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -563,7 +563,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -587,7 +587,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -611,7 +611,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -635,7 +635,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -659,7 +659,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -686,7 +686,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -710,7 +710,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -734,7 +734,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -758,7 +758,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -786,7 +786,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -810,7 +810,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -834,7 +834,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -858,7 +858,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -885,7 +885,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -912,7 +912,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -936,7 +936,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -963,7 +963,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -987,7 +987,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1011,7 +1011,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1035,7 +1035,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1059,7 +1059,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1086,7 +1086,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1110,7 +1110,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1134,7 +1134,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1158,7 +1158,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1182,7 +1182,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1206,7 +1206,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1230,7 +1230,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1254,7 +1254,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1278,7 +1278,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1302,7 +1302,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1326,7 +1326,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1350,7 +1350,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1374,7 +1374,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1398,7 +1398,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1422,7 +1422,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1446,7 +1446,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1470,7 +1470,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1494,7 +1494,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1518,7 +1518,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1542,7 +1542,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -1566,7 +1566,7 @@
       "representation": "二维或等距动效研究；复杂材质为近似",
       "detail": "可在Playground逐项预览；依照内容任务选取，不以数量作为质量依据。",
       "limit": "本地静音小样不等于正式影片或真实功能。",
-      "source": "早期本地小样与 Oreo UI 机制参考；1–64项逐项来源未完整留存，不主张技法原创",
+      "source": "本地早期原创小样与Oreo组件机制研究",
       "implementation": {
         "file": "assets/runtime/src/studies/MoreFilms.tsx",
         "mode": "study",
@@ -2356,8 +2356,7 @@
         95
       ],
       "desc": "同一张真实素材贯穿16秒。先建立环境，再推近手动焦点，让解释与画面共同移动，最后回到全貌。",
-      "historical_preview": "archive.html?mode=c-observe&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=c-observe&rhythm=flow"
     },
     {
       "id": "c-gallery",
@@ -2371,8 +2370,7 @@
         96
       ],
       "desc": "用多张素材试观看角度和景别变化。它是一组预设的16秒编辑编排，可以替换成本机图片或视频。",
-      "historical_preview": "archive.html?mode=c-gallery&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=c-gallery&rhythm=flow"
     },
     {
       "id": "k-reveal",
@@ -2385,8 +2383,7 @@
         87
       ],
       "desc": "用遮挡揭露下一层，再把成果拆开讲清楚；三段画面用空间遮罩接力。适合产品卖点、案例拆解与新栏目片头。",
-      "historical_preview": "archive.html?mode=k-reveal&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=k-reveal&rhythm=flow"
     },
     {
       "id": "k-reaction",
@@ -2399,8 +2396,7 @@
         85
       ],
       "desc": "开头连续触发，中段快速聚拢，最后让运动缓下来。用密与疏的变化组织12秒，不把全片简单加速。",
-      "historical_preview": "archive.html?mode=k-reaction&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=k-reaction&rhythm=flow"
     },
     {
       "id": "k-loop",
@@ -2411,8 +2407,7 @@
         88
       ],
       "desc": "一组真正首尾相接的形状编排：同一物体承担几个角色，保留蓝色形状作为视觉线索。推荐观察连续循环两次。",
-      "historical_preview": "archive.html?mode=k-loop&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=k-loop&rhythm=flow"
     },
     {
       "id": "x-optical",
@@ -2425,8 +2420,7 @@
         68
       ],
       "desc": "玻璃的条带先把画面切开，收成一条缎带，再展开为双面海报。用同一方向的遮挡连接三个镜头。",
-      "historical_preview": "archive.html?mode=x-optical&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=x-optical&rhythm=flow"
     },
     {
       "id": "x-type",
@@ -2440,8 +2434,7 @@
         72
       ],
       "desc": "从字的负空间进入画面，节奏从连续推进转成短促形变，最后让网点逐渐落定。",
-      "historical_preview": "archive.html?mode=x-type&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=x-type&rhythm=flow"
     },
     {
       "id": "x-space",
@@ -2455,8 +2448,7 @@
         76
       ],
       "desc": "作品不再只是依次弹出。镜头和路径接力，把平铺、旋转、曲线与线场组织成一次连续探索。",
-      "historical_preview": "archive.html?mode=x-space&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=x-space&rhythm=flow"
     },
     {
       "id": "x-play",
@@ -2470,8 +2462,7 @@
         80
       ],
       "desc": "先建立触感，再用一次意外转折改变节奏。每个小动作都承担把视线交给下一步的任务。",
-      "historical_preview": "archive.html?mode=x-play&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=x-play&rhythm=flow"
     },
     {
       "id": "discover",
@@ -2485,8 +2476,7 @@
         20
       ],
       "desc": "内容持续经过，一张卡成为主角，再展开为品牌画面。不是四张幻灯片，是同一个对象的四种状态。",
-      "historical_preview": "archive.html?mode=discover&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=discover&rhythm=flow"
     },
     {
       "id": "gallery",
@@ -2499,9 +2489,8 @@
         18,
         20
       ],
-      "desc": "从字里看见作品，镜头拉开形成画廊，光线带出焦点，最后回到品牌。这里的作品为程序绘制的几何视觉小样。",
-      "historical_preview": "archive.html?mode=gallery&rhythm=flow",
-      "available_in_current_ui": false
+      "desc": "从字里看见作品，镜头拉开形成画廊，光线带出焦点，最后回到品牌。这里的作品为原创几何视觉小样。",
+      "preview": "archive.html?mode=gallery&rhythm=flow"
     },
     {
       "id": "process",
@@ -2515,8 +2504,7 @@
         19
       ],
       "desc": "词变成一行，行整理成需求，再沿路径找到互补能力。表现协作意图，不表示平台已自动匹配。",
-      "historical_preview": "archive.html?mode=process&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=process&rhythm=flow"
     },
     {
       "id": "contrast",
@@ -2530,8 +2518,7 @@
         20
       ],
       "desc": "用前后变化讲清一个创意，把节奏留给判断。演示不代表真实品牌改造结果。",
-      "historical_preview": "archive.html?mode=contrast&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=contrast&rhythm=flow"
     },
     {
       "id": "insight",
@@ -2545,8 +2532,7 @@
         36
       ],
       "desc": "先看趋势，再聚焦一个信号。所有数字均为动效演示数据。",
-      "historical_preview": "archive.html?mode=insight&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=insight&rhythm=flow"
     },
     {
       "id": "connect",
@@ -2560,8 +2546,7 @@
         20
       ],
       "desc": "圆点代表抽象参与者，路径表达连接意图，不代表真实用户或自动匹配已经发生。",
-      "historical_preview": "archive.html?mode=connect&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=connect&rhythm=flow"
     },
     {
       "id": "assets",
@@ -2575,8 +2560,7 @@
         45
       ],
       "desc": "从选择到整理，再到一份可带走的成果。用组件变化表达工作流程。",
-      "historical_preview": "archive.html?mode=assets&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=assets&rhythm=flow"
     },
     {
       "id": "quiet",
@@ -2590,8 +2574,7 @@
         37
       ],
       "desc": "前段放慢建立期待，转场快速交接，最后留出稳定的品牌画面。",
-      "historical_preview": "archive.html?mode=quiet&rhythm=flow",
-      "available_in_current_ui": false
+      "preview": "archive.html?mode=quiet&rhythm=flow"
     },
     {
       "id": "interflow-story-001",
@@ -2611,9 +2594,8 @@
         8,
         20
       ],
-      "duration": 15,
-      "historical_preview": "?view=story",
-      "available_in_current_ui": false
+      "preview": "?view=story",
+      "duration": 15
     }
   ],
   "theories": [

@@ -1,0 +1,129 @@
+{
+  "schema": "content-events/v1",
+  "duration": 10,
+  "sources": {
+    "brief": {
+      "role": "explanation",
+      "description": "Synthetic example brief: introduce a topic, emphasize it, replace a character. Not user evidence."
+    }
+  },
+  "objects": {
+    "headline": {
+      "initial": "absent"
+    },
+    "character": {
+      "initial": "absent"
+    },
+    "feedback": {
+      "initial": "absent"
+    }
+  },
+  "events": [
+    {
+      "id": "text",
+      "at": 0,
+      "end": 0.5,
+      "object": "headline",
+      "before": "absent",
+      "after": "plain",
+      "action": "reveal",
+      "meaning": "The topic becomes readable",
+      "focus": "headline",
+      "source_refs": [
+        "brief"
+      ],
+      "readable": [
+        0.5,
+        2
+      ]
+    },
+    {
+      "id": "join",
+      "at": 1,
+      "end": 1.4,
+      "object": "character",
+      "before": "absent",
+      "after": "character-a",
+      "action": "reveal",
+      "meaning": "A character joins the existing content",
+      "focus": "character",
+      "source_refs": [
+        "brief"
+      ]
+    },
+    {
+      "id": "emphasis",
+      "at": 2,
+      "end": 2.4,
+      "object": "headline",
+      "before": "plain",
+      "after": "highlighted",
+      "action": "emphasize",
+      "meaning": "The important phrase is distinguished",
+      "focus": "headline",
+      "source_refs": [
+        "brief"
+      ]
+    },
+    {
+      "id": "feedback",
+      "at": 2.7,
+      "end": 3,
+      "object": "feedback",
+      "before": "absent",
+      "after": "emphasis-complete",
+      "action": "feedback",
+      "meaning": "Confirm the visible highlight has completed",
+      "focus": "feedback",
+      "source_refs": [
+        "brief"
+      ],
+      "result_of": "emphasis"
+    },
+    {
+      "id": "read",
+      "at": 3,
+      "end": 5,
+      "object": "headline",
+      "before": "highlighted",
+      "after": "highlighted",
+      "action": "hold",
+      "meaning": "Read the result",
+      "focus": "headline",
+      "source_refs": [
+        "brief"
+      ],
+      "reason": "Protect reading time"
+    },
+    {
+      "id": "replace",
+      "at": 5,
+      "end": 5.5,
+      "object": "character",
+      "before": "character-a",
+      "after": "character-b",
+      "action": "replace",
+      "meaning": "Only the character changes; content remains",
+      "focus": "character",
+      "source_refs": [
+        "brief"
+      ]
+    },
+    {
+      "id": "settle",
+      "at": 5.5,
+      "end": 10,
+      "object": "headline",
+      "before": "highlighted",
+      "after": "highlighted",
+      "action": "hold",
+      "meaning": "Keep the completed result visible",
+      "focus": "headline",
+      "source_refs": [
+        "brief"
+      ],
+      "reason": "Ending reading window"
+    }
+  ],
+  "screen_copy": []
+}

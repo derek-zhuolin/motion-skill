@@ -1,0 +1,6 @@
+{
+  "repository": null,
+  "channel": "stable",
+  "check_interval_hours": 24,
+  "network_check_enabled": false
+}
