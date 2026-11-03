@@ -1,0 +1,213 @@
+{
+  "duration": 10,
+  "canvas": [
+    1080,
+    1350
+  ],
+  "shots": [
+    {
+      "id": "idea",
+      "meaning": "念头出现",
+      "visible": [
+        0,
+        1.8
+      ],
+      "readable": [
+        0.4,
+        1.5
+      ],
+      "minimum_read_seconds": 0.9,
+      "boxes": [
+        {
+          "id": "text",
+          "rect": [
+            100,
+            210,
+            800,
+            230
+          ]
+        },
+        {
+          "id": "cloud",
+          "rect": [
+            80,
+            570,
+            310,
+            310
+          ]
+        }
+      ],
+      "camera": {
+        "target": "cloud",
+        "purpose": "跳入建立念头"
+      }
+    },
+    {
+      "id": "relay",
+      "meaning": "动作接力",
+      "visible": [
+        1.55,
+        3.75
+      ],
+      "readable": [
+        1.85,
+        3.5
+      ],
+      "minimum_read_seconds": 0.9,
+      "boxes": [
+        {
+          "id": "text",
+          "rect": [
+            100,
+            210,
+            800,
+            230
+          ]
+        },
+        {
+          "id": "cloud",
+          "rect": [
+            130,
+            600,
+            240,
+            240
+          ]
+        },
+        {
+          "id": "sprout",
+          "rect": [
+            700,
+            570,
+            260,
+            260
+          ]
+        }
+      ],
+      "camera": {
+        "target": "blue-dot",
+        "purpose": "沿接力路径轻微跟随"
+      }
+    },
+    {
+      "id": "focus",
+      "meaning": "聚焦重点",
+      "visible": [
+        3.5,
+        5.8
+      ],
+      "readable": [
+        3.85,
+        5.5
+      ],
+      "minimum_read_seconds": 0.9,
+      "boxes": [
+        {
+          "id": "text",
+          "rect": [
+            100,
+            210,
+            800,
+            230
+          ]
+        },
+        {
+          "id": "focus",
+          "rect": [
+            280,
+            520,
+            520,
+            330
+          ]
+        }
+      ],
+      "camera": {
+        "target": "selected-node",
+        "purpose": "推进关键节点，让关系可见"
+      }
+    },
+    {
+      "id": "layout",
+      "meaning": "画面有序",
+      "visible": [
+        5.55,
+        8.2
+      ],
+      "readable": [
+        5.95,
+        7.9
+      ],
+      "minimum_read_seconds": 0.9,
+      "boxes": [
+        {
+          "id": "text",
+          "rect": [
+            100,
+            210,
+            800,
+            230
+          ]
+        },
+        {
+          "id": "diagram",
+          "rect": [
+            160,
+            520,
+            760,
+            350
+          ]
+        }
+      ],
+      "camera": {
+        "target": "three-nodes",
+        "purpose": "拉远揭示信息关系"
+      }
+    },
+    {
+      "id": "finish",
+      "meaning": "让内容活起来",
+      "visible": [
+        7.95,
+        10
+      ],
+      "readable": [
+        8.5,
+        10
+      ],
+      "minimum_read_seconds": 0.9,
+      "boxes": [
+        {
+          "id": "title",
+          "rect": [
+            100,
+            360,
+            880,
+            220
+          ]
+        },
+        {
+          "id": "cloud",
+          "rect": [
+            205,
+            650,
+            260,
+            260
+          ]
+        },
+        {
+          "id": "sprout",
+          "rect": [
+            615,
+            650,
+            260,
+            260
+          ]
+        }
+      ],
+      "camera": {
+        "target": "whole-group",
+        "purpose": "收回全景，组重心中间略偏上"
+      }
+    }
+  ],
+  "note": "Declared safe reading windows and conservative boxes. Verify actual pixels separately."
+}

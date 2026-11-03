@@ -16,21 +16,24 @@
     "verify:rhythm": "node scripts/test-rhythm.mjs && tsc -p examples/rhythm-playground/tsconfig.json",
     "build:rhythm": "node examples/rhythm-playground/build.mjs",
     "preview:rhythm": "python3 -m http.server 4343 --bind 127.0.0.1 --directory examples/rhythm-playground/dist",
-    "verify:rhythm-build": "node scripts/verify-rhythm-build.mjs"
+    "verify:rhythm-build": "node scripts/verify-rhythm-build.mjs",
+    "build:polish": "node examples/directed-polish/build.mjs",
+    "preview:polish": "python3 -m http.server 4344 --bind 127.0.0.1 --directory examples/directed-polish/site"
   },
   "dependencies": {
-    "remotion": "4.0.538",
-    "@remotion/player": "4.0.538",
-    "@remotion/fonts": "4.0.538",
     "@remotion/bundler": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/player": "4.0.538",
     "@remotion/renderer": "4.0.538",
+    "lucide-react": "1.61.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "remotion": "4.0.538"
   },
   "devDependencies": {
-    "typescript": "5.9.3",
     "@types/react": "19.2.7",
-    "esbuild": "0.28.1"
+    "esbuild": "0.28.1",
+    "typescript": "5.9.3"
   },
   "version": "1.2.0-beta.1",
   "engines": {

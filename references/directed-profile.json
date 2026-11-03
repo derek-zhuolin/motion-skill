@@ -1,0 +1,27 @@
+{
+  "id": "directed-clay-polish-v1",
+  "accepted_reference": "polish32",
+  "reference_status": "user_accepted_2026-11-03",
+  "new_audio_transfer_status": "pending_new_audio_trial",
+  "inherit": ["visual identity", "soft clay material", "content-led motion", "continuous object handoffs", "readable results"],
+  "do_not_inherit": ["old narration", "old timestamps", "old shot order", "mandatory phone", "mandatory three-card layout"],
+  "default_brand": {
+    "blue": "#0070DB", "ink": "#141414", "white": "#FFFFFF",
+    "chinese": "Source Han Sans SC / InterflowCN", "latin": "Figtree",
+    "override": "An explicitly supplied brand guide takes precedence. Preserve its identity and review material adaptation."
+  },
+  "material": {"entry": "src/production/SoftClay.tsx", "export": "SoftClaySurface", "representation": "SVG simulated volume, not mesh 3D", "features": ["broad soft gradients", "rounded continuous silhouette", "visible thickness", "contact shadow", "restrained compression"]},
+  "direction": [
+    "Choose the image the viewer should remember, then design its meaningful change.",
+    "One primary action at a time; supporting preparation may overlap without competing.",
+    "Guide toward the next destination before its main action; keep a shared UI shell when the same application changes pages.",
+    "Protect the reading anchor after content is fully visible, not from the first entrance frame.",
+    "Use sparse and dense compositions, scale and causal changes to create pace; do not animate only captions.",
+    "Choose a content-motivated punch moment; do not force a flip, zoom or phone into every film.",
+    "Fast passages may use images, objects or UI states instead of dense explanatory text."
+  ],
+  "media": {"priority": "authorized local real media", "casting_preference_when_people_are_needed": "source-described Asian adults in contemporary urban editorial/commercial photography", "avoid": ["generic corporate stock loops", "unmotivated repeated footage", "AI-generated portraits presented as real photographs"], "external_search": "only when authorized", "location_labels": "source-verified only"},
+  "audio": {"original_voice": true, "speed": 1, "sfx": "few, source-credited and tied to contact or result; never mask narration"},
+  "review_dimensions": ["meaning", "hierarchy", "material", "reading", "handoff", "motion_variation", "audio", "actual_playback"],
+  "learning": "Record user acceptance separately from agent judgment; learn preferences and failures, not one permanent layout."
+}

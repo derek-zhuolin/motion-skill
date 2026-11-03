@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0-beta.1",
+  "version": "1.2.0-beta.1+local.11-directed-polish",
   "display_name": "Motion Skill",
   "invocation": "motion-video",
   "motion_studies": 96,
@@ -17,11 +17,9 @@
     "version": "1.2.3",
     "commit": "5ea8b1cf0a38699340a38e00d02770308997d8c0"
   },
-  "derived_from": "Historical local motion studies and a public voice-to-video reference; see ATTRIBUTION.md",
-  "license_note": "Scoped MIT for project tooling/reference engineering; historical study archive is excluded pending per-item provenance. Fonts and dependencies keep their licenses.",
+  "derived_from": "project-local interflow-motion-director 1.0.0 and director review 030",
+  "license_note": "Local reusable package, no new open-source grant asserted for workspace originals. Font licenses included; Spec Kit is referenced, not redistributed.",
   "private_media_included": false,
-  "reference_video_in_separate_demo_directory": true,
-  "captions_required_by_default": true,
   "production_adapters": [
     "keyword-window",
     "keyword-rhythm",
@@ -35,6 +33,12 @@
     "focus-handoff"
   ],
   "clay_representation": "SVG simulated volume; no mesh 3D",
+  "audio_input_kinds": [
+    "voice",
+    "sfx",
+    "music"
+  ],
+  "publication_status": "source patch; polish32 accepted; new audio transfer pending",
   "timing_helpers": [
     "compileScore",
     "cueProgress"
@@ -73,12 +77,113 @@
     "model_calls": 0,
     "plan_is_not_wiring_evidence": true
   },
-  "integrated_from_local": "selected focus.2 and rhythm experiment changes; private cases excluded",
-  "public_base_commit": "761d11f7b4af2b5d7acd20da62c00884d738ebdd",
+  "public_merge": {
+    "release": "v1.1.1-beta.1",
+    "commit": "761d11f7b4af2b5d7acd20da62c00884d738ebdd",
+    "scope": "selective merge; local references and baselines preserved"
+  },
+  "captions_required_by_default": true,
+  "visual_direction_review": "references/visual-direction-20261028.md",
+  "experimental_extensions": [
+    {
+      "id": "focus-camera",
+      "version": "0.1",
+      "status": "local user playground test pending",
+      "default_enabled": false,
+      "stable_selector_member": false,
+      "modes": [
+        "pull-back-reveal",
+        "focus-return"
+      ],
+      "guide": "references/focus-camera.md",
+      "automatic_keyword_detection": false,
+      "automatic_target_tracking": false,
+      "source_reference": {
+        "repository": "https://github.com/mileson/chaojifeng-video-design",
+        "commit": "a7c84de88f9632a013ab2db16cb9ab0543f897e9",
+        "scope": "shot principles only; new implementation; no upstream code or assets bundled"
+      }
+    },
+    {
+      "id": "handoff-contract",
+      "version": "0.1",
+      "default_enabled": false,
+      "stable_selector_member": false,
+      "guide": "references/handoff-orchestration.md",
+      "validator": "scripts/validate_handoffs.py",
+      "scope": "declared timing/media/UI-role checks; not automatic narrative, buffer or visual acceptance"
+    }
+  ],
+  "public_release": "1.2.0-beta.1",
+  "local_customizations_preserved": true,
   "optional_extensions": {
     "focus_camera": "0.1",
     "orchestration": "1",
-    "music_driven_motion": "1"
+    "music_driven_motion": "1",
+    "continuity_ip": "0.1"
   },
-  "music_generation_bundled": false
+  "local_rollback": "removed local.2-media style/generation defaults; preserved earlier engineering/rhythm/focus patches",
+  "content_event_extension": {
+    "entry": "scripts/content_events.py",
+    "guide": "references/content-events.md",
+    "status": "local experimental",
+    "raw_voice_semantic_recognition": false,
+    "automatic_aesthetic_scoring": false,
+    "stable_adapters_added": 0,
+    "private_accepted_baseline": ".local/content-events-accepted.json"
+  },
+  "open_direction": {
+    "entry": "scripts/open_direction.py",
+    "guide": "references/open-direction.md",
+    "automatic_retrieval": false,
+    "asr": false,
+    "srt_parser": true,
+    "selection": "Agent-assessed open candidates; actual-use history",
+    "user_acceptance": "pending",
+    "review_schema": 2,
+    "feedback": "append-only user feedback by dimension"
+  },
+  "stageshow_ui": {
+    "source": "https://github.com/benjitaylor/skills",
+    "snapshot": "assets/runtime/vendor/stageshow/SOURCE.json",
+    "upstream_code_modified": false,
+    "license": "MIT with third-party asset notices retained",
+    "automatic_scope": "product UI scenes inside Motion tasks",
+    "frame_extension": "ProductUIFilm",
+    "preserves_existing_materials_and_adapters": true,
+    "approval": "User explicitly approved formal integration on 2026-11-02; quicker demo visual acceptance remains pending",
+    "frame_actions": [
+      "UISwipeArchive",
+      "UIPhoneExpand",
+      "UIConversationCards",
+      "UIFreeDrag",
+      "UIUpload",
+      "UIPresence",
+      "UIChartScrub",
+      "UIAggregate"
+    ],
+    "verification": "All eight independent actions have Remotion 4.0.538 representative still evidence. Local catalog verification rendered 38 representative stills; full-film/audio/user acceptance separate.",
+    "component_catalog": "references/component-catalog.json",
+    "frame_component_total": 9
+  },
+  "component_inventory": {
+    "catalog": "references/component-catalog.json",
+    "original_adapters": 10,
+    "original_extensions": 10,
+    "ui_frame_components": 9,
+    "ui_parts": 33,
+    "icons": 33,
+    "scope": "Direct frame components, optional original extensions, composable kit visuals and browser-only behaviors are distinct. Research count is not production component count. Cursor entries are listed separately in catalog.",
+    "guide": "references/component-catalog.md"
+  },
+  "directed_polish": {
+    "profile": "references/directed-profile.json",
+    "guide": "references/directed-motion.md",
+    "prompt": "references/audio-directed-prompt.md",
+    "entry": "scripts/audio_brief.py",
+    "prepared_is_not_film": true,
+    "accepted_reference": "polish32",
+    "new_audio_transfer": "pending",
+    "primitive_exports": 8
+  }
 }

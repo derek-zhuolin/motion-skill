@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0-beta.1",
+  "version": "1.2.0-beta.1+local.11-directed-polish",
   "representation_note": "Production adapters are reusable primitives; Agent still designs the narrative and trajectories. SVG clay simulates volume and is not mesh 3D.",
   "adapters": [
     {
@@ -92,5 +92,170 @@
     ],
     "example": "src/production/score.example.json",
     "scope": "opt-in timing graph; not an additional study adapter or automatic director"
-  }
+  },
+  "ui_extensions": [
+    {
+      "id": "stageshow-ui-flow",
+      "status": "production_frame_extension",
+      "file": "src/production/ProductUIFilm.tsx",
+      "export": "ProductUIFilm",
+      "scope": "three-task create, reorder, share flow; content/theme/timing configurable; original gold examples remain browser references until individually frame-adapted",
+      "index": "references/stageshow-index.json"
+    },
+    {
+      "id": "ui-swipe-archive",
+      "status": "production_frame_extension",
+      "file": "src/production/UISwipeArchive.tsx",
+      "export": "UISwipeArchive",
+      "scope": "筛选/归档/去掉支线",
+      "source_example": "swipe",
+      "default_duration_seconds": 3.4,
+      "clock": "frame",
+      "native_render_verification": "Remotion representative still render"
+    },
+    {
+      "id": "ui-phone-expand",
+      "status": "production_frame_extension",
+      "file": "src/production/UIPhoneExpand.tsx",
+      "export": "UIPhoneExpand",
+      "scope": "深入/展开/看细节",
+      "source_example": "phone-touch",
+      "default_duration_seconds": 3.7,
+      "clock": "frame",
+      "native_render_verification": "Remotion representative still render"
+    },
+    {
+      "id": "ui-conversation-cards",
+      "status": "production_frame_extension",
+      "file": "src/production/UIConversationCards.tsx",
+      "export": "UIConversationCards",
+      "scope": "提问/比较/选择/确认",
+      "source_example": "ai-cards",
+      "default_duration_seconds": 4.9,
+      "clock": "frame",
+      "native_render_verification": "Remotion representative still render"
+    },
+    {
+      "id": "ui-free-drag",
+      "status": "production_frame_extension",
+      "file": "src/production/UIFreeDrag.tsx",
+      "export": "UIFreeDrag",
+      "scope": "安排/归位/排期",
+      "source_example": "freeform-drag",
+      "default_duration_seconds": 4.4,
+      "clock": "frame",
+      "native_render_verification": "Remotion representative still render"
+    },
+    {
+      "id": "ui-upload",
+      "status": "production_frame_extension",
+      "file": "src/production/UIUpload.tsx",
+      "export": "UIUpload",
+      "scope": "输入/上传/素材就绪",
+      "source_example": "upload",
+      "default_duration_seconds": 3.8,
+      "clock": "frame",
+      "native_render_verification": "Remotion 4.0.538 representative still rendered; full film acceptance separate"
+    },
+    {
+      "id": "ui-presence",
+      "status": "production_frame_extension",
+      "file": "src/production/UIPresence.tsx",
+      "export": "UIPresence",
+      "scope": "多人协作/共同标记/结果写回",
+      "source_example": "presence",
+      "default_duration_seconds": 3.8,
+      "clock": "frame",
+      "native_render_verification": "Remotion 4.0.538 representative still rendered; full film acceptance separate"
+    },
+    {
+      "id": "ui-chart-scrub",
+      "status": "production_frame_extension",
+      "file": "src/production/UIChartScrub.tsx",
+      "export": "UIChartScrub",
+      "scope": "逐点查看/数值与指针共位",
+      "source_example": "chart-scrub",
+      "default_duration_seconds": 3.6,
+      "clock": "frame",
+      "native_render_verification": "Remotion 4.0.538 representative still rendered; full film acceptance separate"
+    },
+    {
+      "id": "ui-aggregate",
+      "status": "production_frame_extension",
+      "file": "src/production/UIAggregate.tsx",
+      "export": "UIAggregate",
+      "scope": "对象入列/落定后更新合计",
+      "source_example": "subscriptions",
+      "default_duration_seconds": 3.7,
+      "clock": "frame",
+      "native_render_verification": "Remotion 4.0.538 representative still rendered; full film acceptance separate"
+    }
+  ],
+  "component_catalog": "references/component-catalog.json",
+  "directed_extensions": [
+    {
+      "id": "phrase-reveal",
+      "export": "PhraseReveal",
+      "file": "src/production/DirectedPolish.tsx",
+      "task": "文字按完整语义块出现",
+      "status": "frame_primitive",
+      "representation": "frame-driven-dom-svg"
+    },
+    {
+      "id": "page-handoff",
+      "export": "PageHandoff",
+      "file": "src/production/DirectedPolish.tsx",
+      "task": "导航预告后，旧内容退去，新内容接入",
+      "status": "frame_primitive",
+      "representation": "frame-driven-dom-svg"
+    },
+    {
+      "id": "card-response",
+      "export": "CardResponse",
+      "file": "src/production/DirectedPolish.tsx",
+      "task": "按到达、承接、后退分别改变姿态",
+      "status": "frame_primitive",
+      "representation": "frame-driven-dom-svg"
+    },
+    {
+      "id": "navigation-cue",
+      "export": "NavigationCue",
+      "file": "src/production/DirectedPolish.tsx",
+      "task": "主操作之前指出下一处位置",
+      "status": "frame_primitive",
+      "representation": "frame-driven-dom-svg"
+    },
+    {
+      "id": "trace-rule",
+      "export": "TraceRule",
+      "file": "src/production/DirectedPolish.tsx",
+      "task": "结果落稳后强调一个重点",
+      "status": "frame_primitive",
+      "representation": "frame-driven-dom-svg"
+    },
+    {
+      "id": "trace-confirm",
+      "export": "TraceConfirm",
+      "file": "src/production/DirectedPolish.tsx",
+      "task": "明确结果之后给出确认",
+      "status": "frame_primitive",
+      "representation": "frame-driven-dom-svg"
+    },
+    {
+      "id": "soft-clay-surface",
+      "export": "SoftClaySurface",
+      "file": "src/production/SoftClay.tsx",
+      "task": "圆润轮廓、柔光、厚度和接触影",
+      "status": "frame_primitive",
+      "representation": "svg-simulated-volume"
+    },
+    {
+      "id": "soft-clay-join",
+      "export": "SoftClayJoin",
+      "file": "src/production/SoftClay.tsx",
+      "task": "接触时轻压缩，保留同一对象身份",
+      "status": "frame_primitive",
+      "representation": "svg-simulated-volume"
+    }
+  ]
 }

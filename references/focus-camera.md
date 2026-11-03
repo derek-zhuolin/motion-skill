@@ -1,6 +1,6 @@
-# 重点词运镜 · 可选 beta 扩展 focus-camera/0.1
+# 重点词运镜 · 本地实验扩展 focus-camera/0.1
 
-状态：随 `1.2.0-beta.1` 提供；不承诺自动保持任意内容的审美。**默认关闭，不加入稳定 selector，不改变原有 10 个生产 adapter。**
+状态：`1.1.1-local.6-focus.2`，基于 local.5，未发布；Playground 用户测试待确认。**默认关闭，不加入稳定 selector，不改变原有 10 个生产 adapter。**
 
 ## 只补一层“此刻看哪里”
 

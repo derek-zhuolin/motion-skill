@@ -1,6 +1,5 @@
-import palette from './palette.json';
 import React from 'react';
-const B=palette.accent,K=palette.ink,W=palette.paper;
+const B='#0070DB', K='#141414', W='#FFFFFF';
 const sat=(v:number)=>Math.max(0,Math.min(1,v));
 const ease=(v:number)=>{v=sat(v);return v*v*v*(v*(v*6-15)+10)};
 const w=(t:number,a:number,b:number)=>ease((t-a)/(b-a));
@@ -18,7 +17,7 @@ export const experiments=[
  {id:70,name:'弹性字浪 · 文字也有重心',family:'文字与编辑',desc:'每个字按不同时间压缩、舒展，像一股能量穿过一句话，最后恢复可读比例。',source:'atelier',mechanism:'字宽波浪 × 重心平移 × 可读停顿'},
  {id:71,name:'狭缝时间 · 让上一帧留下来',family:'文字与编辑',desc:'各条带读取同一动作的不同时间，形成有秩序的时间拖影，然后重新对齐。',source:'juan',mechanism:'时间切片 × 残像编排 × 轮廓对齐'},
  {id:72,name:'网点显影 · 颗粒聚成一个形状',family:'文字与编辑',desc:'规则网点按波前变大、变小，蓝色体积从印刷网点中浮现，留下简洁标题。',source:'paper',mechanism:'网点显影 × 体积明暗 × 视觉聚焦'},
- {id:73,name:'无限桌面 · 从全貌跳进细节',family:'空间与运镜',desc:'本地实现的作品铺成自由桌面，镜头弧线滑行、减速，精准进入其中一张海报。',source:'juan',mechanism:'自由画布 × 弧线运镜 × 焦点接管'},
+ {id:73,name:'无限桌面 · 从全貌跳进细节',family:'空间与运镜',desc:'原创作品铺成自由桌面，镜头弧线滑行、减速，精准进入其中一张海报。',source:'juan',mechanism:'自由画布 × 弧线运镜 × 焦点接管'},
  {id:74,name:'轨迹旋涡 · 收集一个好想法',family:'空间与运镜',desc:'小作品沿螺旋留下连续轨迹，逐渐收拢成一个清楚的焦点。',source:'hub',mechanism:'图像轨迹 × 螺旋聚拢 × 尺度变化'},
  {id:75,name:'弹性画带 · 沿着曲线看作品',family:'空间与运镜',desc:'作品在同一条有张力的曲线上行进，曲线逐渐拉直，带出一次有惯性的视觉交接。',source:'atelier',mechanism:'曲线路径 × 切线旋转 × 张力释放'},
  {id:76,name:'摩尔纹透镜 · 线条里的呼吸',family:'空间与运镜',desc:'两层细线发生缓慢相对运动，一枚透镜穿过它们，产生局部放大与干涉层次。',source:'paper',mechanism:'线场干涉 × 局部透镜 × 呼吸节奏'},

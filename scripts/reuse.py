@@ -23,6 +23,9 @@ def reuse_project(args):
  for n,v in {'remotion':'4.0.538','@remotion/player':'4.0.538','@remotion/bundler':'4.0.538','@remotion/renderer':'4.0.538','react':'19.2.3'}.items():
   f=deps/n/'package.json'
   if not f.is_file() or json.loads(f.read_text()).get('version')!=v:raise ValueError('Missing/incompatible local dependency: '+n)
+ from install_product_ui import missing_ui_dependencies
+ ui_missing=missing_ui_dependencies(deps)
+ if ui_missing:raise ValueError('Missing/incompatible UI dependencies; no project created: '+json.dumps(ui_missing,ensure_ascii=False))
  if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_]*',cfg['export']):raise ValueError('Invalid export')
  if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_/-]*',cfg['module']):raise ValueError('Invalid module')
  jobs=[]
@@ -44,7 +47,7 @@ def reuse_project(args):
    if f.is_file():manifest.append({'path':str(f.relative_to(dest)),'sha256':digest(f)})
  for name in ('src','scripts','evidence','outputs','public'):(dest/name).mkdir(exist_ok=True)
  (dest/'node_modules').symlink_to(deps,target_is_directory=True)
- for name in ('tsconfig.json','src/react-dom-client.d.ts','src/react-dom-server.d.ts'):
+ for name in ('tsconfig.json','src/react-dom-client.d.ts','src/react-dom-server.d.ts','src/react-dom.d.ts'):
   f=SKILL/'assets/runtime'/name
   if f.exists():shutil.copy2(f,dest/name)
  shutil.copy2(SKILL/'assets/runtime/serve.py',dest/'serve.py')
@@ -62,7 +65,15 @@ def reuse_project(args):
    if digest(out)!=digest(f):adapter_conflicts.append(str(out.relative_to(dest)))
    continue
   shutil.copy2(f,out);adapter_copies.append(str(out.relative_to(dest)))
- (dest/'evidence/adapters-available.json').write_text(json.dumps({'copied':adapter_copies,'preserved_reference_conflicts':adapter_conflicts,'status':'available_not_invoked'},indent=2))
+ # Include the UI source dependency beside adapters; never replace reference files.
+ for f in (SKILL/'assets/runtime/vendor/stageshow').rglob('*'):
+  if not f.is_file():continue
+  out=dest/'vendor/stageshow'/f.relative_to(SKILL/'assets/runtime/vendor/stageshow');out.parent.mkdir(parents=True,exist_ok=True)
+  if out.exists():
+   if not out.is_file() or digest(out)!=digest(f):adapter_conflicts.append(str(out.relative_to(dest)))
+   continue
+  shutil.copy2(f,out);adapter_copies.append(str(out.relative_to(dest)))
+ (dest/'evidence/adapters-available.json').write_text(json.dumps({'copied':adapter_copies,'preserved_reference_conflicts':adapter_conflicts,'status':'available_not_invoked','ui_dependency_available':(deps/'lucide-react/package.json').is_file()},indent=2))
  (dest/'src/Baseline.tsx').write_text("export {"+cfg['export']+" as BaselineFilm} from './"+cfg['module']+"';\n")
  config={k:cfg[k] for k in ('label','width','height','fps','frames','fonts','props')}
  (dest/'src/baseline.json').write_text(json.dumps(config,ensure_ascii=False,indent=2))

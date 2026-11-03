@@ -5,7 +5,7 @@ from pathlib import Path
 
 def audit_production(manifest, project, registry):
     root = Path(project).resolve()
-    known = {a['id']: a for a in registry['adapters']}
+    known = {a['id']: a for a in [*registry['adapters'], *registry.get('ui_extensions', []), *registry.get('directed_extensions', [])]}
     blocking, warnings, wired = [], [], []
     for key in ('palette','typography','material','motion','sound'):
         if not manifest.get('visual_system', {}).get(key):
@@ -34,7 +34,7 @@ def audit_production(manifest, project, registry):
         start, end = use.get('start', -1), use.get('end', -1)
         if not 0 <= start < end <= manifest.get('duration', 0):
             blocking.append('Invalid usage interval: '+use['adapter'])
-        wired.append({'adapter':use['adapter'],'study_id':adapter['study_id'],'caller':use['file'],'implementation':adapter['file']})
+        wired.append({'adapter':use['adapter'],'study_id':adapter.get('study_id'),'caller':use['file'],'implementation':adapter['file']})
     if not manifest.get('mechanisms'):
         blocking.append('No production mechanisms declared')
     for hold in manifest.get('holds', []):

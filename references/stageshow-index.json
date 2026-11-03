@@ -1,0 +1,201 @@
+{
+  "source_root": "assets/runtime/vendor/stageshow",
+  "automatic_scope": "product UI scenes within Motion tasks",
+  "preserve": [
+    "brand",
+    "typography",
+    "material",
+    "non-UI mechanisms",
+    "original speech speed"
+  ],
+  "frame_extensions": [
+    {
+      "id": "stageshow-ui-flow",
+      "file": "assets/runtime/src/production/ProductUIFilm.tsx",
+      "export": "ProductUIFilm",
+      "story": "create → reorder three tasks → share",
+      "status": "frame-adapted; browser verified, renderer export separate"
+    },
+    {
+      "id": "ui-swipe-archive",
+      "file": "assets/runtime/src/production/UISwipeArchive.tsx",
+      "export": "UISwipeArchive",
+      "story": "筛选/归档/去掉支线",
+      "native_example": "swipe",
+      "status": "frame-adapted; renderer representative still verified"
+    },
+    {
+      "id": "ui-phone-expand",
+      "file": "assets/runtime/src/production/UIPhoneExpand.tsx",
+      "export": "UIPhoneExpand",
+      "story": "深入/展开/看细节",
+      "native_example": "phone-touch",
+      "status": "frame-adapted; renderer representative still verified"
+    },
+    {
+      "id": "ui-conversation-cards",
+      "file": "assets/runtime/src/production/UIConversationCards.tsx",
+      "export": "UIConversationCards",
+      "story": "提问/比较/选择/确认",
+      "native_example": "ai-cards",
+      "status": "frame-adapted; renderer representative still verified"
+    },
+    {
+      "id": "ui-free-drag",
+      "file": "assets/runtime/src/production/UIFreeDrag.tsx",
+      "export": "UIFreeDrag",
+      "story": "安排/归位/排期",
+      "native_example": "freeform-drag",
+      "status": "frame-adapted; renderer representative still verified"
+    },
+    {
+      "id": "ui-upload",
+      "file": "assets/runtime/src/production/UIUpload.tsx",
+      "export": "UIUpload",
+      "story": "输入/上传/素材就绪",
+      "native_example": "upload",
+      "default_duration_seconds": 3.8,
+      "clock": "frame",
+      "status": "frame-adapted; renderer representative still verified",
+      "native_render_verification": "pending"
+    },
+    {
+      "id": "ui-presence",
+      "file": "assets/runtime/src/production/UIPresence.tsx",
+      "export": "UIPresence",
+      "story": "多人协作/共同标记/结果写回",
+      "native_example": "presence",
+      "default_duration_seconds": 3.8,
+      "clock": "frame",
+      "status": "frame-adapted; renderer representative still verified",
+      "native_render_verification": "pending"
+    },
+    {
+      "id": "ui-chart-scrub",
+      "file": "assets/runtime/src/production/UIChartScrub.tsx",
+      "export": "UIChartScrub",
+      "story": "逐点查看/数值与指针共位",
+      "native_example": "chart-scrub",
+      "default_duration_seconds": 3.6,
+      "clock": "frame",
+      "status": "frame-adapted; renderer representative still verified",
+      "native_render_verification": "pending"
+    },
+    {
+      "id": "ui-aggregate",
+      "file": "assets/runtime/src/production/UIAggregate.tsx",
+      "export": "UIAggregate",
+      "story": "对象入列/落定后更新合计",
+      "native_example": "subscriptions",
+      "default_duration_seconds": 3.7,
+      "clock": "frame",
+      "status": "frame-adapted; renderer representative still verified",
+      "native_render_verification": "pending"
+    }
+  ],
+  "references": {
+    "craft": "references/craft.md",
+    "framing": "references/framing.md",
+    "motion": "references/motion.md",
+    "kit": "references/kit.md"
+  },
+  "examples": [
+    {
+      "id": "form-error",
+      "meaning": "input, validation and correction",
+      "borrow": "reserved feedback lane; fixed button state slots"
+    },
+    {
+      "id": "reorder",
+      "meaning": "change priority",
+      "borrow": "grip follows hand; neighbors make space; release settles"
+    },
+    {
+      "id": "share",
+      "meaning": "permissions and sharing",
+      "borrow": "email becomes chip; anchored panel; result stays"
+    },
+    {
+      "id": "table-edit",
+      "meaning": "change a value and its dependent total",
+      "borrow": "fixed cell text position; commit then total"
+    },
+    {
+      "id": "loading",
+      "meaning": "information arrives in existing slots",
+      "borrow": "same geometry for skeleton and content"
+    },
+    {
+      "id": "close-up",
+      "meaning": "one operation with product context",
+      "borrow": "whole-window close-up; scaled cursor"
+    },
+    {
+      "id": "dynamic-island",
+      "meaning": "one surface expands, folds and splits",
+      "borrow": "shell and text layers; state-dependent choreography"
+    },
+    {
+      "id": "swipe",
+      "meaning": "archive with a gesture",
+      "borrow": "press, swipe, release velocity, neighboring gap closes"
+    },
+    {
+      "id": "freeform-drag",
+      "meaning": "move freely then align",
+      "borrow": "grab offset; measured grid; snap into target"
+    },
+    {
+      "id": "phone-touch",
+      "meaning": "card becomes detail and folds back",
+      "borrow": "same element through expansion; causally reset loop"
+    },
+    {
+      "id": "ai-cards",
+      "meaning": "a decision unfolds in a conversation",
+      "borrow": "cards grow with thread; answers remain as record"
+    },
+    {
+      "id": "choreography",
+      "meaning": "content changes while keeping layout continuity",
+      "borrow": "retained tracks, masking, dependent timing"
+    },
+    {
+      "id": "hero-demo",
+      "meaning": "a gesture drives several UI surfaces",
+      "borrow": "named targets; annotation; satellite hierarchy"
+    },
+    {
+      "id": "presence",
+      "meaning": "collaborators work in one persistent document",
+      "borrow": "one person/one color across cursor, selection and avatar; marks remain"
+    },
+    {
+      "id": "chart-scrub",
+      "meaning": "read original data points along a sequence",
+      "borrow": "pointer, crosshair and chart point share geometry; readout retains actual data-point values"
+    },
+    {
+      "id": "subscriptions",
+      "meaning": "an incoming object changes its containing collection",
+      "borrow": "open the row before arrival; update dependent metric after landing"
+    },
+    {
+      "id": "upload",
+      "meaning": "a file enters the product and becomes an asset",
+      "borrow": "one persistent file row through pickup, progress and completion"
+    }
+  ],
+  "native_example_status": "all vendored examples are reference/browser playback; only explicitly listed frame_extensions are adapted for Motion frame timing",
+  "semantic_selection": {
+    "owner": "Agent from source meaning and time anchors",
+    "read": "references/ui-narrative.md",
+    "rules": [
+      "choose the relationship before the carrier",
+      "retain object identity across adjacent scenes",
+      "do not force all audio into phone UI",
+      "do not equate a simulated action with real evidence"
+    ]
+  },
+  "component_catalog": "references/component-catalog.json"
+}

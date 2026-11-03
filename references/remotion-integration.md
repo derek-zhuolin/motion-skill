@@ -33,7 +33,7 @@ npx skills add remotion-dev/skills
 - references/production-registry.json：实际可导入组件和研究编号；仍然保留study_only边界。
 - assets/runtime/src/production/DetailMechanisms.tsx：真正可复用的数字/关键词/素材细节实现。
 - examples / tests：结构化计划、选择输出、真实运行报告；公开例子使用授权素材或显式测试素材。
-- CHANGELOG：本次问题、修复内容、验证环境与未覆盖项。本公开源码版本为 1.1.1-beta.1，整合本地 .4；源码推送不等于新建 GitHub Release 资产。
+- CHANGELOG：本次问题、修复内容、验证环境与未覆盖项。不要把本地.4写成已发布release。
 
 本包不重新分发官方Remotion技能正文；以依赖说明和定位器接入。Remotion技能及运行时各自遵循上游许可，Motion Skill不替上游另行授权。
 

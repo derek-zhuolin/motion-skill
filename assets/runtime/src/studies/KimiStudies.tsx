@@ -1,6 +1,5 @@
-import palette from './palette.json';
 import React from 'react';
-const B=palette.accent,K=palette.ink,W=palette.paper;
+const B='#0070DB',K='#141414',W='#FFFFFF';
 const c=(v:number)=>Math.max(0,Math.min(1,v));
 const e=(v:number)=>{v=c(v);return v*v*v*(v*(v*6-15)+10)};
 const w=(t:number,a:number,b:number)=>e((t-a)/(b-a));

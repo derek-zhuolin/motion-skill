@@ -6,6 +6,24 @@ Motion Skill 是给 Codex / Agent 使用的 **voice-to-video Skill 与可编辑 
 
 [本次 Release](https://github.com/derek-zhuolin/motion-skill/releases/tag/v1.2.0-beta.1) · [安装与更新](docs/UPDATING.md) · [更新日志](CHANGELOG.md) · [English overview](README.en.md) · [快速开始](docs/GETTING_STARTED.md) · [提示词](docs/PROMPTS.md) · [常见问题](docs/FAQ.md) · [内测反馈 / 参与贡献](CONTRIBUTING.md)
 
+## 源码补丁：内容驱动的连续粘土与细节
+
+本次 32 秒 polish32 已获用户视觉认可。补丁保留 Motion 蓝、字体与柔和粘土，把分句、卡片反馈、同一界面换页、导航预告、接触反馈接进可调用源码；保留之前的材质、图表、镜头和产品 UI 能力。
+
+[独立组件预览源码与启动](examples/directed-polish/README.md) · [日常音频提示词](references/audio-directed-prompt.md) · [编排方法与调用](references/directed-motion.md) · [今天的需求收敛](docs/ACCEPTED_POLISH.md) · [组件入口](references/component-catalog.md)
+
+![本机认可的32秒案例对比](docs/polish32/comparison.png)
+
+这是视觉案例截图。私人原声、照片原件和本机工程索引不在本次公开更新中；不是公开托管的完整32秒视频。下一段音频的迁移效果仍待测试，不承诺一条提示词保证任意内容同等成片。
+
+```sh
+python3 scripts/motion.py brief --audio /absolute/audio.mp3 --out /absolute/new-run
+```
+
+此命令准备音源指纹、视觉档案和可复用源码，输出 `prepared_not_film`。Agent 仍需核对转写、按新语义编排、实际接线与播放检查。请使用新内容测试，而不是复制旧片字幕和时间。
+
+下面保留已发布版本的说明与下载。
+
 ## 本次更新：工程化编排与音乐律动
 
 **先让画面表达清楚，再让动作跟音乐呼吸。** 新增能力都是可选扩展，不重写旧工程或替换已选风格。
